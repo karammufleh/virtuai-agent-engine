@@ -1,0 +1,51 @@
+{
+  "topic": "Shipping on a $40 stack vs a $40k stack",
+  "hook_summary": "I shipped a feature last Tuesday for forty dollars.",
+  "total_words": 118,
+  "estimated_seconds": 26,
+  "scenes": [
+    {
+      "id": 1,
+      "story_beat": "setup",
+      "audio_text": "I shipped a feature last Tuesday for forty dollars. My last company spent forty thousand to do the same thing.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, eye-level, seated leaning forward with both forearms on desk [2] SETTING: warm wood writing desk in a quiet home study, open Moleskine notebook beside a ceramic mug, packed bookshelf filling the background [3] LIGHT: soft morning window light from the left, warm and diffuse, slight shadows across bookshelf spines [4] LIVE BACKGROUND: dust motes drifting through the window light, a radiator ticking on the far wall, curtain fabric shifting faintly in an air current [5] CAMERA + MOOD: slow 1-foot handheld push-in toward subject, quiet confessional energy \u2014 @daniel in sand-coloured chore jacket over a navy tee, slightly unshaven, speaks directly to camera with calm certainty",
+      "duration_hint": 5
+    },
+    {
+      "id": 2,
+      "story_beat": "incident",
+      "audio_text": "At that company, a PM filed a ticket in January. The thing went live in April. I wasn't even on that team anymore.",
+      "visual_prompt": "[1] COMPOSITION: medium shot, 50mm, slight low angle, sitting in leather armchair with one elbow resting on the arm, leaning slightly to the side [2] SETTING: leather armchair near a low-burning fireplace, a single hardcover book face-down on the side table, faint amber glow from the hearth [3] LIGHT: warm practical firelight as key source, left side of face in soft shadow, no overhead fill [4] LIVE BACKGROUND: fireplace flames flickering and shifting, small ember occasionally dropping, faint heat shimmer above the grate [5] CAMERA + MOOD: slow orbit left-to-right around the chair, unhurried and reflective \u2014 @daniel in sand-coloured chore jacket over a navy tee, measured tone, slight disbelief in his expression",
+      "duration_hint": 5
+    },
+    {
+      "id": 3,
+      "story_beat": "struggle",
+      "audio_text": "I assumed smaller meant slower. So I spent three weeks spec-ing it out, writing docs, waiting on nobody.",
+      "visual_prompt": "[1] COMPOSITION: wide shot, 28mm, eye-level, standing at kitchen island with both hands flat on the counter [2] SETTING: kitchen island at dusk, one warm pendant lamp on above the island, a closed laptop and a half-empty coffee mug on the counter [3] LIGHT: single pendant warm key from directly above, dusk blue bleeding in from the window behind, deep contrast on the countertop [4] LIVE BACKGROUND: the faucet dripping slowly into the sink in the background, shadows shifting as clouds move past the window, steam still curling from the coffee mug [5] CAMERA + MOOD: slow dolly pulling back to reveal the wide kitchen, slightly restless energy \u2014 @daniel in sand-coloured chore jacket over a navy tee, hands pressed flat, talking through mild frustration",
+      "duration_hint": 5
+    },
+    {
+      "id": 4,
+      "story_beat": "turn",
+      "audio_text": "Then I just opened Cursor, dropped in the context, and built it in six hours. No tickets. No standups. Done.",
+      "visual_prompt": "[1] COMPOSITION: over-shoulder wide, 35mm, high angle looking down at the workbench, subject half-turned looking back at camera [2] SETTING: garage workshop at night, single work lamp clamped to the bench, scattered hand tools and a power drill on pegboard behind, concrete floor visible [3] LIGHT: single warm tungsten work lamp as the only source, hard shadows across the bench surface, face partially lit from below [4] LIVE BACKGROUND: a standing fan oscillating slowly in the corner, a bare bulb swinging faintly on a cord near the garage door, dust settling on the concrete [5] CAMERA + MOOD: handheld drift slowly left, intimate and slightly tense \u2014 @daniel in sand-coloured chore jacket over a navy tee, half-turned back toward camera with a knowing look, voice drops in pace",
+      "duration_hint": 5
+    },
+    {
+      "id": 5,
+      "story_beat": "proof",
+      "audio_text": "I used Claude to write the tests, Zapier to wire the trigger, total spend forty-two dollars. It's been running four weeks without a single bug report.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 85mm portrait, eye-level, seated on the edge of a bed with one hand on knee, upright and direct [2] SETTING: bedroom edge of bed, morning light pushing through thin curtains casting soft parallel lines across the floor, a phone face-down on the duvet [3] LIGHT: soft diffuse morning backlight from curtains, gentle wrap-around fill from white walls, clean and calm [4] LIVE BACKGROUND: curtain fabric breathing slightly in an air vent breeze, light stripes on the floor shifting slowly, muffled ambient street sound implied by faint curtain movement [5] CAMERA + MOOD: slow push-in from medium to close-up, calm and assured delivery \u2014 @daniel in sand-coloured chore jacket over a navy tee, elbow on knee, speaking quietly like he's telling you the actual number",
+      "duration_hint": 5
+    },
+    {
+      "id": 6,
+      "story_beat": "meaning",
+      "audio_text": "Process debt is more expensive than technical debt. Most teams are drowning in both. The stack was never the problem.",
+      "visual_prompt": "[1] COMPOSITION: medium shot, 35mm, eye-level, seated in reading nook with one hand resting open on the windowsill, body angled slightly toward window [2] SETTING: reading nook with rain visible through the window, a paperback closed on the cushion beside him, condensation on the glass outside [3] LIGHT: flat overcast diffuse light from the rain-covered window, cool grey-blue tone, no artificial fill \u2014 faces lit entirely by the storm-grey sky [4] LIVE BACKGROUND: rain streaking down the windowpane continuously, a tree branch outside swaying in the wind, a car passing slowly on the wet street below [5] CAMERA + MOOD: locked wide with a slow 1-foot parallax drift right, meditative and final \u2014 @daniel in sand-coloured chore jacket over a navy tee, open hand on windowsill, looking briefly toward the rain before returning to camera",
+      "duration_hint": 5
+    }
+  ],
+  "loop_back_line": "The stack was never the problem \u2014 forty dollars proved that."
+}

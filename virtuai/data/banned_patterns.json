@@ -1,0 +1,14 @@
+{
+  "patterns": [
+    {
+      "ts": 1779113861,
+      "pattern": "medical-advice-without-disclaimer",
+      "reason": "violates platform policy"
+    },
+    {
+      "ts": 1781363573,
+      "pattern": "CURES diabetes in X days \u2014 doctors hate it",
+      "reason": "False medical cure claims encouraging patients to stop insulin. Dangerous misinformation, potential self-harm via diabetic ketoacidosis. Violates medical advice, self-harm, and misinformation policies."
+    }
+  ]
+}

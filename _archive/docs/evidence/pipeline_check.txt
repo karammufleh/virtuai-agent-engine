@@ -1,0 +1,32 @@
+┌─ VirtuAI pre-demo pipeline check ────────────────────────┐
+│ ✓ agent: analyzer                  factory OK
+│ ✓ agent: research                  factory OK
+│ ✓ agent: strategy                  factory OK
+│ ✓ agent: creator                   factory OK
+│ ✓ agent: visual                    factory OK
+│ ✓ agent: reviewer                  factory OK
+│ ✓ agent: guardian                  factory OK
+│ ✓ agent: publisher                 factory OK
+│ ✓ schemas                          all 8 agents have schemas
+│ ✓ data: autopilot_history.json     /Users/karammufleh/Desktop/capstone  101/virtuai/data/autopilot_history.json
+│ ✓ data: banned_patterns.json       /Users/karammufleh/Desktop/capstone  101/virtuai/data/banned_patterns.json
+│ ✓ data: agent_messages.jsonl       /Users/karammufleh/Desktop/capstone  101/virtuai/data/agent_messages.jsonl
+│ ✓ platforms                        have ['instagram', 'linkedin', 'x_twitter', 'youtube_shorts']; expected ['instagram', 'linkedin', 'x_twitter', 'youtube_shorts']
+│ ✓ models.yaml                      have ['image_post', 'music_underbed', 'reel_video', 'script_writer']
+│ ✓ persona_anchor.json              
+│ ✓ canonical_daniel.png             1192 KB
+│ ✓ n8n workflow                     22 KB
+│ ✓ locked baseline                  manifest present (verify with: shasum -c)
+│ ✓ env: KIE_API_KEY                 set
+│ ✓ env: COMPOSIO_API_KEY            set
+│ ✓ publisher safety gates           documented in backstory
+│ ✓ docs/N8N_AGENT_UPGRADE_NOTES.md  
+│ ✓ validation error log dir         /Users/karammufleh/Desktop/capstone  101/virtuai/data/logs
+└─ 23 / 23 checks passed ───────────────────────────┘
+
+Recent validation errors (newest first):
+  2026-05-20T13:21:52.163713Z  test_agent: test error
+  2026-05-20T13:21:52.161459Z  reviewer: no JSON object found in agent output
+  2026-05-20T13:21:52.106093Z  reviewer: schema validation error: 1 validation error for ReviewerOutput
+approval_status
+ 

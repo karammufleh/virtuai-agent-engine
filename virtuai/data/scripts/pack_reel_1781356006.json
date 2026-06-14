@@ -1,0 +1,51 @@
+{
+  "topic": "The AI tool that silently killed my margins",
+  "hook_summary": "I paid $340 a month for a tool that lost me money.",
+  "total_words": 118,
+  "estimated_seconds": 26,
+  "scenes": [
+    {
+      "id": 1,
+      "story_beat": "setup",
+      "audio_text": "I paid $340 a month for an AI tool my whole team was obsessed with.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, eye-level, seated leaning slightly forward with both forearms on desk [2] SETTING: warm wood writing desk in a quiet home study, open Moleskine notebook and uncapped pen beside a ceramic mug, packed bookshelf visible behind [3] LIGHT: single warm desk lamp casting soft amber glow, late evening, minimal fill from a white wall to the right [4] LIVE BACKGROUND: pages of a notebook fluttering slightly from an AC vent, a clock ticking visibly on the shelf, a coat draped over the chair swaying gently [5] CAMERA + MOOD: slow 1-foot handheld dolly forward, subject steady and direct, understated confessional energy \u2014 @daniel in heather-grey hoodie with subtle texture",
+      "duration_hint": 5
+    },
+    {
+      "id": 2,
+      "story_beat": "incident",
+      "audio_text": "Six weeks in, my accountant flagged it \u2014 our delivery cost per client had jumped $180.",
+      "visual_prompt": "[1] COMPOSITION: medium shot, 50mm, slight low angle, sitting on leather armchair with elbow on knee, leaning forward [2] SETTING: leather armchair near a fireplace with low amber light, a glass of water on a side table, a folded newspaper on the armrest [3] LIGHT: warm flickering firelight as key source, no overhead, deep shadows on the left side of face [4] LIVE BACKGROUND: fireplace flames shifting and crackling, embers visible, a wall sconce flickering in soft focus behind [5] CAMERA + MOOD: slow push-in on 50mm, subject leaning in, mood shifts to quiet urgency \u2014 @daniel in heather-grey hoodie with subtle texture",
+      "duration_hint": 5
+    },
+    {
+      "id": 3,
+      "story_beat": "struggle",
+      "audio_text": "I thought it was a pricing problem. Spent three weeks re-doing our SOPs inside Notion. Still broke.",
+      "visual_prompt": "[1] COMPOSITION: wide shot, 28mm, eye-level, standing with both hands on kitchen island counter, weight leaning in [2] SETTING: kitchen island at dusk, one pendant lamp lit above the island, a laptop open with a spreadsheet visible, a half-empty coffee mug nearby [3] LIGHT: single warm pendant lamp overhead, last traces of dusk blue coming through the window behind, hard shadow on the countertop [4] LIVE BACKGROUND: ceiling pendant lamp swaying faintly, steam rising from the coffee mug, a faucet dripping softly in background [5] CAMERA + MOOD: slow dolly left to right tracking the subject's hands, tense and restless energy \u2014 @daniel in heather-grey hoodie with subtle texture",
+      "duration_hint": 5
+    },
+    {
+      "id": 4,
+      "story_beat": "turn",
+      "audio_text": "Then I ran every client delivery log through Claude. It told me the tool was adding four hours of human review per job.",
+      "visual_prompt": "[1] COMPOSITION: over-shoulder medium shot, 85mm portrait, slight high angle, seated in reading nook with phone in hand [2] SETTING: reading nook with rain streaking the window behind, a small side lamp on, an open book face-down on the cushion beside him [3] LIGHT: soft diffuse overcast light from rain-streaked window, warm reading lamp as secondary fill, cool blue from outside contrasting [4] LIVE BACKGROUND: rain visibly falling and streaking the glass behind, drops catching the lamp light, curtain edge shifting slightly from a gap in the window [5] CAMERA + MOOD: slow 1-foot handheld drift rightward, intimate and surprised \u2014 the moment of discovery \u2014 @daniel in heather-grey hoodie with subtle texture",
+      "duration_hint": 5
+    },
+    {
+      "id": 5,
+      "story_beat": "proof",
+      "audio_text": "I canceled it that Tuesday. Rebuilt the workflow in Zapier for $27 a month. Human review time dropped to 20 minutes.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, eye-level, half-turned looking back over shoulder, relaxed [2] SETTING: garage workshop, workbench behind with scattered hand tools, a single hanging work lamp swinging gently above [3] LIGHT: single exposed work lamp as hard key source from above, warm tungsten quality, strong shadows on one side [4] LIVE BACKGROUND: work lamp swinging slightly, dust motes drifting through the beam, a fan visible in the far corner rotating slowly [5] CAMERA + MOOD: slow parallax drift left as subject holds still \u2014 casual, matter-of-fact, momentum returning \u2014 @daniel in heather-grey hoodie with subtle texture",
+      "duration_hint": 5
+    },
+    {
+      "id": 6,
+      "story_beat": "meaning",
+      "audio_text": "The best tool isn't the most powerful one. It's the one that doesn't quietly eat your margin.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 50mm, eye-level, seated on edge of bed, open hands resting on knees [2] SETTING: bedroom edge of bed with morning light coming through sheer curtains, a plain wooden nightstand beside him, a glass of water catching the light [3] LIGHT: soft diffuse morning light through curtains, golden hour quality, no artificial light, gentle fill on both sides of face [4] LIVE BACKGROUND: curtains shifting slowly in a breeze, light patterns moving across the floor, birds audible through the window implied by the shifting light [5] CAMERA + MOOD: slow 1-foot push-in, subject calm and settled, flat and final \u2014 the line lands clean \u2014 @daniel in heather-grey hoodie with subtle texture",
+      "duration_hint": 5
+    }
+  ],
+  "loop_back_line": "The best tool isn't the most powerful one. It's the one that doesn't quietly eat your margin."
+}

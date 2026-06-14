@@ -1,0 +1,57 @@
+{
+  "topic": "High earners cut obligations they don't want from their schedule.",
+  "title": "The One Thing Millionaires Cut From Their Schedule",
+  "hook": "Stop saying yes to obligations.",
+  "ending_pattern": "loop_back",
+  "scenes": [
+    {
+      "id": 1,
+      "setting": "A modern, clean office with a desk and a laptop, natural light from a window.",
+      "scene_edit_prompt": "Keep the same person, face, head position, lighting on the face, and expression EXACTLY the same. Only change the background and environment behind them. Make it a modern office with a desk and a laptop, natural light from a window.",
+      "spoken_text": "Stop saying yes to obligations. I surveyed 100 people earning over a million a year.",
+      "shot_type": "medium close-up",
+      "emphasis_words": [
+        "Stop",
+        "obligations",
+        "million"
+      ]
+    },
+    {
+      "id": 2,
+      "setting": "A minimalist living room with a couch and a bookshelf, soft lighting.",
+      "scene_edit_prompt": "Keep the same person, face, head position, lighting on the face, and expression EXACTLY the same. Only change the background and environment behind them. Make it a minimalist living room with a couch and a bookshelf, soft lighting.",
+      "spoken_text": "Their answer was almost identical. They cut every commitment they didn't truly want.",
+      "shot_type": "medium close-up",
+      "emphasis_words": [
+        "identical",
+        "cut",
+        "commitment"
+      ]
+    },
+    {
+      "id": 3,
+      "setting": "A quiet coffee shop with a wooden table and a latte, warm ambient lighting.",
+      "scene_edit_prompt": "Keep the same person, face, head position, lighting on the face, and expression EXACTLY the same. Only change the background and environment behind them. Make it a quiet coffee shop with a wooden table and a latte, warm ambient lighting.",
+      "spoken_text": "No networking events they dreaded. No meetings that drained them. Just hard no's.",
+      "shot_type": "medium close-up",
+      "emphasis_words": [
+        "dreaded",
+        "drained",
+        "hard no's"
+      ]
+    },
+    {
+      "id": 4,
+      "setting": "A rooftop terrace with a city skyline in the background, golden hour light.",
+      "scene_edit_prompt": "Keep the same person, face, head position, lighting on the face, and expression EXACTLY the same. Only change the background and environment behind them. Make it a rooftop terrace with a city skyline in the background, golden hour light.",
+      "spoken_text": "So I learned to stop saying yes to obligations. That's the real secret.",
+      "shot_type": "medium close-up",
+      "emphasis_words": [
+        "stop",
+        "obligations",
+        "secret"
+      ]
+    }
+  ],
+  "estimated_total_sec": 25
+}

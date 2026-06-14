@@ -1,0 +1,39 @@
+{
+  "topic": "Why being 'nice' is ruining your career",
+  "hook_summary": "Stop being nice at work. It's costing you opportunities.",
+  "total_words": 102,
+  "estimated_seconds": 27,
+  "scenes": [
+    {
+      "id": 1,
+      "audio_text": "Everyone says be nice at work. That's terrible advice.",
+      "visual_prompt": "@daniel, 28-year-old man with short dark wavy hair, light stubble, dark polo shirt, medium close-up, locked-off camera, candid lighting, office break room, natural window light, documentary style.",
+      "duration_hint": 5
+    },
+    {
+      "id": 2,
+      "audio_text": "I got passed over for a promotion twice because I was too agreeable. My manager said I needed to 'push back more.'",
+      "visual_prompt": "@daniel, same man, over-the-shoulder shot from behind his laptop, soft ambient light from monitor, home office, messy desk with coffee mug, genuine frustrated expression.",
+      "duration_hint": 5
+    },
+    {
+      "id": 3,
+      "audio_text": "So I stopped agreeing to everything. I started saying 'no' to extra work that didn't help my goals.",
+      "visual_prompt": "@daniel, walking on a city sidewalk, medium shot, slow push-in, golden hour sunlight, casual confident stride, looking ahead determined.",
+      "duration_hint": 5
+    },
+    {
+      "id": 4,
+      "audio_text": "Within 6 months, I got promoted and a 20% raise. Not because I worked harder, but because I stopped being a pushover.",
+      "visual_prompt": "@daniel, sitting on a park bench, medium close-up, relaxed posture, natural shade lighting, slight smile, holding a coffee cup.",
+      "duration_hint": 6
+    },
+    {
+      "id": 5,
+      "audio_text": "Nice doesn't get you ahead. Respect does. Go earn it.",
+      "visual_prompt": "@daniel, same park bench, locked-off camera, direct eye contact, confident expression, leaves slightly blowing in background.",
+      "duration_hint": 6
+    }
+  ],
+  "loop_back_line": "Respect does. Go earn it."
+}

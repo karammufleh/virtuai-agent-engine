@@ -1,0 +1,39 @@
+{
+  "topic": "The biggest lie about 'busy' people",
+  "hook_summary": "Stop romanticizing busy people.",
+  "total_words": 98,
+  "estimated_seconds": 26,
+  "scenes": [
+    {
+      "id": 1,
+      "audio_text": "Everyone worships busy people like they're important. I think they're just afraid of being alone with their own thoughts.",
+      "visual_prompt": "@daniel stands in a bright, minimalist kitchen with morning light streaming through a window. Medium close-up, locked-off camera, natural lighting. He speaks directly to the lens with a slight smirk. Photo-real, documentary style.",
+      "duration_hint": 5
+    },
+    {
+      "id": 2,
+      "audio_text": "I used to fill every hour with meetings, calls, side projects. Looked productive. Felt empty.",
+      "visual_prompt": "@daniel walks down a quiet city street at golden hour, wearing the same dark polo. Over-the-shoulder shot, slow tracking forward, warm sunlight filtering through trees. Candid, real-life feel.",
+      "duration_hint": 5
+    },
+    {
+      "id": 3,
+      "audio_text": "Then I spent a week doing nothing. No phone, no laptop. Just sat in a park.",
+      "visual_prompt": "@daniel sits on a wooden park bench under a large oak tree, afternoon sunlight dappling his face. Medium shot, slow push-in, natural lighting. He looks relaxed, thoughtful. Photo-real.",
+      "duration_hint": 6
+    },
+    {
+      "id": 4,
+      "audio_text": "By day three, my brain started surfacing ideas I'd buried for years. That one creative spark paid more than a month of grinding.",
+      "visual_prompt": "@daniel stands at a street market, holding a coffee cup, looking off-camera thoughtfully. Medium close-up, shallow depth of field, warm afternoon light. Documentary style.",
+      "duration_hint": 6
+    },
+    {
+      "id": 5,
+      "audio_text": "Busy is a shield. Drop it. See what's underneath.",
+      "visual_prompt": "@daniel back in the same kitchen as scene 1, now leaning against the counter, arms crossed. Medium close-up, locked-off, natural morning light. He delivers the line with a direct, confident gaze.",
+      "duration_hint": 4
+    }
+  ],
+  "loop_back_line": null
+}

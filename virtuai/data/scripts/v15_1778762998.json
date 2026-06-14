@@ -1,0 +1,30 @@
+{
+  "topic": "Solo founder beats $4M funded competitor on $340/month",
+  "hook_summary": "A competitor raised $4M to build what I run for $340.",
+  "total_words": 72,
+  "estimated_seconds": 24,
+  "scenes": [
+    {
+      "id": 1,
+      "story_beat": "setup",
+      "audio_text": "A competitor just raised $4 million to build what I'm running for $340 a month in API costs. They have 11 employees. I have one \u2014 me.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, eye-level [2] SETTING: corner table at a narrow espresso bar, white tile wall behind him, a ceramic cup and open MacBook on the zinc counter [3] LIGHT: cool morning side-light from a floor-to-ceiling window at 8am, slight fill from white tile bounce [4] LIVE BACKGROUND: barista pulling a shot at the machine behind him, a second patron reading a newspaper in soft focus near the window, steam curling off the group head [5] CAMERA + MOOD: locked-off with a subtle 6-inch push-in over 4 seconds, @daniel leaning forward with forearms on the counter, quiet intensity, the energy of someone dropping a number they've been sitting on",
+      "duration_hint": 8
+    },
+    {
+      "id": 2,
+      "story_beat": "turn | proof",
+      "audio_text": "Six months ago I tried hiring two contractors to handle client delivery. It was a disaster \u2014 missed deadlines, Slack noise, $11k gone. So I rebuilt the entire workflow in Claude and Zapier over one weekend. Same output, zero management overhead.",
+      "visual_prompt": "[1] COMPOSITION: over-shoulder wide, 28mm, slight low angle [2] SETTING: standing at a kitchen island, a single open laptop and a half-empty glass of water on the white quartz surface, minimal shelving with a few books visible [3] LIGHT: diffused afternoon light from a west-facing window at 3pm, warm and flat, no harsh shadows [4] LIVE BACKGROUND: a ceiling fan rotating slowly overhead, a notification badge briefly appearing on the laptop screen, light traffic sound implied by a cracked window in soft focus behind him [5] CAMERA + MOOD: slow 1-foot handheld drift left, @daniel gesturing with one hand toward the laptop, candid and slightly frustrated recall, like a war story being retold without the drama",
+      "duration_hint": 10
+    },
+    {
+      "id": 3,
+      "story_beat": "payoff",
+      "audio_text": "Their burn rate is eating them alive. Mine is $340. Headcount is not a moat \u2014 it's a liability dressed up as traction.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 50mm, eye-level [2] SETTING: rooftop terrace at dusk, a low concrete ledge behind him, a city skyline out of focus, a single folding chair and a closed notebook on the ledge beside him [3] LIGHT: warm golden-hour key from the west at 6:45pm, soft blue fill from open sky to the east, natural vignette at the edges [4] LIVE BACKGROUND: a distant construction crane rotating slowly on the skyline, a pigeon landing and departing on the ledge behind him, a water tower visible two blocks away catching the last light [5] CAMERA + MOOD: locked-off, subject standing still with arms crossed loosely, slight breeze moving his collar, calm and final \u2014 the tone of someone who has already won and is just noting the score",
+      "duration_hint": 6
+    }
+  ],
+  "loop_back_line": "Headcount is not a moat \u2014 it's a liability dressed up as traction."
+}

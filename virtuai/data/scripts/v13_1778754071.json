@@ -1,0 +1,39 @@
+{
+  "topic": "Why Being 'Nice' Is Keeping You Broke",
+  "hook_summary": "Stop being nice if you want to get rich.",
+  "total_words": 92,
+  "estimated_seconds": 26,
+  "scenes": [
+    {
+      "id": 1,
+      "audio_text": "Everyone says be nice and you'll get ahead. That's a lie.",
+      "visual_prompt": "@daniel is sitting on a park bench in late afternoon golden hour, medium close-up, camera locked-off, natural backlight, candid documentary style, slight shadows on face.",
+      "duration_hint": 5
+    },
+    {
+      "id": 2,
+      "audio_text": "I used to say yes to every meeting, every favor, every 'let's grab coffee' until I realized I was just giving away my time for free.",
+      "visual_prompt": "@daniel walking down a busy city street at midday, over-shoulder shot from behind, motion blur in background, sunlit, candid, real street feel.",
+      "duration_hint": 6
+    },
+    {
+      "id": 3,
+      "audio_text": "The moment I started saying no to everything that didn't pay me or teach me, my income went from $40k to $120k in one year.",
+      "visual_prompt": "@daniel leaning against a brick wall in a quiet alley, medium shot, slow push-in, soft diffused light from above, focused expression.",
+      "duration_hint": 6
+    },
+    {
+      "id": 4,
+      "audio_text": "People called me an asshole. But they also started paying me for my time.",
+      "visual_prompt": "@daniel sitting at a small cafe table with a coffee cup, half-empty, indoor warm lighting, medium close-up, slight smirk, candid moment.",
+      "duration_hint": 5
+    },
+    {
+      "id": 5,
+      "audio_text": "Nice guys finish last. But the honest ones finish rich.",
+      "visual_prompt": "@daniel back on the same park bench, golden hour, wide shot showing the whole scene, camera slowly pulling back, sunset glow, contemplative mood.",
+      "duration_hint": 4
+    }
+  ],
+  "loop_back_line": "Nice guys finish last. But the honest ones finish rich."
+}

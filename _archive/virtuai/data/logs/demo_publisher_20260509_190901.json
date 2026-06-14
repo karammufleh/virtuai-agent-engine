@@ -1,0 +1,26 @@
+{
+  "linkedin": {
+    "action": "published",
+    "tool_used": "LINKEDIN_CREATE_LINKED_IN_POST",
+    "response": "{'data': {'x_restli_id': 'urn:li:share:7458910865736728576'}, 'error': None, 'successful': True}"
+  },
+  "x": {
+    "action": "error",
+    "tool_used": "TWITTER_CREATION_OF_A_POST",
+    "error": "BadRequestError: Error code: 400 - {'error': {'message': 'No connected account found for user ID danielcalder- for toolkit twitter', 'code': 1810, 'slug': 'ActionExecute_ConnectedAccountNotFound', 'status': 400, 'request_id': 'd40929f0092f4b599f4217bb45a5e417', 'suggested_fix': \"No active connection exists for toolkit 'twitter' under entity 'danielcalder-'. Connect your twitter account first via the /api/v3/connected_accounts endpoint or the COMPOSIO_INITIATE_CONNECTION tool.\"}}"
+  },
+  "instagram": {
+    "action": "published",
+    "tool_used": "INSTAGRAM_CREATE_POST",
+    "response": "{'data': {'id': '18409130740181070'}, 'error': None, 'successful': True}"
+  },
+  "youtube_shorts": {
+    "action": "published",
+    "tool_used": null,
+    "response": "{'data': {'response_data': {'kind': 'youtube#video', 'etag': 'un-XG7KzpGkYCvB1L73oRlf15v8', 'id': '3VSgAMpvcYc', 'snippet': {'publishedAt': '2026-05-09T16:08:59Z', 'channelId': 'UCwc4qv4Gd6F9BzP0KzHotwg', 'title': 'VirtuAI Capstone \u2014 Publisher Integration Test', 'description': 'Demo upload from the autonomous content pipeline. CrewAI + Composio + local Phi-3.5-mini. End-to-end verification.', 'thu"
+  },
+  "medium": {
+    "action": "tool_unavailable",
+    "reason": "MEDIUM_CREATE_POST not connected in Composio"
+  }
+}

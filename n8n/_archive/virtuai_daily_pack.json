@@ -1,0 +1,199 @@
+{
+  "id": "virtuai-daily-pack",
+  "name": "VirtuAI Daily Pack",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 9 * * *"
+            }
+          ]
+        }
+      },
+      "id": "node-cron",
+      "name": "Schedule: daily 09:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.VIRTUAI_API_BASE || 'http://host.docker.internal:9090' }}/n8n/trigger-pack",
+        "options": {
+          "timeout": 60000
+        }
+      },
+      "id": "node-trigger",
+      "name": "Trigger Daily Pack",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [480, 300]
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "task_id",
+              "value": "={{ $json.task_id }}"
+            },
+            {
+              "name": "poll_url",
+              "value": "={{ $env.VIRTUAI_API_BASE || 'http://host.docker.internal:9090' }}{{ $json.poll_url }}"
+            }
+          ]
+        }
+      },
+      "id": "node-set-task",
+      "name": "Capture task_id",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [720, 300]
+    },
+    {
+      "parameters": {
+        "amount": 5,
+        "unit": "minutes"
+      },
+      "id": "node-initial-wait",
+      "name": "Wait 5 min (initial)",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [960, 300]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "={{ $('Capture task_id').item.json.poll_url }}",
+        "options": {
+          "timeout": 30000
+        }
+      },
+      "id": "node-poll",
+      "name": "Poll status",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1200, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.state }}",
+              "operation": "equal",
+              "value2": "success"
+            }
+          ]
+        }
+      },
+      "id": "node-if-done",
+      "name": "Done?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [1440, 300]
+    },
+    {
+      "parameters": {
+        "amount": 30,
+        "unit": "seconds"
+      },
+      "id": "node-loop-wait",
+      "name": "Wait 30s",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [1200, 480]
+    },
+    {
+      "parameters": {
+        "subject": "VirtuAI daily pack published",
+        "text": "=Topic: {{ $json.result.pack[0].topic }}\n\nReel:     {{ $json.result.pack[0].results.youtube }}\nPortrait: IG {{ $json.result.pack[1].results.instagram_id }} / LinkedIn {{ $json.result.pack[1].results.linkedin_urn }}\nCarousel: IG {{ $json.result.pack[2].results.instagram_id }} / LinkedIn {{ $json.result.pack[2].results.linkedin_urn }}\n\nFinished at {{ $now }}\n",
+        "toEmail": "={{ $env.NOTIFY_EMAIL || 'me@example.com' }}",
+        "options": {}
+      },
+      "id": "node-email-success",
+      "name": "Notify success",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [1680, 200]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.state }}",
+              "operation": "equal",
+              "value2": "failed"
+            }
+          ]
+        }
+      },
+      "id": "node-if-failed",
+      "name": "Failed?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [1440, 480]
+    },
+    {
+      "parameters": {
+        "subject": "VirtuAI daily pack FAILED",
+        "text": "=Task {{ $json.task_id }} failed.\n\nError: {{ $json.error }}\n",
+        "toEmail": "={{ $env.NOTIFY_EMAIL || 'me@example.com' }}",
+        "options": {}
+      },
+      "id": "node-email-failed",
+      "name": "Notify failure",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [1680, 480]
+    }
+  ],
+  "connections": {
+    "Schedule: daily 09:00": {
+      "main": [[{ "node": "Trigger Daily Pack", "type": "main", "index": 0 }]]
+    },
+    "Trigger Daily Pack": {
+      "main": [[{ "node": "Capture task_id", "type": "main", "index": 0 }]]
+    },
+    "Capture task_id": {
+      "main": [[{ "node": "Wait 5 min (initial)", "type": "main", "index": 0 }]]
+    },
+    "Wait 5 min (initial)": {
+      "main": [[{ "node": "Poll status", "type": "main", "index": 0 }]]
+    },
+    "Poll status": {
+      "main": [[{ "node": "Done?", "type": "main", "index": 0 }]]
+    },
+    "Done?": {
+      "main": [
+        [{ "node": "Notify success", "type": "main", "index": 0 }],
+        [{ "node": "Failed?", "type": "main", "index": 0 }]
+      ]
+    },
+    "Failed?": {
+      "main": [
+        [{ "node": "Notify failure", "type": "main", "index": 0 }],
+        [{ "node": "Wait 30s", "type": "main", "index": 0 }]
+      ]
+    },
+    "Wait 30s": {
+      "main": [[{ "node": "Poll status", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "tags": [
+    { "name": "virtuai" },
+    { "name": "automation" }
+  ],
+  "meta": {
+    "instanceId": "virtuai-daily-pack"
+  }
+}

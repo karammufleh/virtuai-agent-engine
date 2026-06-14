@@ -1,0 +1,49 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# KIE.ai model catalogue used by VirtuAI.
+#
+# Centralized so any slug change is ONE edit. Every adapter that hits KIE
+# should resolve its slug via virtuai.utils.config_loader.load_models() —
+# do not hardcode slug strings in code anywhere else.
+#
+# Verified live against api.kie.ai on 2026-05-18.
+# Re-verify any failing slug at the KIE Market page:  https://kie.ai/market
+# ──────────────────────────────────────────────────────────────────────────────
+
+base_url: "https://api.kie.ai/api/v1"
+
+endpoints:
+  create_task:  "/jobs/createTask"
+  record_info:  "/jobs/recordInfo"
+  # Claude lives off the base URL — different path root than /jobs/*.
+  claude:       "https://api.kie.ai/claude/v1/messages"
+  file_upload:  "https://kieai.redpandaai.co/api/file-stream-upload"
+
+# ── Models (production stack — locked v1_2026-05-18) ─────────────────────────
+models:
+  reel_video:
+    slug: "kling-3.0/video"
+    notes: "Kling 3.0 multi-shot with native lipsync + Suno underbed."
+    used_by: "virtuai/tools/cloud_tools.py::generate_cinematic_reel"
+
+  image_post:
+    slug: "nano-banana-2"
+    notes: "Nano Banana 2 background → PIL slide_renderer for typography."
+    used_by: "virtuai/tools/cloud_tools.py::render_image_post"
+
+  music_underbed:
+    slug: "suno-v3.5"
+    notes: "Instrumental underbed for reels."
+
+  script_writer:
+    slug: "claude-sonnet-4-6"
+    endpoint: "claude"                     # uses /claude/v1/messages, not createTask
+    notes: "Used by Creator + Research (viral idea funnel)."
+
+# ── Poll behavior ─────────────────────────────────────────────────────────────
+polling:
+  interval_seconds: 6
+  timeout_seconds: 600
+  terminal_states_success: ["success", "succeeded", "completed", "done"]
+  terminal_states_failure: ["fail", "failed", "error"]
+  also_success_when:
+    - "resultJson is non-empty"            # kie_kling.py pattern

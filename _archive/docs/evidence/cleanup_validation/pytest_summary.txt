@@ -1,0 +1,12 @@
+  /Users/karammufleh/Desktop/capstone  101/.venv/lib/python3.13/site-packages/crewai/agent/core.py:331: DeprecationWarning: deprecated
+    if self.allow_code_execution:
+
+virtuai/tests/test_agents_smoke.py: 14 warnings
+  /Users/karammufleh/Desktop/capstone  101/.venv/lib/python3.13/site-packages/crewai/agent/core.py:342: DeprecationWarning: deprecated
+    if self.reasoning and self.planning_config is None:
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED virtuai/tests/test_agents_smoke.py::test_publisher_agent_dry_run - com...
+FAILED virtuai/tests/test_validators.py::test_publisher_dry_run_still_does_not_publish
+2 failed, 123 passed, 2 skipped, 28 warnings in 11.08s

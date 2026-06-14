@@ -1,0 +1,25 @@
+{
+  "linkedin": {
+    "action": "published",
+    "tool_used": "LINKEDIN_CREATE_LINKED_IN_POST",
+    "response": "{'data': {'x_restli_id': 'urn:li:share:7458064594536665088'}, 'error': None, 'successful': True}"
+  },
+  "x": {
+    "action": "error",
+    "tool_used": "TWITTER_CREATION_OF_A_POST",
+    "error": "BadRequestError: Error code: 400 - {'error': {'message': 'No connected account found for user ID danielcalder- for toolkit twitter', 'code': 1810, 'slug': 'ActionExecute_ConnectedAccountNotFound', 'status': 400, 'request_id': 'e90897302d14483ab310a9db52303b13', 'suggested_fix': \"No active connection exists for toolkit 'twitter' under entity 'danielcalder-'. Connect your twitter account first via the /api/v3/connected_accounts endpoint or the COMPOSIO_INITIATE_CONNECTION tool.\"}}"
+  },
+  "instagram": {
+    "action": "needs_setup",
+    "reason": "IG_USER_ID env var not set. Find your IG Business Account ID via Facebook Graph API Explorer: me/accounts \u2192 <page>?fields=instagram_business_account"
+  },
+  "youtube_shorts": {
+    "action": "error",
+    "tool_used": "YOUTUBE_UPLOAD_VIDEO",
+    "error": "ValueError: Tool 'YOUTUBE_UPLOAD_VIDEO' arguments validation failed: 1 validation error for UploadVideoRequest\nvideoFilePath\n  Input should be a valid dictionary or instance of FileUploadable [type=model_type, input_value='/Users/karammufleh/Deskt...eo_youtube_shorts_2.mp4', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.11/v/model_type\nExpected arguments: {\"tags\": {\"description\": \"List of keyword tags (strings) for the video, used to improve discoverability. This parameter is required.\", \"examples\": [\"['educational', 'python', 'coding tutorial']\"], \"items\": {\"type\": \"string\"}, \"title\": \"Tags\", \"type\": \"array\"}, \"title\": {\"description\": \"The title for the video. Please provide a value of type string. This parameter is required.\", \"examples\": [\"My Awesome Video Adventure\"], \"title\": \"Title\", \"type\": \"string\"}, \"categoryId\": {\"description\": \"YouTube category ID (e.g., '22' for People & Blogs). Can be provided as a string or integer. See YouTube Data API docs for a full list of category IDs. Please provide a value of type string. This parameter is required.\", \"examples\": [\"22\"], \"title\": \"Categoryid\", \"type\": \"string\"}, \"description\": {\"description\": \"Detailed description of the video content, optionally including keywords and context. Please provide a value of type string. This parameter is required.\", \"examples\": [\"A detailed walkthrough of my latest project, showcasing all its features.\"], \"title\": \"Description\", \"type\": \"string\"}, \"privacyStatus\": {\"description\": \"Privacy status. Please provide a value of type string. This parameter is required.\", \"examples\": [\"public\"], \"title\": \"Privacystatus\", \"type\": \"string\"}, \"videoFilePath\": {\"$ref\": \"#/$defs/FileUploadable\", \"examples\": []}}\nRequired: [\"tags\", \"title\", \"categoryId\", \"description\", \"privacyStatus\", \"videoFilePath\"]"
+  },
+  "medium": {
+    "action": "tool_unavailable",
+    "reason": "MEDIUM_CREATE_POST not connected in Composio"
+  }
+}

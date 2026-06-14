@@ -1,0 +1,51 @@
+{
+  "topic": "The one prompt that rewired how I price",
+  "hook_summary": "One prompt made me raise my prices by $11k.",
+  "total_words": 118,
+  "estimated_seconds": 26,
+  "scenes": [
+    {
+      "id": 1,
+      "story_beat": "setup",
+      "audio_text": "One prompt made me raise my prices by $11k. I'd been charging $2,500 per client for AI workflow builds for six months.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, eye-level, seated leaning forward with both elbows on table. [2] SETTING: sunlit corner cafe, ceramic espresso cup beside an open MacBook, worn leather chair, chalk menu board on exposed brick wall behind. [3] LIGHT: warm morning key-light from east-facing window, 8am golden streak across the table surface. [4] LIVE BACKGROUND: barista pulling a shot at the machine, steam curling upward, two blurred figures chatting at the counter. [5] CAMERA + MOOD: slow 1-foot handheld push-in, intimate confessional energy. @daniel \u2014 navy zip-up hoodie over a white tee, short dark wavy hair, light stubble.",
+      "duration_hint": 5
+    },
+    {
+      "id": 2,
+      "story_beat": "incident",
+      "audio_text": "Then last Tuesday a client casually mentioned he'd saved $34,000 in three weeks using the Zapier workflow I'd built him in a single afternoon.",
+      "visual_prompt": "[1] COMPOSITION: medium shot, 28mm, slight low angle, standing arms crossed with weight on one hip. [2] SETTING: co-working space lounge, large floor-to-ceiling window, potted olive tree in corner, scattered laptops on communal tables. [3] LIGHT: diffused overcast daylight through tinted glass, flat soft fill, slight warmth from overhead pendant lamps. [4] LIVE BACKGROUND: ambient figures walking between desks, someone rolling a suitcase past, ceiling fan blade rotating slowly in upper frame. [5] CAMERA + MOOD: slow 2-foot handheld dolly left to right, quiet realization energy. @daniel \u2014 navy zip-up hoodie over a white tee, short dark wavy hair, light stubble.",
+      "duration_hint": 5
+    },
+    {
+      "id": 3,
+      "story_beat": "struggle",
+      "audio_text": "I'd been pricing on hours \u2014 four hours of work, $2,500. I never asked what the output was actually worth to him. That was the mistake.",
+      "visual_prompt": "[1] COMPOSITION: over-shoulder wide, 24mm, slight high angle, half-turned looking back toward camera. [2] SETTING: city sidewalk during golden hour, Georgian-style shopfronts in warm amber light, a coffee cup in hand. [3] LIGHT: low golden-hour sun at 6pm raking from the left, long shadows on pavement, warm orange spill on the hoodie. [4] LIVE BACKGROUND: two cars rolling past in soft focus, a cyclist crossing in the mid-ground, pigeons scattering from a ledge. [5] CAMERA + MOOD: slow tracking shot following @daniel from behind then arcing to profile, reflective unsettled energy. @daniel \u2014 navy zip-up hoodie over a white tee, short dark wavy hair, light stubble.",
+      "duration_hint": 5
+    },
+    {
+      "id": 4,
+      "story_beat": "turn",
+      "audio_text": "So I opened Claude and typed one prompt: 'What is the downstream dollar value of this workflow to the business?' The number it gave me was $40,000.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 50mm, eye-level, sitting with elbow on knee leaning toward camera. [2] SETTING: modern loft kitchen, morning light, Moleskine notebook open on marble counter beside a French press, white subway tile backdrop. [3] LIGHT: cool-to-warm morning light from north-facing skylight, 7am, soft natural fill bouncing off white tile. [4] LIVE BACKGROUND: French press bubbling slightly, steam rising from a mug on the counter, curtain shifting gently near an open transom window. [5] CAMERA + MOOD: slow 1-foot handheld push-in, eureka energy, subject leaning forward with intensity. @daniel \u2014 navy zip-up hoodie over a white tee, short dark wavy hair, light stubble.",
+      "duration_hint": 5
+    },
+    {
+      "id": 5,
+      "story_beat": "proof",
+      "audio_text": "I repriced the next proposal at $13,500. Sent it Friday. Signed by Sunday. Same scope, same Zapier build \u2014 just anchored to value, not hours.",
+      "visual_prompt": "[1] COMPOSITION: wide shot, 35mm, eye-level, standing open hands slightly raised as if presenting evidence. [2] SETTING: rooftop terrace, city skyline softly visible in distance, low concrete parapet wall, a glass of water on a ledge beside him. [3] LIGHT: late afternoon overcast light, diffused blue-grey sky, even soft wrap illuminating the face cleanly. [4] LIVE BACKGROUND: a plane banking slowly across the sky in mid-distance, wind moving @daniel's hoodie slightly, faint traffic blur three stories below. [5] CAMERA + MOOD: slow orbit right-to-left around subject at 4-foot radius, confident matter-of-fact energy. @daniel \u2014 navy zip-up hoodie over a white tee, short dark wavy hair, light stubble.",
+      "duration_hint": 5
+    },
+    {
+      "id": 6,
+      "story_beat": "meaning",
+      "audio_text": "You're not selling your time. You're selling the gap between their problem and their result. One prompt made me raise my prices by $11k.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, eye-level, leaning against a tiled pillar, hand on chin, direct eye contact with lens. [2] SETTING: underground subway platform, platform bench visible to the left, commuters in soft focus across the tracks, tiled station walls. [3] LIGHT: warm tungsten overhead platform lighting, 9pm, hard top-light softened by white tile reflection below. [4] LIVE BACKGROUND: train pulling into the far end of the platform, headlights sweeping the tiles, commuters starting to shift and stand. [5] CAMERA + MOOD: slow 1-foot handheld dolly forward, final-word gravity, subject completely still against moving world behind. @daniel \u2014 navy zip-up hoodie over a white tee, short dark wavy hair, light stubble.",
+      "duration_hint": 5
+    }
+  ],
+  "loop_back_line": "One prompt made me raise my prices by $11k."
+}

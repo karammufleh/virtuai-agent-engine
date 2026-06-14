@@ -1,0 +1,51 @@
+{
+  "topic": "Automation quietly killed my recurring contractor invoice",
+  "hook_summary": "I paid a contractor $1,800 a month for two years.",
+  "total_words": 118,
+  "estimated_seconds": 26,
+  "scenes": [
+    {
+      "id": 1,
+      "story_beat": "setup",
+      "audio_text": "I paid a contractor $1,800 a month for two years. Same invoice, every month, like clockwork.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, eye-level, seated leaning slightly forward with both elbows on table [2] SETTING: sunlit corner cafe, espresso machine visible on counter, ceramic cups stacked beside it, condensation on a glass of water on the table [3] LIGHT: warm morning side-light from a south-facing window, 8am soft golden diffusion across face [4] LIVE BACKGROUND: barista pulling a shot behind @daniel, steam curling from the group head, two customers in soft focus shifting in their seats [5] CAMERA + MOOD: slow 1-foot handheld push-in, intimate confessional energy, slight warmth \u2014 @daniel in navy zip-up hoodie over white tee",
+      "duration_hint": 5
+    },
+    {
+      "id": 2,
+      "story_beat": "incident",
+      "audio_text": "Last March she raised her rate to $2,400. I said fine. Then I actually looked at what she was doing.",
+      "visual_prompt": "[1] COMPOSITION: medium shot, 28mm, slight low angle, leaning back against a concrete half-wall with arms loosely crossed [2] SETTING: rooftop terrace, city skyline soft in the distance, a small folding table with a coffee cup and an open Moleskine notebook nearby [3] LIGHT: late afternoon sun dropping behind the skyline, warm backlight rim on @daniel's shoulders, cool ambient fill from open sky [4] LIVE BACKGROUND: a pigeon landing on the ledge to the right, a construction crane moving slowly in the far background, distant traffic noise implied by passing light trails [5] CAMERA + MOOD: slow orbit right-to-left, deliberate and slightly tense energy \u2014 @daniel in navy zip-up hoodie over white tee",
+      "duration_hint": 5
+    },
+    {
+      "id": 3,
+      "story_beat": "struggle",
+      "audio_text": "She was pulling data from three sources, formatting a report, emailing it to me. Every single Tuesday. I'd been paying $21,600 a year for a copy-paste job.",
+      "visual_prompt": "[1] COMPOSITION: over-shoulder wide, 24mm, eye-level, walking with one hand in hoodie pocket, phone loosely in other hand [2] SETTING: city sidewalk during golden hour, shopfront windows reflecting amber light, a bike lane with a cyclist blurring past, a newspaper box at the curb [3] LIGHT: golden hour sun from the west, long shadows stretching ahead of @daniel, warm orange spill on the right side of his face [4] LIVE BACKGROUND: a car rolling slowly through the intersection ahead, a woman walking a dog in the near background, an awning flapping in a light breeze to the left [5] CAMERA + MOOD: handheld tracking shot following slightly behind and to the right, candid street-doc energy, slight lens shake \u2014 @daniel in navy zip-up hoodie over white tee",
+      "duration_hint": 5
+    },
+    {
+      "id": 4,
+      "story_beat": "turn",
+      "audio_text": "I expected it to take a week to automate. It took four hours. Zapier pulled the data, Claude wrote the summary, and it emailed me before 7am.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, eye-level, sitting with elbow on knee, leaning forward slightly toward camera [2] SETTING: co-working space lounge, large floor-to-ceiling window behind @daniel, a low wooden coffee table with a laptop half-open and a flat white in a glass [3] LIGHT: bright overcast daylight flooding through the window, even soft fill on face, no harsh shadows [4] LIVE BACKGROUND: ambient figures typing at desks in the background, a person standing and rolling up a standing-desk mat, ceiling fans turning slowly overhead [5] CAMERA + MOOD: slow push-in 1.5 feet over 5 seconds, mounting realization energy, slightly hushed \u2014 @daniel in navy zip-up hoodie over white tee",
+      "duration_hint": 5
+    },
+    {
+      "id": 5,
+      "story_beat": "proof",
+      "audio_text": "That workflow has run every Tuesday for six months. Total cost: $11. The report is better. It never misses a field.",
+      "visual_prompt": "[1] COMPOSITION: medium shot, 50mm, eye-level, standing with both hands resting on a kitchen counter, half-turned slightly toward camera [2] SETTING: modern loft kitchen, morning light from a large east-facing window, a French press on the counter, a open Moleskine beside it with a pen resting across the page [3] LIGHT: clean 7am east-window morning light, neutral white balance, soft shadow on the far side of face [4] LIVE BACKGROUND: steam rising from the French press, a ceiling fan rotating slowly above, pigeons visible shifting on a window ledge in the background [5] CAMERA + MOOD: slow pan left to right, matter-of-fact calm energy, clean and deliberate \u2014 @daniel in navy zip-up hoodie over white tee",
+      "duration_hint": 5
+    },
+    {
+      "id": 6,
+      "story_beat": "meaning",
+      "audio_text": "The contractor wasn't the cost. The process was. Stop auditing your people. Audit your processes.",
+      "visual_prompt": "[1] COMPOSITION: tight medium close-up, 35mm, eye-level, hand on chin, direct eye contact with lens, completely still posture [2] SETTING: underground subway platform, a tiled column beside @daniel, a platform bench visible to the left with a paper coffee cup on it [3] LIGHT: overhead fluorescent spill, slightly harsh but balanced by the warm light from a backlit transit ad panel to the right [4] LIVE BACKGROUND: a subway train pulling into the platform behind @daniel, wind from the arriving train lifting the hem of his hoodie slightly, commuters beginning to move in the background [5] CAMERA + MOOD: locked wide then slow push-in to tight close-up as the train arrives behind him, punctuating final-word energy, direct and flat \u2014 @daniel in navy zip-up hoodie over white tee",
+      "duration_hint": 5
+    }
+  ],
+  "loop_back_line": "Stop auditing your people. Audit your processes."
+}

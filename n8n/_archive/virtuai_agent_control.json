@@ -1,0 +1,135 @@
+{
+  "id": "virtuai-agent-control",
+  "name": "VirtuAI — Agent Control Panel (manual)",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "virtuai-agent-run",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "id": "n-webhook",
+      "name": "Webhook: /webhook/virtuai-agent-run",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [200, 400]
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            { "name": "agent", "value": "={{ $json.body.agent || 'research' }}" },
+            { "name": "prompt", "value": "={{ $json.body.prompt || 'Discover a viral topic in AI/automation.' }}" }
+          ]
+        }
+      },
+      "id": "n-parse",
+      "name": "Parse agent + prompt",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [440, 400]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.VIRTUAI_API_BASE || 'http://localhost:9090' }}/agents/{{ $('Parse agent + prompt').item.json.agent }}/run",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"input\": {\n    \"prompt\": \"{{ $('Parse agent + prompt').item.json.prompt }}\"\n  }\n}",
+        "options": { "timeout": 60000 }
+      },
+      "id": "n-run-agent",
+      "name": "Run agent",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [680, 400]
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            { "name": "task_id", "value": "={{ $json.task_id }}" },
+            { "name": "poll_url", "value": "={{ $env.VIRTUAI_API_BASE || 'http://localhost:9090' }}{{ $json.poll }}" }
+          ]
+        }
+      },
+      "id": "n-capture",
+      "name": "Capture task_id",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [920, 400]
+    },
+    {
+      "parameters": { "amount": 30, "unit": "seconds" },
+      "id": "n-wait-initial",
+      "name": "Wait 30s",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [1160, 400]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "={{ $('Capture task_id').item.json.poll_url }}",
+        "options": { "timeout": 30000 }
+      },
+      "id": "n-poll",
+      "name": "Poll status",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1400, 400]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [{ "value1": "={{ $json.state }}", "operation": "equal", "value2": "success" }]
+        }
+      },
+      "id": "n-if-done",
+      "name": "Done?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [1640, 400]
+    },
+    {
+      "parameters": { "amount": 10, "unit": "seconds" },
+      "id": "n-loop-wait",
+      "name": "Wait 10s",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [1400, 580]
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            { "name": "agent", "value": "={{ $('Parse agent + prompt').item.json.agent }}" },
+            { "name": "output", "value": "={{ $json.result.output }}" }
+          ]
+        }
+      },
+      "id": "n-respond",
+      "name": "Final agent output",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [1880, 400]
+    }
+  ],
+  "connections": {
+    "Webhook: /webhook/virtuai-agent-run": { "main": [[{ "node": "Parse agent + prompt", "type": "main", "index": 0 }]] },
+    "Parse agent + prompt":   { "main": [[{ "node": "Run agent", "type": "main", "index": 0 }]] },
+    "Run agent":              { "main": [[{ "node": "Capture task_id", "type": "main", "index": 0 }]] },
+    "Capture task_id":        { "main": [[{ "node": "Wait 30s", "type": "main", "index": 0 }]] },
+    "Wait 30s":               { "main": [[{ "node": "Poll status", "type": "main", "index": 0 }]] },
+    "Poll status":            { "main": [[{ "node": "Done?", "type": "main", "index": 0 }]] },
+    "Done?":                  { "main": [
+                                  [{ "node": "Final agent output", "type": "main", "index": 0 }],
+                                  [{ "node": "Wait 10s", "type": "main", "index": 0 }]
+                                ] },
+    "Wait 10s":               { "main": [[{ "node": "Poll status", "type": "main", "index": 0 }]] }
+  },
+  "settings": { "executionOrder": "v1" },
+  "tags": [{ "name": "virtuai" }, { "name": "agents" }, { "name": "manual" }]
+}

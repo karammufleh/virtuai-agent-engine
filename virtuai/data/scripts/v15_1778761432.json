@@ -1,0 +1,27 @@
+{
+  "topic": "Stop building AI tools, start building AI processes",
+  "hook_summary": "Everyone's building AI tools. I made $40k by not building a single one.",
+  "total_words": 74,
+  "estimated_seconds": 23,
+  "scenes": [
+    {
+      "id": 1,
+      "audio_text": "Everyone's building AI tools. I made $40k last month by not building a single one.",
+      "visual_prompt": "Medium close-up of @daniel in a sunlit coffee shop, natural light from window on left, slightly gritty texture, candid documentary style, locked-off camera, shallow depth of field.",
+      "duration_hint": 4
+    },
+    {
+      "id": 2,
+      "audio_text": "I automated one process \u2014 client onboarding. Emails, contracts, scheduling. No chatbot, no agent. Just a Zapier sequence that saved me 6 hours a week.",
+      "visual_prompt": "Over-shoulder shot of @daniel at a messy desk in a home office, warm desk lamp, papers and monitor visible, slow push-in, natural candid feel.",
+      "duration_hint": 8
+    },
+    {
+      "id": 3,
+      "audio_text": "Founders are competing on systems, not products. Automate the boring stuff first. That's it. That's the whole thing.",
+      "visual_prompt": "Wide shot of @daniel walking on a city street at golden hour, confident stride, natural sunlight, shallow depth of field, locked-off camera.",
+      "duration_hint": 7
+    }
+  ],
+  "loop_back_line": null
+}

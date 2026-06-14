@@ -1,0 +1,25 @@
+{
+  "linkedin": {
+    "action": "published",
+    "tool_used": "LINKEDIN_CREATE_LINKED_IN_POST",
+    "response": "{'data': {'x_restli_id': 'urn:li:share:7458881139735359488'}, 'error': None, 'successful': True}"
+  },
+  "x": {
+    "action": "error",
+    "tool_used": "TWITTER_CREATION_OF_A_POST",
+    "error": "BadRequestError: Error code: 400 - {'error': {'message': 'No connected account found for user ID danielcalder- for toolkit twitter', 'code': 1810, 'slug': 'ActionExecute_ConnectedAccountNotFound', 'status': 400, 'request_id': 'da157bfcda3b4dc08f2d33a6622565ba', 'suggested_fix': \"No active connection exists for toolkit 'twitter' under entity 'danielcalder-'. Connect your twitter account first via the /api/v3/connected_accounts endpoint or the COMPOSIO_INITIATE_CONNECTION tool.\"}}"
+  },
+  "instagram": {
+    "action": "needs_setup",
+    "reason": "IG_USER_ID env var not set. Find your IG Business Account ID via Facebook Graph API Explorer: me/accounts \u2192 <page>?fields=instagram_business_account"
+  },
+  "youtube_shorts": {
+    "action": "published",
+    "tool_used": "YOUTUBE_UPLOAD_VIDEO",
+    "response": "{'data': {'response_data': {'etag': '_ikhpIi0m8LW9BYktuVCpmWhHVE', 'id': 'Ln8g7XqcwZo', 'kind': 'youtube#video', 'snippet': {'categoryId': '22', 'channelId': 'UCwc4qv4Gd6F9BzP0KzHotwg', 'channelTitle': 'Daniel Calder', 'description': 'Demo upload from the autonomous content pipeline. CrewAI + Composio + local Phi-3.5-mini. End-to-end verification.', 'liveBroadcastContent': 'none', 'localized': {'d"
+  },
+  "medium": {
+    "action": "tool_unavailable",
+    "reason": "MEDIUM_CREATE_POST not connected in Composio"
+  }
+}

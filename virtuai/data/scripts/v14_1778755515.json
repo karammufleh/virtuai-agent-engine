@@ -1,0 +1,33 @@
+{
+  "topic": "Stop building AI tools. Start building AI processes.",
+  "hook_summary": "You're not an AI company. You're a business that needs leverage.",
+  "total_words": 97,
+  "estimated_seconds": 24,
+  "scenes": [
+    {
+      "id": 1,
+      "audio_text": "Everyone's rushing to build AI tools. I think that's a mistake.",
+      "visual_prompt": "@daniel, medium close-up, sitting in a modern coffee shop with warm natural light from a window. He's leaning forward, hands resting on a small table. Slight frown, serious eye contact. Locked-off camera, shallow depth of field, candid documentary style.",
+      "duration_hint": 5
+    },
+    {
+      "id": 2,
+      "audio_text": "I spent six months building a custom AI scheduling bot. It failed. Clients didn't care about the tech \u2014 they cared about getting booked faster.",
+      "visual_prompt": "@daniel, walking on a city sidewalk, over-shoulder shot from behind. He's gesturing with one hand, wearing the same dark polo. Late afternoon golden hour light, slight motion blur on background. Real street environment with people passing.",
+      "duration_hint": 6
+    },
+    {
+      "id": 3,
+      "audio_text": "What actually worked? I took an off-the-shelf Zapier workflow, connected it to Calendly and Stripe, and reduced my admin time from 12 hours to 2 hours a week.",
+      "visual_prompt": "@daniel, sitting at a desk in a home office, medium shot. He's looking at a laptop screen, but turns to speak to camera. Desk has a coffee mug and notebook. Natural light from a window, warm tones. Slow push-in.",
+      "duration_hint": 7
+    },
+    {
+      "id": 4,
+      "audio_text": "Stop building AI. Start automating your business. That's where the leverage is.",
+      "visual_prompt": "@daniel, wide shot leaning against a brick wall outside, arms crossed. Direct eye contact, slight smile. Overcast soft lighting, no harsh shadows. Clean background, candid street photography style.",
+      "duration_hint": 6
+    }
+  ],
+  "loop_back_line": null
+}

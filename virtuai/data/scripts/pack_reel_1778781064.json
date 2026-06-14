@@ -1,0 +1,51 @@
+{
+  "topic": "Agent stack to hand a new hire day one",
+  "hook_summary": "I stopped giving new hires a 90-day plan.",
+  "total_words": 118,
+  "estimated_seconds": 26,
+  "scenes": [
+    {
+      "id": 1,
+      "story_beat": "setup",
+      "audio_text": "I stopped giving new hires a 90-day plan. Last March I hired a $4,200-a-month ops coordinator and handed her a Notion doc instead.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, eye-level, seated leaning slightly forward with both forearms on desk [2] SETTING: warm wood writing desk in a quiet home study, open Moleskine notebook and a cold glass of water on the desk, floor-to-ceiling bookshelf packed with spines behind him [3] LIGHT: single warm lamp on the desk casting a tight pool of amber light, late evening, deep shadows in the bookshelf [4] LIVE BACKGROUND: pages of an open book riffling gently from a ceiling fan, soft lamp flicker, a candle flame wavering on the shelf behind [5] CAMERA + MOOD: slow 1-foot handheld dolly forward, subject leaning in, intimate confessional energy \u2014 @daniel in black henley with subtle stubble",
+      "duration_hint": 5
+    },
+    {
+      "id": 2,
+      "story_beat": "incident",
+      "audio_text": "Six weeks in she quit. Said the role was unclear. I looked at that Notion doc and she was right \u2014 it was 40 pages of nothing.",
+      "visual_prompt": "[1] COMPOSITION: medium shot, 35mm, slight low angle, sitting in leather armchair with one elbow on the armrest, hand on chin [2] SETTING: leather armchair near a fireplace with low light, a small side table with a half-empty whiskey glass, stack of printed documents on the floor beside the chair [3] LIGHT: warm orange firelight as the only key source, flickering and directional, right side of face in soft shadow [4] LIVE BACKGROUND: fire crackling and shifting behind him, embers glowing and sparking, shadows dancing across the ceiling [5] CAMERA + MOOD: slow parallax drift left-to-right, contemplative and heavy \u2014 @daniel in black henley with subtle stubble",
+      "duration_hint": 5
+    },
+    {
+      "id": 3,
+      "story_beat": "struggle",
+      "audio_text": "I rewrote it twice. Hired an HR consultant for $340 to audit it. Still too abstract. Every new hire needed three weeks just to find their footing.",
+      "visual_prompt": "[1] COMPOSITION: over-shoulder wide, 28mm, slight high angle, standing with both hands flat on kitchen island, looking down at an open laptop [2] SETTING: kitchen island at dusk with one pendant lamp on, scattered printed pages and a cold coffee mug on the counter, window behind showing a darkening sky [3] LIGHT: single warm pendant lamp overhead creating a tight top-light, blue dusk bleeding in from the window behind, cool-warm contrast [4] LIVE BACKGROUND: a kettle steaming on the stove in the background, cars passing outside the window in soft focus, papers shifting as he moves his hand [5] CAMERA + MOOD: slow push-in from behind over the shoulder toward the laptop screen, tense and problem-saturated \u2014 @daniel in black henley with subtle stubble",
+      "duration_hint": 5
+    },
+    {
+      "id": 4,
+      "story_beat": "turn",
+      "audio_text": "Then I stopped writing docs entirely. I built three agents in Claude \u2014 one that reads their inbox, one that triages tasks in Notion, one that sends a daily briefing by 8am.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 50mm, eye-level, leaning against the garage workshop wall with arms loosely crossed [2] SETTING: garage workshop with tools hung neatly on a pegboard behind him, a single work lamp clamped to a wooden workbench, an open laptop glowing on the bench [3] LIGHT: single tungsten work lamp as hard key from below-left, rest of the garage in cool shadow, late night feel [4] LIVE BACKGROUND: a shop fan oscillating slowly behind him, dust motes drifting through the lamp beam, a hanging cable swaying faintly [5] CAMERA + MOOD: slow orbit left, 180-degree arc, revelatory and energized \u2014 @daniel in black henley with subtle stubble",
+      "duration_hint": 5
+    },
+    {
+      "id": 5,
+      "story_beat": "proof",
+      "audio_text": "Next hire was fully operational in four days. Not four weeks \u2014 four days. The agents did what 40 pages never could.",
+      "visual_prompt": "[1] COMPOSITION: medium shot, 35mm, eye-level, sitting on the edge of a bed with elbows on knees, open hands gesturing forward [2] SETTING: bedroom edge of bed with morning light through curtains, unmade bed behind him, a phone face-down on the nightstand, wooden floor with a single rug [3] LIGHT: soft diffused morning light through sheer white curtains, golden hour warmth, fill from a white wall to camera-left [4] LIVE BACKGROUND: curtains breathing gently from a cracked window, dust motes floating through the beam of light, birdsong implied by the open window [5] CAMERA + MOOD: slow 1-foot handheld dolly forward, subject leaning toward camera, confident and decisive \u2014 @daniel in black henley with subtle stubble",
+      "duration_hint": 5
+    },
+    {
+      "id": 6,
+      "story_beat": "meaning",
+      "audio_text": "A 90-day plan tells someone what to do. An agent stack shows them. Stop writing onboarding docs. Build the system that onboards for you.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, eye-level, seated in reading nook with one arm resting on the windowsill, half-turned looking back toward camera [2] SETTING: reading nook with rain visible through the window, a paperback book closed on the cushion beside him, a steaming mug on the sill [3] LIGHT: flat grey rain-light from the window as the primary source, cool and even, a small warm reading lamp providing subtle fill from behind [4] LIVE BACKGROUND: rain streaking down the window glass behind him, a tree branch swaying in the wind outside, steam curling off the mug [5] CAMERA + MOOD: slow push-in, locked gaze direct to lens, calm and authoritative \u2014 @daniel in black henley with subtle stubble",
+      "duration_hint": 5
+    }
+  ],
+  "loop_back_line": "I stopped giving new hires a 90-day plan \u2014 and now they don't need one."
+}

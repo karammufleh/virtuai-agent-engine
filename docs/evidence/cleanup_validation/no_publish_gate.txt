@@ -1,0 +1,20 @@
+rootdir: /Users/karammufleh/Desktop/capstone  101
+configfile: pyproject.toml
+plugins: anyio-4.13.0
+collecting ... collected 13 items
+
+virtuai/tests/test_no_publish.py::test_default_run_pack_request_allows_publish PASSED [  7%]
+virtuai/tests/test_no_publish.py::test_publish_false_blocks_publishing PASSED [ 15%]
+virtuai/tests/test_no_publish.py::test_dry_run_true_blocks_publishing PASSED [ 23%]
+virtuai/tests/test_no_publish.py::test_no_publish_true_blocks_publishing PASSED [ 30%]
+virtuai/tests/test_no_publish.py::test_any_blocking_signal_wins PASSED   [ 38%]
+virtuai/tests/test_no_publish.py::test_demo_body_shape_is_accepted PASSED [ 46%]
+virtuai/tests/test_no_publish.py::test_daily_pack_main_signature_accepts_publish_kwarg PASSED [ 53%]
+virtuai/tests/test_no_publish.py::test_daily_pack_main_no_publish_path_skips_publish_helpers PASSED [ 61%]
+virtuai/tests/test_no_publish.py::test_run_pack_worker_propagates_publish_false PASSED [ 69%]
+virtuai/tests/test_no_publish.py::test_run_pack_worker_default_publishes PASSED [ 76%]
+virtuai/tests/test_no_publish.py::test_demo_kick_off_body_when_no_publish PASSED [ 84%]
+virtuai/tests/test_no_publish.py::test_demo_kick_off_body_when_publish_allowed PASSED [ 92%]
+virtuai/tests/test_no_publish.py::test_run_pack_worker_logs_no_publish_warning PASSED [100%]
+
+============================== 13 passed in 0.17s ==============================

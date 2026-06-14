@@ -1,0 +1,2 @@
+│ ✗ agent: publisher                 Error code: 401 - {'error': {'message': 'Invalid API key: ak_oFAtw*****', 'code': 10401, 'slug': 'HTTP_Unauthorized', 'status': 401, 'request_id': '5e668d1b95784acc805140566564a5f4', 'suggested_fix': 'Please check you are using a valid API key.'}}
+└─ 22 / 23 checks passed ───────────────────────────┘

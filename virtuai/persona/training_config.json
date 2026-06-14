@@ -1,0 +1,44 @@
+{
+  "_doc": "mflux-train config for the Daniel Calder face LoRA. Z-Image-Turbo base, 8-bit quant, 512px training resolution, low-RAM. Tuned twice for Apple Silicon: original 1024px+8bit OOM-killed; 768px+4bit ran but at 273s/iter (91 hours est). 8-bit is faster per step (less dequant overhead) and 512px halves activation memory; 25 epochs over 30 images = 750 total steps at ~30-60s each = roughly 6-12 hours, doable overnight.",
+  "model": "z-image-turbo",
+  "data": "face_dataset",
+  "seed": 42,
+  "steps": 9,
+  "guidance": 0.0,
+  "quantize": 8,
+  "max_resolution": 512,
+  "low_ram": true,
+  "training_loop": {
+    "num_epochs": 25,
+    "batch_size": 1,
+    "timestep_low": 4,
+    "timestep_high": 9
+  },
+  "optimizer": {
+    "name": "AdamW",
+    "learning_rate": 1e-4
+  },
+  "checkpoint": {
+    "save_frequency": 5,
+    "output_path": "training_runs"
+  },
+  "monitoring": {
+    "preview_width": 512,
+    "preview_height": 512,
+    "plot_frequency": 5,
+    "generate_image_frequency": 25
+  },
+  "lora_layers": {
+    "targets": [
+      { "module_path": "layers.{block}.attention.to_q", "blocks": { "start": 0, "end": 30 }, "rank": 16 },
+      { "module_path": "layers.{block}.attention.to_k", "blocks": { "start": 0, "end": 30 }, "rank": 16 },
+      { "module_path": "layers.{block}.attention.to_v", "blocks": { "start": 0, "end": 30 }, "rank": 16 },
+      { "module_path": "layers.{block}.attention.to_out.0", "blocks": { "start": 0, "end": 30 }, "rank": 16 },
+      { "module_path": "layers.{block}.feed_forward.w1", "blocks": { "start": 0, "end": 30 }, "rank": 16 },
+      { "module_path": "layers.{block}.feed_forward.w2", "blocks": { "start": 0, "end": 30 }, "rank": 16 },
+      { "module_path": "layers.{block}.feed_forward.w3", "blocks": { "start": 0, "end": 30 }, "rank": 16 },
+      { "module_path": "cap_embedder.1", "rank": 16 },
+      { "module_path": "all_final_layer.2-1.linear", "rank": 16 }
+    ]
+  }
+}

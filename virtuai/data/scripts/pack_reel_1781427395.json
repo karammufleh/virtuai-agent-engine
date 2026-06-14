@@ -1,0 +1,71 @@
+{
+  "topic": "My sales bot just cost me",
+  "hook_summary": "My sales bot just cost me",
+  "scenes": [
+    {
+      "audio_text": "My sales bot just cost me twenty-one thousand six hundred dollars in one week. I'd spent three months building it in Claude \u2014 fully automated enterprise outreach.",
+      "visual_prompt": "Medium close-up, eye-level, man in dark charcoal henley with rolled sleeves seated at a worn wooden desk leaning slightly forward, both forearms on the table, dim warm lamp light, deadpan expression looking directly at camera",
+      "on_screen_text": "$21,600 IN ONE WEEK"
+    },
+    {
+      "audio_text": "Last Monday it sent quotes to two hundred enterprise prospects. Twelve dollars per seat. The price was supposed to be one hundred and twenty dollars.",
+      "visual_prompt": "Over-shoulder wide shot, 28mm, slight low angle, man standing at a desk looking down at an open laptop screen, cables on the desk, overcast diffuse light through windows",
+      "on_screen_text": "$12 \u2192 200 LEADS | PRICE WAS $120"
+    },
+    {
+      "audio_text": "I'd tested it for two weeks. Ran it through Zapier, checked the outputs. Never caught a decimal error buried in the prompt logic.",
+      "visual_prompt": "Medium shot, eye-level, man sitting on a bench outdoors, elbow on knee, head slightly tilted, candid contemplative expression, dappled morning light",
+      "on_screen_text": "2 WEEKS OF TESTING \u2014 MISSED IT"
+    },
+    {
+      "audio_text": "I expected a pricing bug. What I found was worse \u2014 the prompt itself had no strict output schema. The model was just guessing.",
+      "visual_prompt": "Close-up, 85mm portrait, man leaning against a wall with arms crossed, direct eye contact, warm single practical sconce light from one side, blue-hour ambient through a glass door behind him",
+      "on_screen_text": "NO OUTPUT SCHEMA \u2014 MODEL WAS GUESSING"
+    },
+    {
+      "audio_text": "I rebuilt the quote logic in Cursor in four hours \u2014 typed outputs, validation layer, hard schema. Zero pricing errors in six hundred sends since.",
+      "visual_prompt": "Medium wide, slight high angle, man on a rooftop terrace at dusk half-turned looking back at camera with hand on chin, city skyline behind him, warm golden hour rim light",
+      "on_screen_text": "FIXED IN 4 HOURS \u2014 600 SENDS, 0 ERRORS"
+    },
+    {
+      "audio_text": "Automating the sale is easy. Automating the guardrails is the actual job. My bot didn't need more intelligence \u2014 it needed more constraints.",
+      "visual_prompt": "Medium close-up, eye-level, man standing in a home kitchen with open hands slightly raised, soft morning window light from behind camera, white subway tile, French press on counter, direct address to camera, calm and final energy",
+      "on_screen_text": "AUTOMATE THE GUARDRAILS, NOT JUST THE SALE"
+    }
+  ],
+  "caption": "My sales bot just cost me $21,600 in one week.\n\nI'd spent three months building a Claude-powered enterprise outreach bot. Fully automated \u2014 prospect sourcing, personalization, quote generation, delivery. Shipped it on a Monday.\n\nBy Friday, two hundred enterprise leads had received pricing quotes. I thought conversion was high because the copy was good. It wasn't. The bot was quoting $12 per seat instead of $120.\n\nA decimal error in the prompt logic. No strict output schema. No validation layer. The model was generating plausible-looking pricing that was completely wrong \u2014 and doing it 200 times before a human ever saw it.\n\nI caught it because a prospect replied asking if the price was a typo.\n\nHere's what I learned:\n\n\ud83d\udd34 No output schema = your LLM is guessing on every number that matters\n\ud83d\udd34 No floor check = no safety net when the guess is wrong\n\ud83d\udd34 No human review gate = an error repeats itself at full scale\n\nThe fix took four hours. I rebuilt the quote logic in Cursor with typed JSON outputs, a validation layer that checks every numeric field against a floor value, and a Zapier step that flags any quote below $50 for manual review.\n\nZero pricing errors in 600 sends since.\n\nAutomating the sale is easy. Automating the guardrails is the actual job.\n\nComment 'SCHEMA' if you want the exact output schema template I dropped into the Claude API call.",
+  "hashtags": [
+    "#aiautomation",
+    "#foundermistakes",
+    "#salesautomation",
+    "#claudeai",
+    "#promptengineering",
+    "#buildinpublic",
+    "#aiops"
+  ],
+  "platform_versions": {
+    "instagram": {
+      "caption": "My sales bot just cost me $21,600 in one week.\n\nI'd spent three months building a Claude-powered enterprise outreach bot. Fully automated \u2014 prospect sourcing, personalization, quote generation, delivery. Shipped it on a Monday.\n\nBy Friday, two hundred enterprise leads had received pricing quotes. I thought conversion was high because the copy was good. It wasn't. The bot was quoting $12 per seat instead of $120.\n\nA decimal error in the prompt logic. No strict output schema. No validation layer. The model was generating plausible-looking pricing that was completely wrong \u2014 and doing it 200 times before a human ever saw it.\n\nI caught it because a prospect replied asking if the price was a typo.\n\nHere's what I learned:\n\ud83d\udd34 No output schema = your LLM is guessing on every number that matters\n\ud83d\udd34 No floor check = no safety net when the guess is wrong\n\ud83d\udd34 No human review gate = an error repeats itself at full scale\n\nThe fix took four hours. I rebuilt the quote logic in Cursor with typed JSON outputs, a validation layer that checks every numeric field against a floor value, and a Zapier step that flags any quote below $50 for manual review.\n\nZero pricing errors in 600 sends since.\n\nAutomating the sale is easy. Automating the guardrails is the actual job.\n\nComment 'SCHEMA' if you want the exact output schema template I dropped into the Claude API call.",
+      "hashtags": [
+        "#aiautomation",
+        "#foundermistakes",
+        "#salesautomation",
+        "#claudeai",
+        "#promptengineering",
+        "#buildinpublic",
+        "#aiops"
+      ]
+    },
+    "linkedin": {
+      "caption": "My sales bot just cost me $21,600 in one week.\n\nI'd spent three months building a Claude-powered enterprise outreach bot. Fully automated \u2014 prospect sourcing from Apollo, personalized quote generation via Claude, delivery through an automated email sequence.\n\nBy Friday, two hundred enterprise leads had received pricing quotes. I thought conversion was high because the copy was good. It wasn't. The bot was quoting $12 per seat instead of $120.\n\nThe root cause: no strict output schema in the prompt. The model was generating plausible-looking pricing that was completely wrong \u2014 and doing it 200 times before a human ever saw it.\n\nThe fix: typed JSON outputs in the Claude API call, a validation layer checking every numeric field against a floor value, and a Zapier step flagging any quote below $50 for manual review.\n\nZero pricing errors in 600 sends since.\n\nIf your AI is touching any number that has a dollar sign in front of it, validate the output structurally, not just syntactically. Free-text generation and financial data are a bad combination without a schema holding the seam together.\n\nA mistake your automation makes at scale isn't a bug. It's a policy."
+    },
+    "facebook": {
+      "post": "My sales bot just cost me $21,600 in one week.\n\nI spent three months building a Claude-powered outreach bot. Shipped it Monday. By Friday, 200 enterprise leads had received quotes for $12 per seat instead of $120.\n\nThe model wasn't broken. The prompt had no output schema. It was guessing \u2014 and sounding confident while doing it.\n\nFix took four hours: typed JSON outputs, a validation layer checking numeric fields against a floor value, and a Zapier step flagging any quote under $50 for human review.\n\nZero errors in 600 sends since.\n\nAutomating the sale is easy. Automating the guardrails is the actual job."
+    },
+    "youtube_shorts": {
+      "title": "My AI Sales Bot Cost Me $21,600 in One Week",
+      "description": "My Claude-powered sales bot quoted $12 per seat instead of $120 to 200 enterprise prospects in its first week. Here's exactly what went wrong and how I fixed it in 4 hours.\n\nTools mentioned:\n- Claude (conversation layer)\n- Zapier (outreach routing)\n- Cursor (quote logic rebuild)\n- Apollo (prospect sourcing)\n\nTimeline:\n- 3 months: built the bot\n- 2 weeks: tested the bot (missed the bug)\n- Week 1 live: 200 wrong quotes sent\n- 4 hours: rebuilt with output schema + validation\n- 600 sends since: zero pricing errors\n\nSubscribe for more AI deployment post-mortems."
+    }
+  },
+  "_source": "creator"
+}

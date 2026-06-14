@@ -1,0 +1,51 @@
+{
+  "topic": "Small business beats VC-backed rival with same AI stack",
+  "hook_summary": "A $4M startup just lost to my $11k operation.",
+  "total_words": 118,
+  "estimated_seconds": 26,
+  "scenes": [
+    {
+      "id": 1,
+      "story_beat": "setup",
+      "audio_text": "A $4M VC-backed startup just lost a $340k contract to my eleven-person shop. Same AI stack. Same tools.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, eye-level, seated leaning slightly forward with both elbows on table. [2] SETTING: sunlit corner cafe, worn marble tabletop, ceramic espresso cup to the left, chalk menu board visible on wall behind. [3] LIGHT: warm south-facing window light, 9am soft golden fill, slight shadow under jaw. [4] LIVE BACKGROUND: barista wiping steam wand behind him, two patrons chatting at a blurred table, steam curling from an espresso machine. [5] CAMERA + MOOD: slow 1-foot handheld push-in, subject locks eyes with lens, quiet confidence before a reveal. @daniel wearing navy zip-up hoodie over a white tee.",
+      "duration_hint": 5
+    },
+    {
+      "id": 2,
+      "story_beat": "incident",
+      "audio_text": "The client told me last Tuesday \u2014 they chose us because we responded to their brief in four hours. The startup took six days.",
+      "visual_prompt": "[1] COMPOSITION: over-shoulder wide, 28mm, slight low angle, standing with one hand resting on a glass railing. [2] SETTING: rooftop terrace, late afternoon, city skyline blurred in distance, a single open Moleskine notebook on the railing ledge. [3] LIGHT: low warm key-light from the west, 5pm golden hour, long soft shadow across the rooftop surface. [4] LIVE BACKGROUND: a pigeon landing on the far parapet, distant rooftop HVAC unit spinning slowly, two figures walking the street far below. [5] CAMERA + MOOD: slow dolly right-to-left along railing, subject half-turned looking back at lens, reflective but measured. @daniel wearing navy zip-up hoodie over a white tee.",
+      "duration_hint": 5
+    },
+    {
+      "id": 3,
+      "story_beat": "struggle",
+      "audio_text": "Six months ago I couldn't compete on speed. My team of three was buried in Notion docs nobody read and Loom videos nobody watched.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 50mm, eye-level, sitting with elbow on knee, chin resting on closed fist. [2] SETTING: co-working space lounge, low mid-century leather sofa, large floor-to-ceiling window behind, a closed laptop beside him on the cushion. [3] LIGHT: overcast diffused daylight from window, midday flat fill, no harsh shadows, slight halo around shoulder. [4] LIVE BACKGROUND: ambient figures moving past the window outside, a man in background pouring coffee at a standing counter, ceiling fan rotating slowly overhead. [5] CAMERA + MOOD: slow orbit left around subject, slightly tight, introspective weight to the scene. @daniel wearing navy zip-up hoodie over a white tee.",
+      "duration_hint": 5
+    },
+    {
+      "id": 4,
+      "story_beat": "turn",
+      "audio_text": "I expected Claude to save me time. What I didn't expect \u2014 it gave my small team the institutional memory a hundred-person org takes years to build.",
+      "visual_prompt": "[1] COMPOSITION: medium wide, 35mm, slight low angle, standing arms crossed with weight shifted to one hip, facing camera directly. [2] SETTING: city sidewalk during golden hour, brick shopfront to the left, parked cars along the curb, narrow tree casting long shadows across the pavement. [3] LIGHT: warm raking golden-hour sun from the left, 6:30pm, deep amber shadows, high contrast on face. [4] LIVE BACKGROUND: two pedestrians passing behind in soft focus, a yellow taxi moving through the mid-ground, leaves skittering across the sidewalk in a gust. [5] CAMERA + MOOD: slow tracking shot moving with subject for 1 foot, slightly handheld drift, moment of quiet revelation energy. @daniel wearing navy zip-up hoodie over a white tee.",
+      "duration_hint": 5
+    },
+    {
+      "id": 5,
+      "story_beat": "proof",
+      "audio_text": "I ran one Zapier workflow feeding every client email into Claude. Four hours later I had a brief, a strategy doc, and a price. The startup had a Zoom to schedule.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, eye-level, leaning against kitchen counter with both hands gripping the counter edge behind him. [2] SETTING: modern loft kitchen with morning light, open shelving with stacked white mugs, a French press mid-pour on the counter, a folded newspaper beside it. [3] LIGHT: clean east-facing window light, 8am crisp white morning fill, soft warm bounce from white tile splashback. [4] LIVE BACKGROUND: coffee slowly dripping from the French press, steam rising off a cup on the counter, a ceiling pendant swaying faintly. [5] CAMERA + MOOD: slow 1-foot push-in toward subject, handheld with subtle drift, matter-of-fact delivery energy, intimate and direct. @daniel wearing navy zip-up hoodie over a white tee.",
+      "duration_hint": 5
+    },
+    {
+      "id": 6,
+      "story_beat": "meaning",
+      "audio_text": "VC money buys headcount. It can't buy response time. The $4M startup lost because size slows you down \u2014 and AI doesn't care how much you raised.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, eye-level, open hands slightly raised at chest height, direct address to lens. [2] SETTING: underground subway platform, yellow painted safety line visible at bottom of frame, concrete columns in mid-ground, a route map on the tiled wall behind him. [3] LIGHT: warm overhead platform fluorescents, slightly cool fill from the tunnel mouth, even wrap light with mild shadows. [4] LIVE BACKGROUND: a train pulling in on the far platform across the tracks, commuters moving past in soft focus, a gust of tunnel air lifting his hoodie hem. [5] CAMERA + MOOD: slow pull-back handheld dolly away from subject as train arrives behind, final beat gravity, declarative and clean. @daniel wearing navy zip-up hoodie over a white tee.",
+      "duration_hint": 5
+    }
+  ],
+  "loop_back_line": "AI doesn't care how much you raised."
+}

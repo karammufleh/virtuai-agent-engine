@@ -1,0 +1,33 @@
+{
+  "topic": "Why most AI businesses fail in 90 days",
+  "hook_summary": "The real reason your AI startup is dying is not the tech.",
+  "total_words": 105,
+  "estimated_seconds": 25,
+  "scenes": [
+    {
+      "id": 1,
+      "audio_text": "I've watched 47 AI startups burn cash in 90 days. The ones that survived didn't have better tech.",
+      "visual_prompt": "Medium close-up of @daniel sitting on a concrete ledge in an industrial park, overcast natural light, locked-off camera, documentary style. He looks directly into lens with a slight smirk.",
+      "duration_hint": 5
+    },
+    {
+      "id": 2,
+      "audio_text": "They had someone who could sell the outcome, not the bot. One guy sold a lead gen agent to dental clinics for $2k a month \u2014 he didn't mention AI once.",
+      "visual_prompt": "Over-the-shoulder shot of @daniel walking through a busy city street, candid, soft afternoon light, slight camera wobble as if handheld. He gestures with one hand while talking.",
+      "duration_hint": 5
+    },
+    {
+      "id": 3,
+      "audio_text": "Meanwhile, the technical founders were still arguing about the best vector database. Their product was better. But no one cared.",
+      "visual_prompt": "Wide shot of @daniel sitting at a small table in a quiet cafe, natural window light, slow push-in. He leans forward, expression serious.",
+      "duration_hint": 4
+    },
+    {
+      "id": 4,
+      "audio_text": "AI is the easiest part. Selling is the moat. That's the whole thing.",
+      "visual_prompt": "Medium close-up of @daniel leaning against a brick wall, golden hour light, locked-off. He gives a slight nod after finishing his sentence.",
+      "duration_hint": 4
+    }
+  ],
+  "loop_back_line": "Selling is the moat."
+}

@@ -1,0 +1,51 @@
+{
+  "topic": "Claude agent replaced $4,200 accountant in 11 minutes",
+  "hook_summary": "My accountant charged me $4,200 to categorize expenses.",
+  "total_words": 118,
+  "estimated_seconds": 34,
+  "scenes": [
+    {
+      "id": 1,
+      "story_beat": "setup",
+      "audio_text": "My accountant charged me $4,200 to categorize last year's expenses. One invoice. One year. $4,200.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, eye-level [2] SETTING: corner table at a quiet morning cafe, white ceramic espresso cup on the table, open MacBook to his left, crumpled receipt visible near the keyboard [3] LIGHT: warm east-facing window light, 8am golden hour, soft ambient fill from white plaster walls [4] LIVE BACKGROUND: barista tamping espresso behind the counter, steam rising from the machine, a second patron reading a newspaper in soft focus near the window [5] CAMERA + MOOD: locked-off, @daniel leans slightly forward with a flat expression, quiet disbelief energy",
+      "duration_hint": 5
+    },
+    {
+      "id": 2,
+      "story_beat": "incident",
+      "audio_text": "She sent me the bill last Tuesday. I opened it, stared at it for about thirty seconds, then closed my laptop.",
+      "visual_prompt": "[1] COMPOSITION: over-shoulder wide, 28mm, slight low angle [2] SETTING: open-plan home office, standing desk with a mechanical keyboard, a single potted snake plant in the corner, printed invoice face-down on the desk [3] LIGHT: diffused afternoon light through frosted glass window, 3pm, cool neutral fill from white walls [4] LIVE BACKGROUND: a ceiling fan rotating slowly overhead, notification flicker on a second monitor in the background, ambient street traffic sound implied by passing shadow on the window [5] CAMERA + MOOD: slow 1-foot handheld push toward @daniel's back as he closes the laptop lid, tense stillness, controlled frustration",
+      "duration_hint": 5
+    },
+    {
+      "id": 3,
+      "story_beat": "struggle",
+      "audio_text": "I spent a full weekend trying to do it myself in Notion. Seventeen tabs open. I quit Sunday night with maybe 40% done.",
+      "visual_prompt": "[1] COMPOSITION: medium wide, 50mm, eye-level [2] SETTING: kitchen island at night, Moleskine notebook open with scrawled category names, coffee mug half-empty, a tangled charging cable beside the laptop [3] LIGHT: warm overhead pendant light, 10pm, cool blue spillover from the laptop screen contrasting the warm ambient [4] LIVE BACKGROUND: refrigerator hum implied, a cat walking across the counter behind him in soft focus, condensation visible on the coffee mug [5] CAMERA + MOOD: locked-off, @daniel rubs the back of his neck and exhales, low-energy exhaustion, intimate and relatable",
+      "duration_hint": 5
+    },
+    {
+      "id": 4,
+      "story_beat": "turn",
+      "audio_text": "Monday morning I fed every transaction into a Claude agent I built in about two hours. I expected it to get 60% right. It got 97%.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, slight high angle [2] SETTING: rooftop terrace at dawn, exposed concrete parapet wall, a single brass travel mug steaming on the ledge, city skyline low in the background [3] LIGHT: early morning blue-hour light transitioning to golden, 6:30am, cool ambient sky fill with warm horizon glow [4] LIVE BACKGROUND: a distant construction crane moving slowly on the skyline, pigeons landing on the ledge behind him, soft wind moving his hair [5] CAMERA + MOOD: slow dolly forward, @daniel's eyes widen slightly mid-sentence \u2014 the moment of surprise landing in real-time, quiet revelation energy",
+      "duration_hint": 5
+    },
+    {
+      "id": 5,
+      "story_beat": "proof",
+      "audio_text": "Eleven minutes total. I ran it through a Zapier flow to export clean into QuickBooks. Cost me $9 in API calls.",
+      "visual_prompt": "[1] COMPOSITION: wide, 24mm, eye-level [2] SETTING: sunlit park bench on a tree-lined path, laptop open on his knees, a paper coffee cup on the bench beside him, earbuds around his neck [3] LIGHT: dappled late-morning sunlight through overhead elm canopy, 10am, bright natural fill with moving leaf shadows on his face [4] LIVE BACKGROUND: a jogger passing behind him on the path, a dog walker crossing the far end of the lane in soft focus, leaves rustling in a breeze [5] CAMERA + MOOD: handheld slow arc right-to-left at waist height, @daniel glances up from the screen with a half-smile, casual confidence, almost bored",
+      "duration_hint": 5
+    },
+    {
+      "id": 6,
+      "story_beat": "meaning",
+      "audio_text": "I fired her the same week. You're not paying for expertise anymore. You're paying for whoever automated it first.",
+      "visual_prompt": "[1] COMPOSITION: tight medium close-up, 50mm, eye-level [2] SETTING: bare garage workshop converted to a small studio, raw wood shelving behind him, a single industrial pendant lamp above, a worn leather notebook closed on a workbench [3] LIGHT: single warm tungsten pendant, late afternoon, hard directional shadows on one side of his face, unlit background receding into shadow [4] LIVE BACKGROUND: dust motes drifting through the lamp beam, a shelf of binders slightly out of focus behind him, faint sound of a power tool implied from outside [5] CAMERA + MOOD: locked-off, @daniel delivers the last line dead to camera with zero expression \u2014 flat, final, declarative \u2014 then cuts",
+      "duration_hint": 5
+    }
+  ],
+  "loop_back_line": "You're not paying for expertise anymore. You're paying for whoever automated it first."
+}

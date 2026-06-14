@@ -1,0 +1,51 @@
+{
+  "topic": "Notion agent found $4,200 tax leak in 11 minutes",
+  "hook_summary": "My accountant charged $4,200 to find what took 11 minutes.",
+  "total_words": 118,
+  "estimated_seconds": 26,
+  "scenes": [
+    {
+      "id": 1,
+      "story_beat": "setup",
+      "audio_text": "My accountant charged me $4,200 last April. For a quarterly tax review. I paid it without blinking.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, eye-level [2] SETTING: corner table at a busy morning caf\u00e9, ceramic espresso cup and a crumpled receipt on the table, exposed brick wall behind [3] LIGHT: warm east-facing window light, 8am, soft golden fill bouncing off white tile [4] LIVE BACKGROUND: barista tamping grounds at the counter, steam curling from a group head, a patron opening a laptop two tables back [5] CAMERA + MOOD: locked-off with a subtle 1-foot slow push-in, @daniel leaning forward elbows on table, matter-of-fact confessional energy",
+      "duration_hint": 5
+    },
+    {
+      "id": 2,
+      "story_beat": "incident",
+      "audio_text": "Then two weeks later I was cleaning up my Notion workspace and I'd built a finance-tracking agent. I ran it for fun.",
+      "visual_prompt": "[1] COMPOSITION: over-shoulder wide, 28mm, slight high angle looking down at laptop screen [2] SETTING: home kitchen counter at night, open Moleskine notebook beside the laptop, a half-empty glass of water, tiled backsplash behind [3] LIGHT: single warm pendant lamp directly overhead, 10pm, deep shadows on the periphery with soft fill from the laptop screen [4] LIVE BACKGROUND: refrigerator humming faintly visible to the left, a ceiling fan turning slowly above, distant street light catching the window behind [5] CAMERA + MOOD: locked-off, @daniel glancing between the camera and the screen, low-key curious energy, slightly raised eyebrow",
+      "duration_hint": 5
+    },
+    {
+      "id": 3,
+      "story_beat": "struggle",
+      "audio_text": "I'd given it read access to my bank exports and told it to flag anything inconsistent. I didn't expect it to find anything real.",
+      "visual_prompt": "[1] COMPOSITION: medium shot, 35mm, eye-level [2] SETTING: rooftop terrace at midday, single metal folding chair, a takeaway coffee cup on a concrete ledge, city rooftops visible in the middle distance [3] LIGHT: harsh overhead noon sun softened by an overcast layer, flat diffused daylight, slight rim on @daniel's left shoulder [4] LIVE BACKGROUND: an HVAC unit cycling on behind him, a pigeon landing and walking across the parapet, a distant crane moving slowly on the skyline [5] CAMERA + MOOD: slow 1-foot handheld push-in, @daniel arms crossed, slightly skeptical tone, candid documentary energy",
+      "duration_hint": 5
+    },
+    {
+      "id": 4,
+      "story_beat": "turn",
+      "audio_text": "Eleven minutes in, Notion flagged a $6,800 software subscription billed twice \u2014 for fourteen months straight. My accountant had reviewed that same period.",
+      "visual_prompt": "[1] COMPOSITION: tight medium close-up, 50mm, eye-level [2] SETTING: parked car interior, steering wheel visible in foreground, a phone mounted on the dash, afternoon light through a windshield [3] LIGHT: warm 4pm side light through the driver window, golden hour quality, slight lens flare on the edge of the frame [4] LIVE BACKGROUND: pedestrians crossing at a crosswalk ahead, a cyclist passing the passenger window, traffic signal cycling green in the distance [5] CAMERA + MOOD: locked-off, @daniel turning slightly toward camera from the driver seat, controlled disbelief in voice and posture, intimate and direct",
+      "duration_hint": 5
+    },
+    {
+      "id": 5,
+      "story_beat": "proof",
+      "audio_text": "I filed for a refund, recovered $5,400, and I built out the full agent in Claude over one weekend. Costs me $18 a month to run.",
+      "visual_prompt": "[1] COMPOSITION: medium wide, 28mm, slight low angle [2] SETTING: garage workshop with a standing desk, a mechanical keyboard on the desk, a whiteboard covered in handwritten notes behind, a single shop light clamped to a shelf [3] LIGHT: cool overhead shop light with a warm fill from a desk lamp to the right, late evening, 9pm, industrial and focused [4] LIVE BACKGROUND: a box fan oscillating slowly in the corner, a phone screen lighting up briefly on the desk surface, tools hanging on a pegboard visible in soft focus [5] CAMERA + MOOD: slow 1-foot dolly right to left, @daniel standing with arms relaxed at sides, grounded and matter-of-fact delivery",
+      "duration_hint": 5
+    },
+    {
+      "id": 6,
+      "story_beat": "meaning",
+      "audio_text": "Your accountant reviews what happened. The agent watches while it's happening. That's the difference you're paying for.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, eye-level [2] SETTING: park bench on a tree-lined path at early morning, a paper coffee cup beside him on the bench, leaves on the ground suggesting autumn [3] LIGHT: soft 7am diffused morning light through a canopy of trees, cool blue-white fill with faint warm patches where light breaks through [4] LIVE BACKGROUND: a jogger passing in soft focus on the path behind, leaves shifting in a light breeze, a dog walker visible far down the path [5] CAMERA + MOOD: locked-off with a very slow 1-foot push-in, @daniel looking directly at camera with quiet certainty, reflective and final, no smile",
+      "duration_hint": 5
+    }
+  ],
+  "loop_back_line": "Your accountant charged $4,200. Mine costs $18 a month and works Sundays."
+}

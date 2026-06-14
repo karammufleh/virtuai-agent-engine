@@ -1,0 +1,42 @@
+# YouTube Shorts Platform Configuration
+platform_id: "youtube_shorts"
+display_name: "YouTube Shorts"
+enabled: true
+
+content_formats:
+  - type: "short"
+    max_duration_seconds: 60
+    recommended_duration: "30-60"
+    aspect_ratio: "9:16"
+    title_max_length: 100
+    description_max_length: 5000
+
+posting:
+  optimal_times:
+    - "Monday 14:00"
+    - "Wednesday 16:00"
+    - "Friday 12:00"
+  max_posts_per_day: 2
+  min_hours_between_posts: 6
+
+media_specs:
+  video:
+    formats: ["mp4", "mov"]
+    max_size_mb: 256
+    recommended_resolution: "1080x1920"
+    aspect_ratios: ["9:16"]
+    max_duration_seconds: 60
+
+api:
+  base_url: "https://www.googleapis.com/youtube/v3"
+  auth_type: "OAuth2"
+  scopes:
+    - "youtube.upload"
+    - "youtube.readonly"
+    - "yt-analytics.readonly"
+  rate_limit: "10000 units/day"
+
+hashtag_rules:
+  count: "5-8"
+  placement: "in description"
+  style: "include #Shorts tag always"

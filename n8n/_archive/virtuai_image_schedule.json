@@ -1,0 +1,158 @@
+{
+  "id": "virtuai-image-schedule",
+  "name": "VirtuAI — Image pack (daily 17:00)",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [{ "field": "cronExpression", "expression": "0 17 * * *" }]
+        }
+      },
+      "id": "n-cron",
+      "name": "Schedule 17:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [200, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.VIRTUAI_API_BASE || 'http://localhost:9090' }}/n8n/run-images-and-publish",
+        "options": { "timeout": 60000 }
+      },
+      "id": "n-trigger-images",
+      "name": "Produce + publish images",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [440, 300]
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            { "name": "task_id", "value": "={{ $json.task_id }}" },
+            { "name": "poll_url", "value": "={{ $env.VIRTUAI_API_BASE || 'http://localhost:9090' }}{{ $json.poll_url }}" }
+          ]
+        }
+      },
+      "id": "n-capture",
+      "name": "Capture task_id",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [680, 300]
+    },
+    {
+      "parameters": { "amount": 3, "unit": "minutes" },
+      "id": "n-wait-initial",
+      "name": "Wait 3 min (image gen)",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [920, 300]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "={{ $('Capture task_id').item.json.poll_url }}",
+        "options": { "timeout": 30000 }
+      },
+      "id": "n-poll",
+      "name": "Poll status",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1160, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [{ "value1": "={{ $json.state }}", "operation": "equal", "value2": "success" }]
+        }
+      },
+      "id": "n-if-done",
+      "name": "Done?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [1400, 300]
+    },
+    {
+      "parameters": { "amount": 30, "unit": "seconds" },
+      "id": "n-loop-wait",
+      "name": "Wait 30s",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [1160, 500]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.VIRTUAI_API_BASE || 'http://localhost:9090' }}/webhook/linkedin-amplify",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"source\": \"image-pack\",\n  \"text\": \"Portrait: {{ $json.result.portrait_topic }} | Carousel: {{ $json.result.carousel_topic }}\"\n}",
+        "options": { "timeout": 60000 }
+      },
+      "id": "n-linkedin-amplify",
+      "name": "LinkedIn amplify",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1640, 200]
+    },
+    {
+      "parameters": {
+        "subject": "VirtuAI image pack published",
+        "text": "=Portrait: {{ $('Poll status').item.json.result.portrait_topic }}\n  IG: {{ $('Poll status').item.json.result.results.portrait.instagram.result.data.id }}\n  LI: {{ $('Poll status').item.json.result.results.portrait.linkedin.result.data.x_restli_id }}\n\nCarousel: {{ $('Poll status').item.json.result.carousel_topic }}\n  IG: {{ $('Poll status').item.json.result.results.carousel.instagram.result.data.id || $('Poll status').item.json.result.results.carousel.instagram.media_id }}\n  LI: {{ $('Poll status').item.json.result.results.carousel.linkedin.result.data.x_restli_id }}\n\nAmplifier: {{ $json.ok }}\n",
+        "toEmail": "={{ $env.NOTIFY_EMAIL || 'me@example.com' }}",
+        "options": {}
+      },
+      "id": "n-notify-success",
+      "name": "Notify success",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [1900, 200]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [{ "value1": "={{ $json.state }}", "operation": "equal", "value2": "failed" }]
+        }
+      },
+      "id": "n-if-failed",
+      "name": "Failed?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [1400, 500]
+    },
+    {
+      "parameters": {
+        "subject": "VirtuAI image pack FAILED",
+        "text": "=Image pipeline failed.\n\nError: {{ $json.error }}\n",
+        "toEmail": "={{ $env.NOTIFY_EMAIL || 'me@example.com' }}",
+        "options": {}
+      },
+      "id": "n-notify-failed",
+      "name": "Notify failure",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [1640, 500]
+    }
+  ],
+  "connections": {
+    "Schedule 17:00":           { "main": [[{ "node": "Produce + publish images", "type": "main", "index": 0 }]] },
+    "Produce + publish images": { "main": [[{ "node": "Capture task_id", "type": "main", "index": 0 }]] },
+    "Capture task_id":          { "main": [[{ "node": "Wait 3 min (image gen)", "type": "main", "index": 0 }]] },
+    "Wait 3 min (image gen)":   { "main": [[{ "node": "Poll status", "type": "main", "index": 0 }]] },
+    "Poll status":              { "main": [[{ "node": "Done?", "type": "main", "index": 0 }]] },
+    "Done?":                    { "main": [
+                                    [{ "node": "LinkedIn amplify", "type": "main", "index": 0 }],
+                                    [{ "node": "Failed?", "type": "main", "index": 0 }]
+                                  ] },
+    "LinkedIn amplify":         { "main": [[{ "node": "Notify success", "type": "main", "index": 0 }]] },
+    "Failed?":                  { "main": [
+                                    [{ "node": "Notify failure", "type": "main", "index": 0 }],
+                                    [{ "node": "Wait 30s", "type": "main", "index": 0 }]
+                                  ] },
+    "Wait 30s":                 { "main": [[{ "node": "Poll status", "type": "main", "index": 0 }]] }
+  },
+  "settings": { "executionOrder": "v1" },
+  "tags": [{ "name": "virtuai" }, { "name": "images" }, { "name": "automation" }]
+}

@@ -1,0 +1,39 @@
+{
+  "topic": "Why being 'average' is your biggest financial asset",
+  "hook_summary": "Stop trying to be special. Average is the cheat code.",
+  "total_words": 97,
+  "estimated_seconds": 27,
+  "scenes": [
+    {
+      "id": 1,
+      "audio_text": "Everyone says you need to be exceptional to make real money. I think that's a trap.",
+      "visual_prompt": "Medium close-up of @daniel sitting at a rustic wooden table in a sunlit coffee shop, natural light from a large window on his left, candid documentary style, locked-off camera.",
+      "duration_hint": 5
+    },
+    {
+      "id": 2,
+      "audio_text": "The most financially secure people I know? They're not geniuses. They're average people who showed up every day for a decade.",
+      "visual_prompt": "Over-the-shoulder shot of @daniel walking down a quiet tree-lined street in a residential neighborhood, afternoon golden hour light, motion follows him slowly.",
+      "duration_hint": 6
+    },
+    {
+      "id": 3,
+      "audio_text": "I spent years trying to be the smartest guy in the room. Got nowhere. Then I just picked a boring skill and ground it out.",
+      "visual_prompt": "Wide shot of @daniel leaning against a brick wall in an urban alley, moody overcast light, slightly grainy film look, slow push-in.",
+      "duration_hint": 6
+    },
+    {
+      "id": 4,
+      "audio_text": "Funny thing\u2014once I stopped chasing unique, the money showed up. Consistency beats talent when talent isn't consistent.",
+      "visual_prompt": "Medium shot of @daniel sitting on a park bench under a large oak tree, dappled sunlight, candid looking off-camera, locked-off.",
+      "duration_hint": 6
+    },
+    {
+      "id": 5,
+      "audio_text": "So stop trying to be special. Just be average, but do it longer than anyone else.",
+      "visual_prompt": "Close-up of @daniel in his kitchen, leaning on a counter, warm tungsten light, direct eye contact with camera, clean flat landing.",
+      "duration_hint": 4
+    }
+  ],
+  "loop_back_line": "Average is the new unfair advantage."
+}

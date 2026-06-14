@@ -1,0 +1,4 @@
+=========================== short test summary info ============================
+FAILED virtuai/tests/test_agents_smoke.py::test_publisher_agent_dry_run - com...
+FAILED virtuai/tests/test_validators.py::test_publisher_dry_run_still_does_not_publish
+2 failed, 123 passed, 2 skipped, 28 warnings in 10.54s

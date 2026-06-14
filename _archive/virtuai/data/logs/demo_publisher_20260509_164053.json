@@ -1,0 +1,25 @@
+{
+  "linkedin": {
+    "action": "published",
+    "tool_used": "LINKEDIN_CREATE_LINKED_IN_POST",
+    "response": "{'data': {'x_restli_id': 'urn:li:share:7458873628328198146'}, 'error': None, 'successful': True}"
+  },
+  "x": {
+    "action": "error",
+    "tool_used": "TWITTER_CREATION_OF_A_POST",
+    "error": "BadRequestError: Error code: 400 - {'error': {'message': 'No connected account found for user ID danielcalder- for toolkit twitter', 'code': 1810, 'slug': 'ActionExecute_ConnectedAccountNotFound', 'status': 400, 'request_id': '608f1732fd9345219331dc7dc48208e7', 'suggested_fix': \"No active connection exists for toolkit 'twitter' under entity 'danielcalder-'. Connect your twitter account first via the /api/v3/connected_accounts endpoint or the COMPOSIO_INITIATE_CONNECTION tool.\"}}"
+  },
+  "instagram": {
+    "action": "needs_setup",
+    "reason": "IG_USER_ID env var not set. Find your IG Business Account ID via Facebook Graph API Explorer: me/accounts \u2192 <page>?fields=instagram_business_account"
+  },
+  "youtube_shorts": {
+    "action": "published",
+    "tool_used": "YOUTUBE_UPLOAD_VIDEO",
+    "response": "{'data': {'message': \"Invalid request data provided\\n- Value error, The 'videoFilePath' parameter requires a FileUploadable object (dictionary) with 'name', 'mimetype', and 's3key' fields. You provided a string value instead. File paths are not supported directly. You must first upload the file to S3 to get an s3key. on parameter ``\", 'status_code': None}, 'error': \"Invalid request data provided\\n"
+  },
+  "medium": {
+    "action": "tool_unavailable",
+    "reason": "MEDIUM_CREATE_POST not connected in Composio"
+  }
+}

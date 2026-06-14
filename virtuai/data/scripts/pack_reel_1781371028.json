@@ -1,0 +1,51 @@
+{
+  "topic": "The AI tool that wrecked my unit economics",
+  "hook_summary": "I paid $1,400 a month for a tool that cost me clients.",
+  "total_words": 118,
+  "estimated_seconds": 26,
+  "scenes": [
+    {
+      "id": 1,
+      "story_beat": "setup",
+      "audio_text": "I paid $1,400 a month for an AI tool. Fully automated. Looked incredible on the demo.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, eye-level, seated leaning slightly forward with both forearms resting on desk [2] SETTING: warm wood writing desk in a quiet home study, stacked hardcover books behind him, a ceramic mug and a yellow legal pad to his left [3] LIGHT: soft warm lamp glow from a desk lamp to the right, late evening, no overhead light, deep shadows behind the bookshelf [4] LIVE BACKGROUND: a ceiling fan rotating slowly overhead, warm light shifting subtly across the spines of books, dust motes drifting through the lamp beam [5] CAMERA + MOOD: slow 1-foot handheld push-in, @daniel in black bomber jacket with a thin chain necklace, calm and declarative, like he's already done the math",
+      "duration_hint": 5
+    },
+    {
+      "id": 2,
+      "story_beat": "incident",
+      "audio_text": "Six weeks in, a client emailed me. Said our outreach felt robotic. That was the first red flag.",
+      "visual_prompt": "[1] COMPOSITION: over-shoulder wide, 28mm, slight low angle, @daniel standing with one hand flat on the kitchen island, half-turned looking back toward camera [2] SETTING: kitchen island at dusk, a single brass pendant lamp on above the counter, a glass of water and an open laptop on the island, dark wood cabinetry behind [3] LIGHT: warm single pendant overhead, deep blue dusk light coming through the window behind him, hard contrast between lit counter and shadowed wall [4] LIVE BACKGROUND: condensation dripping slowly down the water glass, the laptop fan spinning faintly visible as the screen glows, light shifting outside the window as dusk deepens [5] CAMERA + MOOD: slow tracking shot left to right, @daniel in black bomber jacket with a thin chain necklace, tense and sharp, the moment a problem surfaces",
+      "duration_hint": 5
+    },
+    {
+      "id": 3,
+      "story_beat": "struggle",
+      "audio_text": "I tweaked the prompts. Tried layering Zapier on top of it. Burned three weeks chasing a fix that wasn't coming.",
+      "visual_prompt": "[1] COMPOSITION: medium shot, 50mm, eye-level, seated in leather armchair with elbow on knee, chin resting in one hand [2] SETTING: leather armchair near a low fireplace, a side table with a whiskey glass and a closed Moleskine notebook, exposed brick wall to the left [3] LIGHT: flickering amber firelight as the dominant key source, no overhead light, warm low fill from the fire, deep shadows on the right side of his face [4] LIVE BACKGROUND: fire crackling and visibly flickering, shadows dancing across the brick wall, smoke curling faintly near the top of the firebox [5] CAMERA + MOOD: very slow push-in, subtle handheld drift, @daniel in black bomber jacket with a thin chain necklace, contemplative and tired, the weight of a bad decision sitting on him",
+      "duration_hint": 5
+    },
+    {
+      "id": 4,
+      "story_beat": "turn",
+      "audio_text": "Then I pulled the plug and rebuilt the whole workflow in Claude for $38 a month. Same output. Better replies.",
+      "visual_prompt": "[1] COMPOSITION: close-up, 85mm portrait, slight high angle, @daniel leaning against the garage workshop wall with arms loosely crossed [2] SETTING: garage workshop, pegboard with hanging tools behind him, a single industrial work lamp clamped to a shelf to his left, a worn wooden workbench at the edge of frame [3] LIGHT: single hard work lamp casting strong directional light from the left, cool ambient spill from the open garage door behind, high contrast and gritty [4] LIVE BACKGROUND: a small metal fan oscillating on the workbench, a hanging cord swaying slightly from the breeze, a car just barely visible pulling out of a driveway in soft focus through the open door [5] CAMERA + MOOD: handheld drift from left to right, slow and deliberate, @daniel in black bomber jacket with a thin chain necklace, a quiet controlled relief \u2014 the turn has already happened",
+      "duration_hint": 5
+    },
+    {
+      "id": 5,
+      "story_beat": "proof",
+      "audio_text": "That client came back two months later. Booked a $9,000 retainer. The tool wasn't the problem \u2014 the cost structure was.",
+      "visual_prompt": "[1] COMPOSITION: extreme wide, 28mm anamorphic, low angle looking slightly up, @daniel sitting on the edge of the bed with open hands resting on his knees [2] SETTING: bedroom edge of bed with morning light through sheer curtains, a phone face-down on the nightstand, a pair of dress shoes on the floor [3] LIGHT: soft diffuse golden-hour morning light pouring through sheer curtains, no artificial light, even and clean across the room [4] LIVE BACKGROUND: curtains breathing slightly from a cracked window, shadows from outside tree branches drifting slowly across the wall, a dog's shadow passing briefly in the hallway through the open door [5] CAMERA + MOOD: slow dolly back, wide and airy, @daniel in black bomber jacket with a thin chain necklace, calm and resolved, no drama \u2014 just the numbers",
+      "duration_hint": 5
+    },
+    {
+      "id": 6,
+      "story_beat": "meaning",
+      "audio_text": "A tool that costs more than it earns isn't automation. It's a subscription to staying small.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, eye-level, @daniel seated in a reading nook with one knee up and elbow resting on it, looking directly into camera [2] SETTING: reading nook with rain visible through the window beside him, a paperback face-down on the cushion, a warm blanket draped over the seat back [3] LIGHT: overcast diffuse daylight from the rain-streaked window, no artificial source, soft flat light with gentle shadows, grey and quiet [4] LIVE BACKGROUND: rain streaking down the window glass in real time, a drop rolling diagonally across the pane, tree branches swaying outside in the wet wind [5] CAMERA + MOOD: locked slow push-in with 1-foot handheld drift, intimate and final, @daniel in black bomber jacket with a thin chain necklace, flat affect \u2014 the aphorism landing like he doesn't need you to agree",
+      "duration_hint": 5
+    }
+  ],
+  "loop_back_line": "I paid $1,400 a month to learn that."
+}

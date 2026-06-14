@@ -1,0 +1,33 @@
+{
+  "topic": "I replaced my $80k VA with AI agents",
+  "hook_summary": "I fired my VA. Now I run 3 businesses with AI agents for $400/mo.",
+  "total_words": 110,
+  "estimated_seconds": 30,
+  "scenes": [
+    {
+      "id": 1,
+      "audio_text": "I fired my $80,000-a-year virtual assistant last quarter. And my businesses run better without her.",
+      "visual_prompt": "Medium close-up of @daniel in a bright, modern home office with natural light from a window behind. He sits at a wooden desk, leaning forward slightly. Camera locked-off, candid documentary style, slight lens flare on the right. He looks directly into the lens, confident expression.",
+      "duration_hint": 5
+    },
+    {
+      "id": 2,
+      "audio_text": "I built three AI agents\u2014one for inbound email triage, one for scheduling, and one for customer support triage. Cost me $400 a month total.",
+      "visual_prompt": "Over-the-shoulder shot of @daniel at his desk, typing on a laptop. Screen shows a simple dashboard with three agent status indicators. Warm, natural lighting from the window. Slow push-in on his face as he speaks. Photo-real, casual.",
+      "duration_hint": 7
+    },
+    {
+      "id": 3,
+      "audio_text": "Response time dropped from 4 hours to 90 seconds. Customer satisfaction score went up 12 points. I wasn't losing quality\u2014I was losing overhead.",
+      "visual_prompt": "Medium shot of @daniel walking down a city street, coffee in hand, talking to the camera. Golden hour light, soft shadows. He gestures with his free hand. Documentary style, locked-off camera.",
+      "duration_hint": 8
+    },
+    {
+      "id": 4,
+      "audio_text": "Everyone told me you need a human touch. They were wrong. You need the right system. That's it.",
+      "visual_prompt": "Medium close-up of @daniel leaning against a brick wall, arms crossed, slight smirk. Evening light, urban background with blurred passersby. Camera locked-off, shallow depth of field. Natural, candid.",
+      "duration_hint": 6
+    }
+  ],
+  "loop_back_line": "I fired my $80,000-a-year VA. Now my businesses run better without her."
+}

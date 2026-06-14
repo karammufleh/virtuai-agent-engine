@@ -1,0 +1,267 @@
+{
+  "lora": "/Users/karammufleh/Desktop/capstone  101/virtuai/persona/training_runs/_extracted/0000455_checkpoint_adapter.safetensors",
+  "before": {
+    "n_images": 34,
+    "n_with_face": 29,
+    "mean_similarity": 0.3011,
+    "median_similarity": 0.3031,
+    "min_similarity": 0.1097,
+    "max_similarity": 0.4397,
+    "stdev_similarity": 0.0775,
+    "above_strong_threshold_0.65": 0,
+    "above_acceptable_threshold_0.45": 0,
+    "below_drift_threshold_0.30": 13,
+    "scores": [
+      {
+        "image_path": "/Users/karammufleh/Desktop/capstone  101/virtuai/data/generated_images/test_imagen.png",
+        "similarity": 0.395,
+        "nearest_reference_sim": 0.3569,
+        "n_faces_detected": 1,
+        "note": ""
+      },
+      {
+        "image_path": "/Users/karammufleh/Desktop/capstone  101/virtuai/data/generated_images/linkedin_demo.png",
+        "similarity": 0.4397,
+        "nearest_reference_sim": 0.4007,
+        "n_faces_detected": 1,
+        "note": ""
+      },
+      {
+        "image_path": "/Users/karammufleh/Desktop/capstone  101/virtuai/data/generated_images/medium_post3.png",
+        "similarity": 0.3498,
+        "nearest_reference_sim": 0.3587,
+        "n_faces_detected": 1,
+        "note": ""
+      },
+      {
+        "image_path": "/Users/karammufleh/Desktop/capstone  101/virtuai/data/generated_images/medium_post2.png",
+        "similarity": 0.3022,
+        "nearest_reference_sim": 0.2946,
+        "n_faces_detected": 1,
+        "note": ""
+      },
+      {
+        "image_path": "/Users/karammufleh/Desktop/capstone  101/virtuai/data/generated_images/tiktok_demo.png",
+        "similarity": 0.3442,
+        "nearest_reference_sim": 0.3316,
+        "n_faces_detected": 1,
+        "note": ""
+      },
+      {
+        "image_path": "/Users/karammufleh/Desktop/capstone  101/virtuai/data/generated_images/youtube_shorts_demo_1.png",
+        "similarity": 0.0,
+        "nearest_reference_sim": 0.0,
+        "n_faces_detected": 0,
+        "note": "no_face_detected"
+      },
+      {
+        "image_path": "/Users/karammufleh/Desktop/capstone  101/virtuai/data/generated_images/instagram_post2.png",
+        "similarity": 0.3745,
+        "nearest_reference_sim": 0.387,
+        "n_faces_detected": 1,
+        "note": ""
+      },
+      {
+        "image_path": "/Users/karammufleh/Desktop/capstone  101/virtuai/data/generated_images/linkedin_post3.png",
+        "similarity": 0.2571,
+        "nearest_reference_sim": 0.278,
+        "n_faces_detected": 1,
+        "note": ""
+      },
+      {
+        "image_path": "/Users/karammufleh/Desktop/capstone  101/virtuai/data/generated_images/linkedin_post2.png",
+        "similarity": 0.3497,
+        "nearest_reference_sim": 0.3679,
+        "n_faces_detected": 4,
+        "note": ""
+      },
+      {
+        "image_path": "/Users/karammufleh/Desktop/capstone  101/virtuai/data/generated_images/instagram_post3.png",
+        "similarity": 0.3461,
+        "nearest_reference_sim": 0.3435,
+        "n_faces_detected": 1,
+        "note": ""
+      },
+      {
+        "image_path": "/Users/karammufleh/Desktop/capstone  101/virtuai/data/generated_images/tiktok_demo_1.png",
+        "similarity": 0.0,
+        "nearest_reference_sim": 0.0,
+        "n_faces_detected": 0,
+        "note": "no_face_detected"
+      },
+      {
+        "image_path": "/Users/karammufleh/Desktop/capstone  101/virtuai/data/generated_images/youtube_shorts_demo_2.png",
+        "similarity": 0.1663,
+        "nearest_reference_sim": 0.2031,
+        "n_faces_detected": 1,
+        "note": ""
+      },
+      {
+        "image_path": "/Users/karammufleh/Desktop/capstone  101/virtuai/data/generated_images/tiktok_demo_2.png",
+        "similarity": 0.1839,
+        "nearest_reference_sim": 0.2303,
+        "n_faces_detected": 1,
+        "note": ""
+      },
+      {
+        "image_path": "/Users/karammufleh/Desktop/capstone  101/virtuai/data/generated_images/instagram_demo.png",
+        "similarity": 0.4387,
+        "nearest_reference_sim": 0.4422,
+        "n_faces_detected": 1,
+        "note": ""
+      },
+      {
+        "image_path": "/Users/karammufleh/Desktop/capstone  101/virtuai/data/generated_images/youtube_shorts_post3.png",
+        "similarity": 0.3301,
+        "nearest_reference_sim": 0.327,
+        "n_faces_detected": 1,
+        "note": ""
+      },
+      {
+        "image_path": "/Users/karammufleh/Desktop/capstone  101/virtuai/data/generated_images/youtube_shorts_post2.png",
+        "similarity": 0.3031,
+        "nearest_reference_sim": 0.2983,
+        "n_faces_detected": 1,
+        "note": ""
+      },
+      {
+        "image_path": "/Users/karammufleh/Desktop/capstone  101/virtuai/data/generated_images/medium_demo_1.png",
+        "similarity": 0.0,
+        "nearest_reference_sim": 0.0,
+        "n_faces_detected": 0,
+        "note": "no_face_detected"
+      },
+      {
+        "image_path": "/Users/karammufleh/Desktop/capstone  101/virtuai/data/generated_images/medium_demo_2.png",
+        "similarity": 0.2644,
+        "nearest_reference_sim": 0.277,
+        "n_faces_detected": 1,
+        "note": ""
+      },
+      {
+        "image_path": "/Users/karammufleh/Desktop/capstone  101/virtuai/data/generated_images/x_demo_2.png",
+        "similarity": 0.3104,
+        "nearest_reference_sim": 0.2949,
+        "n_faces_detected": 1,
+        "note": ""
+      },
+      {
+        "image_path": "/Users/karammufleh/Desktop/capstone  101/virtuai/data/generated_images/x_demo_1.png",
+        "similarity": 0.0,
+        "nearest_reference_sim": 0.0,
+        "n_faces_detected": 0,
+        "note": "no_face_detected"
+      },
+      {
+        "image_path": "/Users/karammufleh/Desktop/capstone  101/virtuai/data/generated_images/linkedin_demo_1.png",
+        "similarity": 0.0,
+        "nearest_reference_sim": 0.0,
+        "n_faces_detected": 0,
+        "note": "no_face_detected"
+      },
+      {
+        "image_path": "/Users/karammufleh/Desktop/capstone  101/virtuai/data/generated_images/hero_ref_2.png",
+        "similarity": 0.3644,
+        "nearest_reference_sim": 0.3534,
+        "n_faces_detected": 1,
+        "note": ""
+      },
+      {
+        "image_path": "/Users/karammufleh/Desktop/capstone  101/virtuai/data/generated_images/medium_demo.png",
+        "similarity": 0.2922,
+        "nearest_reference_sim": 0.2842,
+        "n_faces_detected": 1,
+        "note": ""
+      },
+      {
+        "image_path": "/Users/karammufleh/Desktop/capstone  101/virtuai/data/generated_images/youtube_shorts_demo.png",
+        "similarity": 0.2122,
+        "nearest_reference_sim": 0.2405,
+        "n_faces_detected": 1,
+        "note": ""
+      },
+      {
+        "image_path": "/Users/karammufleh/Desktop/capstone  101/virtuai/data/generated_images/linkedin_demo_2.png",
+        "similarity": 0.236,
+        "nearest_reference_sim": 0.3012,
+        "n_faces_detected": 1,
+        "note": ""
+      },
+      {
+        "image_path": "/Users/karammufleh/Desktop/capstone  101/virtuai/data/generated_images/hero_ref_0.png",
+        "similarity": 0.2553,
+        "nearest_reference_sim": 0.2835,
+        "n_faces_detected": 1,
+        "note": ""
+      },
+      {
+        "image_path": "/Users/karammufleh/Desktop/capstone  101/virtuai/data/generated_images/hero_ref_1.png",
+        "similarity": 0.4059,
+        "nearest_reference_sim": 0.3871,
+        "n_faces_detected": 1,
+        "note": ""
+      },
+      {
+        "image_path": "/Users/karammufleh/Desktop/capstone  101/virtuai/data/generated_images/x_post2.png",
+        "similarity": 0.2921,
+        "nearest_reference_sim": 0.3166,
+        "n_faces_detected": 1,
+        "note": ""
+      },
+      {
+        "image_path": "/Users/karammufleh/Desktop/capstone  101/virtuai/data/generated_images/x_post3.png",
+        "similarity": 0.3198,
+        "nearest_reference_sim": 0.3122,
+        "n_faces_detected": 1,
+        "note": ""
+      },
+      {
+        "image_path": "/Users/karammufleh/Desktop/capstone  101/virtuai/data/generated_images/instagram_demo_2.png",
+        "similarity": 0.2667,
+        "nearest_reference_sim": 0.2526,
+        "n_faces_detected": 1,
+        "note": ""
+      },
+      {
+        "image_path": "/Users/karammufleh/Desktop/capstone  101/virtuai/data/generated_images/tiktok_post3.png",
+        "similarity": 0.2765,
+        "nearest_reference_sim": 0.3079,
+        "n_faces_detected": 1,
+        "note": ""
+      },
+      {
+        "image_path": "/Users/karammufleh/Desktop/capstone  101/virtuai/data/generated_images/tiktok_post2.png",
+        "similarity": 0.2116,
+        "nearest_reference_sim": 0.2517,
+        "n_faces_detected": 1,
+        "note": ""
+      },
+      {
+        "image_path": "/Users/karammufleh/Desktop/capstone  101/virtuai/data/generated_images/instagram_demo_1.png",
+        "similarity": 0.1097,
+        "nearest_reference_sim": 0.1215,
+        "n_faces_detected": 1,
+        "note": ""
+      },
+      {
+        "image_path": "/Users/karammufleh/Desktop/capstone  101/virtuai/data/generated_images/x_demo.png",
+        "similarity": 0.334,
+        "nearest_reference_sim": 0.3495,
+        "n_faces_detected": 1,
+        "note": ""
+      }
+    ]
+  },
+  "after": {
+    "n_images": 6,
+    "n_with_face": 6,
+    "mean_similarity": 0.6288,
+    "median_similarity": 0.6836,
+    "min_similarity": 0.4851,
+    "max_similarity": 0.7192,
+    "stdev_similarity": 0.1016,
+    "above_strong_threshold_0.65": 4,
+    "above_acceptable_threshold_0.45": 6,
+    "below_drift_threshold_0.30": 0
+  }
+}

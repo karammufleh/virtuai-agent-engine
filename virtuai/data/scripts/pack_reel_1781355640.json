@@ -1,0 +1,51 @@
+{
+  "topic": "Agent stack to hand a new hire day one",
+  "hook_summary": "I stopped writing 90-day plans two months ago.",
+  "total_words": 118,
+  "estimated_seconds": 26,
+  "scenes": [
+    {
+      "id": 1,
+      "story_beat": "setup",
+      "audio_text": "I stopped writing 90-day plans two months ago. Every new hire I onboarded still couldn't find answers by week three.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, eye-level, seated leaning forward with both forearms on the desk surface [2] SETTING: warm wood writing desk in a quiet home study, open Moleskine notebook and a cold brew glass to the left, packed bookshelf behind him [3] LIGHT: soft warm overhead lamp at late evening, single practical desk lamp spilling amber across the desk surface [4] LIVE BACKGROUND: pages of the notebook flutter slightly from an unseen vent, a clock ticks visibly on the shelf behind, books casting long shadows that shift subtly [5] CAMERA + MOOD: slow 1-foot handheld push-in, subject leaning forward with controlled frustration, intimate confessional energy \u2014 @daniel in light denim shirt under tan suede jacket",
+      "duration_hint": 5
+    },
+    {
+      "id": 2,
+      "story_beat": "incident",
+      "audio_text": "Last March I hired a $5,500-a-month ops coordinator. By week two she was still Slacking me to ask where the SOPs lived.",
+      "visual_prompt": "[1] COMPOSITION: medium wide, 50mm, slight low angle, standing with arms crossed and weight shifted to one hip [2] SETTING: garage workshop, single work lamp clamped to a wooden shelf, scattered hand tools hanging on pegboard behind him, a metal stool to his right [3] LIGHT: single tungsten work lamp casting hard directional light from above-left, rest of garage in cool shadow, late evening [4] LIVE BACKGROUND: a ceiling fan rotates slowly overhead, dust motes drifting through the lamp beam, a loose tarp on the far wall shifts slightly from airflow [5] CAMERA + MOOD: slow orbit right-to-left around the subject at waist height, determined and slightly incredulous expression \u2014 @daniel in light denim shirt under tan suede jacket",
+      "duration_hint": 5
+    },
+    {
+      "id": 3,
+      "story_beat": "struggle",
+      "audio_text": "I spent six hours building her a Notion wiki. She read it once and never opened it again. $330 of my time, gone.",
+      "visual_prompt": "[1] COMPOSITION: over-shoulder wide, 28mm, slight high angle, leaning against the kitchen island with both hands flat on the counter [2] SETTING: kitchen island at dusk, one warm pendant lamp switched on above him, a laptop open to the side, a ceramic mug steaming near his left hand [3] LIGHT: pendant lamp as key light, warm orange dusk bleeding through the window behind, soft fill bouncing off white tile [4] LIVE BACKGROUND: steam curling steadily from the mug, headlights of a passing car sweeping across the window behind him, a ceiling fan rotating slowly in the reflection [5] CAMERA + MOOD: slow dolly left following the subject's eye line toward the laptop screen, quietly frustrated, almost resigned \u2014 @daniel in light denim shirt under tan suede jacket",
+      "duration_hint": 5
+    },
+    {
+      "id": 4,
+      "story_beat": "turn",
+      "audio_text": "Then I tried something different. I fed every Loom I'd ever recorded into Claude and told it to answer her questions directly. She stopped messaging me the same afternoon.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 85mm portrait, eye-level, sitting with elbow on knee leaning slightly sideways [2] SETTING: reading nook with rain visible through the window beside him, a worn paperback face-down on the cushion, a small side table with a glass of water [3] LIGHT: overcast diffuse daylight through rain-streaked glass, no artificial source, soft flat fill from the white wall opposite [4] LIVE BACKGROUND: rain streaking and beading down the window behind him, a tree branch outside swaying in the wind, condensation slowly forming on his water glass [5] CAMERA + MOOD: slow 1-foot handheld drift left with subtle parallax from the rain-window, subject's tone shifting from frustrated to quietly surprised \u2014 @daniel in light denim shirt under tan suede jacket",
+      "duration_hint": 5
+    },
+    {
+      "id": 5,
+      "story_beat": "proof",
+      "audio_text": "I added a Zapier layer on top so it auto-routed her daily tasks from our project board. Four weeks later she was running the whole ops queue without a single check-in.",
+      "visual_prompt": "[1] COMPOSITION: medium wide, 35mm, eye-level, standing half-turned with one hand on the back of the armchair looking back toward camera [2] SETTING: leather armchair near a fireplace with low light, a small stack of printed reports on the armchair seat, framed architectural prints on the dark wall [3] LIGHT: warm firelight as key source from the right, flickering and shifting, blue-hour darkness visible through a narrow window to the left [4] LIVE BACKGROUND: fireplace flames visibly dancing and shifting, embers glowing and settling, shadows on the wall behind him moving with the fire [5] CAMERA + MOOD: slow tracking pull-back as he turns to face camera, firelight catching his jacket collar, tone measured and satisfied \u2014 @daniel in light denim shirt under tan suede jacket",
+      "duration_hint": 5
+    },
+    {
+      "id": 6,
+      "story_beat": "meaning",
+      "audio_text": "A 90-day plan teaches people what to do. An agent stack shows them. Build the stack first. Hand it over on day one.",
+      "visual_prompt": "[1] COMPOSITION: close-up, 50mm, eye-level, open hands resting in lap, sitting upright on the edge of a bed [2] SETTING: bedroom edge of bed with morning light through curtains, a single nightstand with a phone face-down and a glass of water, bare white walls [3] LIGHT: soft morning light filtering through sheer curtains, golden hour quality, warm directional rays across the bed linen and his forearms [4] LIVE BACKGROUND: curtain fabric shifting gently in a morning breeze, dust motes floating through the shaft of light, a bird briefly visible silhouette against the curtain [5] CAMERA + MOOD: slow 1-foot handheld push-in, completely still posture, direct eye contact, quiet certainty \u2014 the line lands and the camera holds \u2014 @daniel in light denim shirt under tan suede jacket",
+      "duration_hint": 5
+    }
+  ],
+  "loop_back_line": "Build the stack first. Hand it over on day one."
+}

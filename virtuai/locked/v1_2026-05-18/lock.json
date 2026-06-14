@@ -1,0 +1,104 @@
+{
+  "version": "v1_2026-05-18",
+  "locked_at": "2026-05-18T19:18:00Z",
+  "label": "Credit-aware pipeline + viral-idea funnel + cloud-only generation",
+  "summary": {
+    "agents": 8,
+    "n8n_nodes": 34,
+    "n8n_connections": 23,
+    "pipeline": "Analyzer -> Research -> Strategy -> Creator -> Reviewer(text) -> Guardian(text) -> Visual -> Reviewer(video) -> Publisher",
+    "credit_model": "all text gates fire BEFORE Visual; expensive Kling/Nano/Suno render runs at most once per cycle",
+    "fallback_policy": "local generation tools (Z-Image-Turbo LoRA, F5-TTS, SadTalker, ffmpeg) preserved on disk but NOT auto-routed to agents; manual scripts only"
+  },
+  "agents": {
+    "analyzer": {
+      "role": "Performance Analyzer (cycle start)",
+      "position": 1,
+      "tools": ["read_autopilot_history", "fetch_instagram_post_metrics", "add_lesson"]
+    },
+    "research": {
+      "role": "Trend Research Specialist",
+      "position": 2,
+      "tools": [
+        "fetch_industry_signals",
+        "discover_trending_topic",
+        "brainstorm_viral_angles",
+        "fetch_viral_hook_patterns",
+        "score_topic_virality",
+        "read_banned_patterns",
+        "read_lessons"
+      ],
+      "funnel_steps": 5
+    },
+    "strategy": {
+      "role": "Content Scheduling Director",
+      "position": 3,
+      "tools": ["read_autopilot_history", "read_lessons"]
+    },
+    "creator": {
+      "role": "Content Creator",
+      "position": 4,
+      "tools": [
+        "write_viral_script",
+        "write_portrait_content",
+        "write_carousel_content",
+        "read_my_messages",
+        "read_banned_patterns"
+      ]
+    },
+    "reviewer": {
+      "role": "Content Quality Reviewer",
+      "phases": ["text-pre-render", "video-post-render"],
+      "tools": [
+        "analyze_sentiment_local",
+        "review_content_quality",
+        "review_video_quality",
+        "verify_face_identity",
+        "send_agent_message"
+      ]
+    },
+    "guardian": {
+      "role": "Ethics and Safety Guardian",
+      "tools": [
+        "content_safety_check_local",
+        "check_persona_compliance_local",
+        "send_agent_message",
+        "add_banned_pattern"
+      ]
+    },
+    "visual": {
+      "role": "Visual Content Designer",
+      "tools": ["generate_cinematic_reel", "render_image_post"]
+    },
+    "publisher": {
+      "role": "Content Publisher",
+      "tools": [
+        "FACEBOOK_CREATE_POST",
+        "INSTAGRAM_CREATE_MEDIA_CONTAINER",
+        "INSTAGRAM_CREATE_POST",
+        "LINKEDIN_CREATE_LINKED_IN_POST",
+        "LINKEDIN_GET_MY_INFO",
+        "TWITTER_CREATION_OF_A_POST",
+        "YOUTUBE_DIRECT_UPLOAD",
+        "publish_reel_to_youtube",
+        "publish_reel_to_instagram",
+        "publish_image_to_instagram",
+        "publish_post_to_linkedin"
+      ]
+    }
+  },
+  "shared_state_files": {
+    "agent_messages.jsonl": "inbox for inter-agent REVISE messages (auto-injected by api_server)",
+    "banned_patterns.json": "Guardian BLOCK list; Research + Creator read on every cycle",
+    "lessons.json": "Analyzer learnings; Strategy + Research read on every cycle",
+    "autopilot_history.json": "last-N published posts (topic / outfit / mood / IDs)"
+  },
+  "models_in_use": {
+    "claude-sonnet-4-6": "writes scripts, brainstorms viral ideas, scores virality, surfaces signals",
+    "kling-3.0-multishot": "cinematic native-lipsync reels (face-locked via canonical_daniel.png)",
+    "nano-banana-2": "carousel/portrait backgrounds",
+    "suno-v3.5": "instrumental underbeds",
+    "elevenlabs": "voice (Composio path)"
+  },
+  "verify_command": "cd virtuai/locked/v1_2026-05-18 && shasum -a 256 -c manifest.sha256"
+}

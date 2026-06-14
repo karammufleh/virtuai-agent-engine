@@ -1,0 +1,51 @@
+{
+  "topic": "Replaced junior dev with AI, product crashed six months later",
+  "hook_summary": "I replaced a $68,000-a-year developer with a $40 subscription.",
+  "total_words": 118,
+  "estimated_seconds": 26,
+  "scenes": [
+    {
+      "id": 1,
+      "story_beat": "setup",
+      "audio_text": "I replaced a $68,000-a-year junior developer with a $40-a-month Claude and Cursor subscription. Deadpan decision. Zero regrets. At first.",
+      "visual_prompt": "[1] COMPOSITION: tight medium close-up, 35mm, eye-level, seated leaning slightly forward with both hands flat on table. [2] SETTING: sunlit corner cafe, espresso machine steaming on the counter behind him, ceramic cups stacked on a shelf, small round table with a closed Moleskine notebook. [3] LIGHT: warm morning window light from the left, soft diffuse fill from white-painted walls, golden hour quality at 8am. [4] LIVE BACKGROUND: barista wiping the espresso machine behind him, a customer passing in soft focus, steam curling up from a cup on the counter. [5] CAMERA + MOOD: slow 1-foot handheld push-in, deliberate and confessional, the kind of quiet that precedes bad news. @daniel in vintage denim jacket over grey hoodie, deadpan, direct eye contact.",
+      "duration_hint": 5
+    },
+    {
+      "id": 2,
+      "story_beat": "incident",
+      "audio_text": "Last January, my junior dev quit. I had a product to ship in six weeks and no budget to hire. So I made the call.",
+      "visual_prompt": "[1] COMPOSITION: medium wide, 28mm, slight low angle, standing with arms loosely crossed, weight on one leg. [2] SETTING: co-working space lounge, floor-to-ceiling window with grey city buildings outside, a few ambient figures at standing desks, a half-drunk coffee on the ledge beside him. [3] LIGHT: overcast diffuse light through large window, flat even white, mid-morning. [4] LIVE BACKGROUND: two figures moving between desks in soft focus behind him, a fan oscillating slowly on a shelf, a courier crossing past the window outside. [5] CAMERA + MOOD: slow tracking right-to-left, observational and matter-of-fact, the pressure of a deadline hanging in the air. @daniel in vintage denim jacket over grey hoodie, arms crossed, slightly clipped delivery.",
+      "duration_hint": 5
+    },
+    {
+      "id": 3,
+      "story_beat": "struggle",
+      "audio_text": "Cursor wrote the features. Claude reviewed the PRs. I shipped on time. The codebase looked clean. I thought I'd cracked something.",
+      "visual_prompt": "[1] COMPOSITION: over-shoulder wide, 50mm, eye-level, leaning against the kitchen island with one hand on the counter. [2] SETTING: modern loft kitchen, morning light through steel-framed windows, a French press on the counter, a open laptop angled away from camera, white subway tiles. [3] LIGHT: strong directional morning light from east-facing window, warm and hard, casting a long shadow across the counter. [4] LIVE BACKGROUND: coffee slowly dripping from a French press plunger mid-press, condensation moving on a cold glass beside him, pigeons shifting on the window ledge outside. [5] CAMERA + MOOD: slow dolly pulling back slightly, creeping sense of false confidence, the calm before something breaks. @daniel in vintage denim jacket over grey hoodie, leaning one hand on counter, half-smile.",
+      "duration_hint": 5
+    },
+    {
+      "id": 4,
+      "story_beat": "turn",
+      "audio_text": "Six months later, the product crashed. New engineer opened the repo and couldn't follow a single thread. The AI had written code no human could maintain.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 85mm portrait, eye-level, sitting with elbow on knee, leaning forward into camera. [2] SETTING: underground subway platform, tiled walls behind him, a train pulling in on the left side of frame, yellow warning strip on the platform floor. [3] LIGHT: harsh fluorescent overhead light, cold and unflattering, blue-white tone, stark. [4] LIVE BACKGROUND: subway train sliding into frame on the left in motion blur, commuters streaming past in soft focus, a woman adjusting her bag strap midground. [5] CAMERA + MOOD: slow handheld drift left, disorienting and unsettled, the moment the story pivots hard. @daniel in vintage denim jacket over grey hoodie, elbow on knee, jaw set, voice dropping.",
+      "duration_hint": 5
+    },
+    {
+      "id": 5,
+      "story_beat": "proof",
+      "audio_text": "We spent $11,000 in contractor hours just to understand what Cursor had built. More than I saved in salary.",
+      "visual_prompt": "[1] COMPOSITION: wide, 28mm anamorphic, slight high angle, walking slowly with hands in jacket pockets, half-turned looking back at camera. [2] SETTING: city sidewalk during golden hour, brick storefronts on one side, cars passing in the street, long shadows stretching across the pavement. [3] LIGHT: golden hour side-light from the west, warm amber, hard shadows, rim-light catching the edge of his jacket. [4] LIVE BACKGROUND: two cars rolling past behind him, a cyclist cutting through the frame, a street vendor packing up a cart in the distance. [5] CAMERA + MOOD: tracking shot following slightly behind, world-weary stride, the quiet arithmetic of a mistake sinking in. @daniel in vintage denim jacket over grey hoodie, walking, hands in pockets, looking back over shoulder.",
+      "duration_hint": 5
+    },
+    {
+      "id": 6,
+      "story_beat": "meaning",
+      "audio_text": "AI can write the code. It can't own the code. That's still a human job. And if no human owns it, you don't have a product \u2014 you have a liability.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, eye-level, standing with open hands slightly raised, looking directly into lens. [2] SETTING: rooftop terrace, city skyline blurred in the distance, a low concrete parapet behind him, a single folding chair off to the side. [3] LIGHT: dusk blue-hour ambient, soft purple-grey sky, a single warm practical lamp glowing on the parapet behind him, cool shadow on his face. [4] LIVE BACKGROUND: a flag on an adjacent rooftop rippling in the wind, distant building windows blinking on as lights come up at dusk, a helicopter light moving slowly across the far skyline. [5] CAMERA + MOOD: very slow orbit left to right, measured and final, the weight of a lesson that cost real money. @daniel in vintage denim jacket over grey hoodie, standing tall, open hands, direct unflinching eye contact.",
+      "duration_hint": 5
+    }
+  ],
+  "loop_back_line": "I replaced a $68,000-a-year developer with a $40 subscription. Then spent $11,000 learning why that math doesn't work."
+}

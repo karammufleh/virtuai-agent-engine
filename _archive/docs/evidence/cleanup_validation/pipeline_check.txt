@@ -1,0 +1,32 @@
+┌─ VirtuAI pre-demo pipeline check ────────────────────────┐
+│ ✓ agent: analyzer                  factory OK
+│ ✓ agent: research                  factory OK
+│ ✓ agent: strategy                  factory OK
+│ ✓ agent: creator                   factory OK
+│ ✓ agent: visual                    factory OK
+│ ✓ agent: reviewer                  factory OK
+│ ✓ agent: guardian                  factory OK
+│ ✗ agent: publisher                 Error code: 401 - {'error': {'message': 'Invalid API key: ak_oFAtw*****', 'code': 10401, 'slug': 'HTTP_Unauthorized', 'status': 401, 'request_id': '39eb8aa84d9f4ce394ba32a473b68dc6', 'suggested_fix': 'Please check you are using a valid API key.'}}
+│ ✓ schemas                          all 8 agents have schemas
+│ ✓ data: autopilot_history.json     /Users/karammufleh/Desktop/capstone  101/virtuai/data/autopilot_history.json
+│ ✓ data: banned_patterns.json       /Users/karammufleh/Desktop/capstone  101/virtuai/data/banned_patterns.json
+│ ✓ data: agent_messages.jsonl       /Users/karammufleh/Desktop/capstone  101/virtuai/data/agent_messages.jsonl
+│ ✓ platforms                        have ['facebook', 'instagram', 'linkedin', 'youtube_shorts']; expected ['facebook', 'instagram', 'linkedin', 'youtube_shorts']
+│ ✓ models.yaml                      have ['image_post', 'music_underbed', 'reel_video', 'script_writer']
+│ ✓ persona_anchor.json              
+│ ✓ canonical_daniel.png             1192 KB
+│ ✓ n8n workflow                     22 KB
+│ ✓ locked baseline                  manifest present (verify with: shasum -c)
+│ ✓ env: KIE_API_KEY                 set
+│ ✓ env: COMPOSIO_API_KEY            set
+│ ✓ publisher safety gates           documented in backstory
+│ ✓ docs/N8N_AGENT_UPGRADE_NOTES.md  
+│ ✓ validation error log dir         /Users/karammufleh/Desktop/capstone  101/virtuai/data/logs
+└─ 22 / 23 checks passed ───────────────────────────┘
+
+Recent validation errors (newest first):
+  2026-06-02T10:57:58.854862Z  test_agent: test error
+  2026-06-02T10:57:58.850518Z  reviewer: no JSON object found in agent output
+  2026-06-02T10:57:58.795976Z  reviewer: schema validation error: 1 validation error for ReviewerOutput
+approval_status
+ 

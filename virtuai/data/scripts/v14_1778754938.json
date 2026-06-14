@@ -1,0 +1,39 @@
+{
+  "topic": "The one money rule that made me rich",
+  "hook_summary": "Stop saving money. It's keeping you broke.",
+  "total_words": 96,
+  "estimated_seconds": 27,
+  "scenes": [
+    {
+      "id": 1,
+      "audio_text": "Stop saving money. You heard me. Saving is for people who want to stay average.",
+      "visual_prompt": "@daniel in a bright coffee shop, natural window light, medium close-up, camera locked off, candid expression, slight smirk, holding a black coffee cup.",
+      "duration_hint": 5
+    },
+    {
+      "id": 2,
+      "audio_text": "When I was 22, I saved every penny. Had $20k in the bank. Felt great. Then I got laid off.",
+      "visual_prompt": "@daniel walking on a city street at golden hour, over-shoulder shot, motion with walking, looking ahead, slight concern on face, denim jacket over polo.",
+      "duration_hint": 6
+    },
+    {
+      "id": 3,
+      "audio_text": "That $20k? Gone in 6 months. No skills, no network, no leverage. That's what saving gets you.",
+      "visual_prompt": "@daniel sitting on a park bench, late afternoon sun, wide shot, hands gesturing, frustrated tone, casual clothes, trees in background.",
+      "duration_hint": 6
+    },
+    {
+      "id": 4,
+      "audio_text": "So I flipped it. Started spending every extra dollar on skills and relationships. Books, courses, coffee with smart people.",
+      "visual_prompt": "@daniel in a modern library, medium close-up, slow push-in, confident expression, holding a book, warm ambient lighting.",
+      "duration_hint": 6
+    },
+    {
+      "id": 5,
+      "audio_text": "Now I make in a month what I used to save in a year. Spend to earn. That's the whole thing.",
+      "visual_prompt": "@daniel in a sleek office with city view, locked-off medium shot, leaning forward, direct eye contact, dark polo, professional lighting.",
+      "duration_hint": 4
+    }
+  ],
+  "loop_back_line": null
+}

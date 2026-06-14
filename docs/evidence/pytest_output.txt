@@ -1,0 +1,52 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.13.3, pytest-9.1.0, pluggy-1.6.0
+rootdir: /Users/karammufleh/Desktop/virtuai-capstone/.claude/worktrees/romantic-curran-c2b1c4
+configfile: pyproject.toml
+testpaths: virtuai/tests
+plugins: hydra-core-1.3.2, anyio-4.13.0
+collected 140 items
+
+virtuai/tests/test_agents_smoke.py .........                             [  6%]
+virtuai/tests/test_asset_download.py ................                    [ 17%]
+virtuai/tests/test_auth_guard.py .................                       [ 30%]
+virtuai/tests/test_daily_pack_crew.py ........                           [ 35%]
+virtuai/tests/test_demo_polling.py ......                                [ 40%]
+virtuai/tests/test_ig_caption.py ..........                              [ 47%]
+virtuai/tests/test_no_publish.py .............                           [ 56%]
+virtuai/tests/test_publisher_safety.py ........                          [ 62%]
+virtuai/tests/test_reel_fallback.py .....                                [ 65%]
+virtuai/tests/test_schemas.py .............                              [ 75%]
+virtuai/tests/test_validators.py ...................                     [ 88%]
+virtuai/tests/test_variety_and_voice.py ................                 [100%]
+
+=============================== warnings summary ===============================
+virtuai/tests/test_agents_smoke.py: 16 warnings
+virtuai/tests/test_no_publish.py: 8 warnings
+virtuai/tests/test_publisher_safety.py: 1 warning
+  /Users/karammufleh/virtuai-venv/lib/python3.13/site-packages/crewai/agent/core.py:337: DeprecationWarning: deprecated
+    if self.reasoning and self.planning_config is None:
+
+virtuai/tests/test_no_publish.py::test_daily_pack_main_no_publish_path_skips_publish_helpers
+virtuai/tests/test_no_publish.py::test_daily_pack_main_no_publish_path_skips_publish_helpers
+virtuai/tests/test_no_publish.py::test_daily_pack_main_no_publish_path_skips_publish_helpers
+virtuai/tests/test_no_publish.py::test_daily_pack_main_no_publish_path_skips_publish_helpers
+virtuai/tests/test_no_publish.py::test_daily_pack_main_no_publish_path_skips_publish_helpers
+virtuai/tests/test_no_publish.py::test_daily_pack_main_no_publish_path_skips_publish_helpers
+virtuai/tests/test_no_publish.py::test_daily_pack_main_no_publish_path_skips_publish_helpers
+virtuai/tests/test_no_publish.py::test_daily_pack_main_no_publish_path_skips_publish_helpers
+  /Users/karammufleh/virtuai-venv/lib/python3.13/site-packages/crewai/crew.py:1352: DeprecationWarning: deprecated
+    and hasattr(agent, "multimodal")
+
+virtuai/tests/test_no_publish.py::test_daily_pack_main_no_publish_path_skips_publish_helpers
+virtuai/tests/test_no_publish.py::test_daily_pack_main_no_publish_path_skips_publish_helpers
+virtuai/tests/test_no_publish.py::test_daily_pack_main_no_publish_path_skips_publish_helpers
+virtuai/tests/test_no_publish.py::test_daily_pack_main_no_publish_path_skips_publish_helpers
+virtuai/tests/test_no_publish.py::test_daily_pack_main_no_publish_path_skips_publish_helpers
+virtuai/tests/test_no_publish.py::test_daily_pack_main_no_publish_path_skips_publish_helpers
+virtuai/tests/test_no_publish.py::test_daily_pack_main_no_publish_path_skips_publish_helpers
+virtuai/tests/test_no_publish.py::test_daily_pack_main_no_publish_path_skips_publish_helpers
+  /Users/karammufleh/virtuai-venv/lib/python3.13/site-packages/crewai/crew.py:1353: DeprecationWarning: deprecated
+    and getattr(agent, "multimodal", False)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================= 140 passed, 41 warnings in 125.77s (0:02:05) =================

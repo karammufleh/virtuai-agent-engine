@@ -1,0 +1,51 @@
+{
+  "topic": "Automation quietly killed my recurring contractor invoice",
+  "hook_summary": "I paid a contractor $1,200 a month for two years.",
+  "total_words": 118,
+  "estimated_seconds": 26,
+  "scenes": [
+    {
+      "id": 1,
+      "story_beat": "setup",
+      "audio_text": "I paid a contractor $1,200 a month for two years. Every month. Like clockwork.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, eye-level, seated leaning slightly forward with both hands wrapped around a coffee cup [2] SETTING: sunlit corner cafe, espresso machine gleaming on the counter behind him, ceramic cups stacked on a wooden shelf, small round marble table with a phone face-down on it [3] LIGHT: soft morning window light from the left, warm diffuse fill from white-painted walls, 8am glow [4] LIVE BACKGROUND: barista steaming milk behind the counter, ambient figures shifting past the window in soft focus, condensation rising faintly from the espresso machine [5] CAMERA + MOOD: slow 1-foot handheld push-in toward subject, calm matter-of-fact confessional energy \u2014 @daniel in deep-burgundy henley, sleeves at the elbow",
+      "duration_hint": 5
+    },
+    {
+      "id": 2,
+      "story_beat": "incident",
+      "audio_text": "Last March she raised her rate to $2,100. I said fine, then opened Notion and actually mapped what she did.",
+      "visual_prompt": "[1] COMPOSITION: medium shot, 50mm, slight low angle, sitting with elbow on knee, leaning to one side [2] SETTING: co-working space lounge, large floor-to-ceiling window behind him flooding the room with overcast diffuse light, a closed laptop on the cushion beside him, a half-full glass of water on the low table [3] LIGHT: overcast midday diffuse from the large window, cool flat fill, no harsh shadows [4] LIVE BACKGROUND: ambient figures moving through the space in the background, a person at a standing desk typing, a ceiling fan rotating slowly overhead [5] CAMERA + MOOD: slow tracking shot moving left to right, subject staying centered, quiet tension building \u2014 @daniel in deep-burgundy henley, sleeves at the elbow",
+      "duration_hint": 5
+    },
+    {
+      "id": 3,
+      "story_beat": "struggle",
+      "audio_text": "Turns out her whole job was pulling reports, formatting them, and emailing three people. I tried to automate it myself and broke everything in six hours.",
+      "visual_prompt": "[1] COMPOSITION: over-shoulder wide, 28mm, slight high angle, standing with both hands on a kitchen counter, looking down at an open Moleskine notebook [2] SETTING: modern loft kitchen, morning light cutting through horizontal blinds, a French press on the counter, the Moleskine open with handwritten notes, a ceramic mug beside it [3] LIGHT: sharp morning sidelight through slatted blinds creating parallel lines across the counter, golden-hour warmth from the east-facing window [4] LIVE BACKGROUND: steam rising slowly from the French press, dust motes drifting in the light beam, a ceiling pendant swaying faintly [5] CAMERA + MOOD: slow dolly pulling back and slightly left, revealing more of the kitchen, frustrated-but-focused energy \u2014 @daniel in deep-burgundy henley, sleeves at the elbow",
+      "duration_hint": 5
+    },
+    {
+      "id": 4,
+      "story_beat": "turn",
+      "audio_text": "So I dumped her last twelve email templates into Claude, connected Zapier, and let it run overnight. I woke up and it had already sent Tuesday's report.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 85mm portrait, eye-level, half-turned looking back over shoulder toward camera [2] SETTING: rooftop terrace at dusk, city skyline blurred in the distance, a low concrete ledge behind him, a single takeaway coffee cup resting on the ledge [3] LIGHT: blue-hour ambient sky light, warm orange glow from city lights below, cool top-light from open sky [4] LIVE BACKGROUND: a plane with blinking lights crossing the skyline, wind moving his henley slightly, distant city traffic haze shifting [5] CAMERA + MOOD: slow orbit moving left around the subject, subject pivoting slightly to stay on camera, revelation energy \u2014 @daniel in deep-burgundy henley, sleeves at the elbow",
+      "duration_hint": 5
+    },
+    {
+      "id": 5,
+      "story_beat": "proof",
+      "audio_text": "That was four months ago. Total cost: $34. I haven't touched it since. The three people getting those reports haven't noticed a thing.",
+      "visual_prompt": "[1] COMPOSITION: wide shot, 35mm anamorphic, eye-level, walking with phone in one hand, open palm gesturing outward [2] SETTING: city sidewalk during golden hour, parked cars and moving traffic alongside him, a dry-cleaner and a coffee shop visible in the background, long evening shadows stretching across the pavement [3] LIGHT: golden-hour sidelight from the west, hard warm key from low sun, soft fill from building facades [4] LIVE BACKGROUND: a car pulling out of a parking spot in the mid-ground, two pedestrians crossing behind him, a cyclist passing on the road [5] CAMERA + MOOD: handheld tracking shot walking alongside subject, slight drift, loose documentary energy \u2014 @daniel in deep-burgundy henley, sleeves at the elbow",
+      "duration_hint": 5
+    },
+    {
+      "id": 6,
+      "story_beat": "meaning",
+      "audio_text": "You're not paying contractors for talent. You're paying them for consistency. And consistency is the cheapest thing to automate.",
+      "visual_prompt": "[1] COMPOSITION: close-up, 50mm, eye-level, leaning against a tiled pillar, arms crossed, chin slightly down [2] SETTING: underground subway platform, a train pulling in on the far track, yellow safety line visible on the platform edge, a weathered transit map poster on the pillar behind him [3] LIGHT: overhead fluorescent practical lights, cool flat ambient, slight warm spill from the train's headlights as it enters [4] LIVE BACKGROUND: train sliding into the platform with motion blur, a few commuters shifting on the platform edge, a ceiling ventilation grate flickering [5] CAMERA + MOOD: slow 1-foot handheld push-in, subject still, quiet finality \u2014 @daniel in deep-burgundy henley, sleeves at the elbow",
+      "duration_hint": 5
+    }
+  ],
+  "loop_back_line": "Consistency is the cheapest thing to automate \u2014 and I was paying $1,200 a month for it."
+}

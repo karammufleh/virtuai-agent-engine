@@ -1,0 +1,51 @@
+{
+  "topic": "AI proposal generator killed my conversion rate",
+  "hook_summary": "I burned $31,000 building a tool that hurt my business.",
+  "total_words": 118,
+  "estimated_seconds": 26,
+  "scenes": [
+    {
+      "id": 1,
+      "story_beat": "setup",
+      "audio_text": "I burned $31,000 and six weeks building an AI proposal generator in Cursor. Automated the whole thing.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, eye-level [2] SETTING: sunlit corner cafe, espresso machine steaming on the bar behind him, ceramic mugs stacked on a wooden shelf, open laptop on a small round table [3] LIGHT: warm morning window light from the left, soft diffused fill from white-painted walls [4] LIVE BACKGROUND: barista pulling a shot behind him, two patrons in soft focus chatting near the window, ambient steam drifting up from a cup on the counter [5] CAMERA + MOOD: locked-off, subject leaning slightly forward over the laptop, confessional tone \u2014 @daniel, 28, short dark wavy hair, light stubble, navy zip-up hoodie over a white tee",
+      "duration_hint": 5
+    },
+    {
+      "id": 2,
+      "story_beat": "incident",
+      "audio_text": "March 4th, a $22,000 deal went cold. The prospect said the proposal felt like a form letter.",
+      "visual_prompt": "[1] COMPOSITION: over-shoulder wide, 28mm, slight low angle [2] SETTING: co-working space lounge, large floor-to-ceiling window with city rooftops visible, a Moleskine notebook open on a low oak table, a cold brew in a glass beside it [3] LIGHT: overcast midday light flooding through the window, even and slightly flat, a warm pendant lamp providing contrast above [4] LIVE BACKGROUND: two ambient figures typing at desks in soft focus, a person walking past carrying a tote bag, an air conditioning unit quietly cycling in the background [5] CAMERA + MOOD: slow 1-foot push-in toward subject, slightly tense \u2014 @daniel, navy zip-up hoodie over a white tee, glancing down at the Moleskine then back up",
+      "duration_hint": 5
+    },
+    {
+      "id": 3,
+      "story_beat": "struggle",
+      "audio_text": "I iterated for three more weeks. Rewired the Claude prompts, added Notion intake forms. Conversion dropped another twelve points.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, eye-level [2] SETTING: modern loft kitchen, morning light cutting across a white quartz countertop, a French press half-full of coffee beside an open MacBook, a pen resting on a printed spreadsheet [3] LIGHT: direct east-facing window light, 7am golden hour, hard shadows softening against the white cabinetry [4] LIVE BACKGROUND: coffee slowly settling in the French press, a ceiling fan turning lazily overhead, a phone screen lighting up briefly on the counter [5] CAMERA + MOOD: locked-off, subject rubbing the back of his neck with one hand, frustrated but measured energy \u2014 @daniel, navy zip-up hoodie over a white tee",
+      "duration_hint": 5
+    },
+    {
+      "id": 4,
+      "story_beat": "turn",
+      "audio_text": "Then one client told me straight up \u2014 I don't read PDFs from people I haven't spoken to. I want a human first.",
+      "visual_prompt": "[1] COMPOSITION: medium wide, 24mm, eye-level [2] SETTING: city sidewalk during golden hour, brick storefronts behind him, a parked bicycle leaning against a lamppost, a paper coffee cup in his hand [3] LIGHT: low amber late-afternoon sun hitting him from the right at roughly 6pm, long shadows stretching across the pavement, warm golden backlight [4] LIVE BACKGROUND: two cars passing slowly on the street, a pedestrian in soft focus walking the opposite direction, a shop door opening briefly releasing faint music [5] CAMERA + MOOD: slow half-step handheld walk toward camera then stops, candid street-corner realisation energy \u2014 @daniel, navy zip-up hoodie over a white tee",
+      "duration_hint": 5
+    },
+    {
+      "id": 5,
+      "story_beat": "proof",
+      "audio_text": "I scrapped the generator. Added one 20-minute discovery call before any proposal goes out. Last month, closed $47,000.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 50mm, slight high angle looking down [2] SETTING: rooftop terrace, city skyline visible in the distance behind him, a folding chair and a small metal table with a glass of water, exposed HVAC units softly out of focus [3] LIGHT: dusk blue-hour light, soft gradient from orange horizon behind the skyline, a small warm clip-on ring light providing subtle face fill [4] LIVE BACKGROUND: a distant siren passing below, a plane blinking slowly across the sky, rooftop AC units humming softly, lights beginning to flicker on in the skyline [5] CAMERA + MOOD: locked-off, subject sitting back, arms open, relief and quiet confidence \u2014 @daniel, navy zip-up hoodie over a white tee",
+      "duration_hint": 5
+    },
+    {
+      "id": 6,
+      "story_beat": "meaning",
+      "audio_text": "Automation wins on volume. It loses on trust. And trust is what closes. Don't automate the handshake.",
+      "visual_prompt": "[1] COMPOSITION: tight medium close-up, 35mm, dead eye-level [2] SETTING: underground subway platform, white ceramic tiles behind him, a metal bench beside him, a posted transit map on the pillar to his right [3] LIGHT: flat cool fluorescent overhead platform lighting, slightly harsh, practical and unfiltered \u2014 raw, no-nonsense quality [4] LIVE BACKGROUND: a train pulling in on the far track in soft focus, a few commuters standing back from the platform edge, announcement audio barely audible in the background [5] CAMERA + MOOD: completely locked-off, subject still, looking directly into the lens, deliberate and unhurried \u2014 @daniel, navy zip-up hoodie over a white tee",
+      "duration_hint": 5
+    }
+  ],
+  "loop_back_line": "Don't automate the handshake \u2014 and I burned $31,000 learning that."
+}

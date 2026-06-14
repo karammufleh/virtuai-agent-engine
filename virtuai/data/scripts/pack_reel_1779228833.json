@@ -1,0 +1,51 @@
+{
+  "topic": "Why founders who vibe-code their own tools lose",
+  "hook_summary": "Vibe-coding your own tools is making you poor.",
+  "total_words": 118,
+  "estimated_seconds": 26,
+  "scenes": [
+    {
+      "id": 1,
+      "story_beat": "setup",
+      "audio_text": "Vibe-coding your own tools is making you poor. I know because I spent six weeks building mine.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, eye-level, seated leaning forward with both elbows on table [2] SETTING: sunlit corner cafe, marble two-top table, ceramic espresso cup to his left, worn leather satchel draped over chair back [3] LIGHT: warm morning side-light from a south-facing window, soft diffused fill from white plaster wall, golden hour quality at 8am [4] LIVE BACKGROUND: barista wiping down the counter behind him, steam rising steadily from the espresso machine group head, two ambient figures chatting at the far end in soft focus [5] CAMERA + MOOD: slow 1-foot handheld dolly forward, subject leaning into lens, intimate confessional energy \u2014 @daniel, 28, short dark wavy hair, light stubble, navy zip-up hoodie over white tee",
+      "duration_hint": 5
+    },
+    {
+      "id": 2,
+      "story_beat": "incident",
+      "audio_text": "Last March, I had $11k in pipeline sitting untouched because I had no follow-up system. So I opened Cursor and started building one myself.",
+      "visual_prompt": "[1] COMPOSITION: medium shot, 28mm, slight low angle, standing with arms crossed, weight on back foot [2] SETTING: rooftop terrace, late afternoon, a small iron patio table beside him with a closed Moleskine and a cold brew can on it, city skyline receding into haze behind [3] LIGHT: warm directional golden hour sun from the west, long soft shadow across the concrete deck, slight rim light on his left shoulder [4] LIVE BACKGROUND: a distant crane arm rotating slowly against the skyline, a pigeon landing and walking along the parapet ledge, two rooftop HVAC units humming with visible heat shimmer [5] CAMERA + MOOD: slow push-in from waist to chest height, subject standing firm, quiet tension building \u2014 @daniel, navy zip-up hoodie over white tee",
+      "duration_hint": 5
+    },
+    {
+      "id": 3,
+      "story_beat": "struggle",
+      "audio_text": "Four weeks in, I had a half-working app and zero closed deals. The pipeline had gone cold. I'd basically paid myself $0 to be a mediocre developer.",
+      "visual_prompt": "[1] COMPOSITION: over-shoulder wide, 24mm, slight high angle, sitting with elbow on knee, half-turned looking back toward camera [2] SETTING: co-working space lounge, low linen sofa, a MacBook open on the coffee table showing code, a paper coffee cup with a lid beside it [3] LIGHT: flat cool daylight pouring through a floor-to-ceiling north-facing window, ambient overhead pendant filling shadows evenly [4] LIVE BACKGROUND: ambient figures at standing desks moving in background, a person walking past with a tote bag, ceiling fans rotating slowly above [5] CAMERA + MOOD: slow parallax drift left to right, subject weighted and still while background slides, mood of quiet frustration \u2014 @daniel, navy zip-up hoodie over white tee",
+      "duration_hint": 5
+    },
+    {
+      "id": 4,
+      "story_beat": "turn",
+      "audio_text": "Then my accountant asked me one question: what's your hourly rate? I said $340. She said you just paid $340 an hour to do a $40 Zapier job.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, eye-level, leaning against a tiled kitchen counter, one hand resting flat on the surface [2] SETTING: modern loft kitchen, morning light, a French press half-full of coffee on the counter, a phone face-down beside it, open shelving with mismatched ceramics behind [3] LIGHT: cool-warm split light from a east-facing skylight, crisp soft shadows on the counter surface, warm secondary fill from pendant lamp over island [4] LIVE BACKGROUND: coffee press steam curling upward and dissipating, tree branches visible through the window shifting in wind, a muted TV news ticker scrolling on a wall-mounted screen in background [5] CAMERA + MOOD: slow 8-inch handheld push-in toward subject's face, subject still with slight raised eyebrow, moment-of-realization intimacy \u2014 @daniel, navy zip-up hoodie over white tee",
+      "duration_hint": 5
+    },
+    {
+      "id": 5,
+      "story_beat": "proof",
+      "audio_text": "I scrapped the app, built the follow-up workflow in Zapier and Claude in one afternoon, reconnected the pipeline, and closed $9k that same week.",
+      "visual_prompt": "[1] COMPOSITION: medium shot, 35mm, eye-level, walking with selfie-stick style framing, one hand gesturing outward [2] SETTING: city sidewalk during golden hour, brick shopfronts to his right, a bike lane painted on the road to his left, a caf\u00e9 sandwich board on the pavement nearby [3] LIGHT: low golden hour sun from the west casting long warm streaks across the pavement, slight lens flare clipping the upper right corner [4] LIVE BACKGROUND: cars passing in the bike lane behind him in soft focus, a cyclist rolling through the frame, pedestrians crossing at an intersection 20 meters ahead [5] CAMERA + MOOD: tracking shot moving with subject at walking pace, slight handheld drift, forward momentum, mood shifts to resolved and energized \u2014 @daniel, navy zip-up hoodie over white tee",
+      "duration_hint": 5
+    },
+    {
+      "id": 6,
+      "story_beat": "meaning",
+      "audio_text": "Vibe-coding your own tools is making you poor. Your job is to operate the business, not to be its cheapest contractor.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 50mm, eye-level, standing with open hands at chest height, direct eye contact with lens [2] SETTING: underground subway platform, tiled columns behind him, a bench with a folded newspaper on it to his right, yellow platform edge line on the floor [3] LIGHT: cool overhead fluorescent wash with a warm sodium-light glow from the tunnel mouth to the left, slight underlit quality creating subtle contrast on his face [4] LIVE BACKGROUND: a train pulling into the frame from the left with its headlights growing, commuters on the far platform beginning to move, a departure board display flipping numbers overhead [5] CAMERA + MOOD: locked wide to medium with a slow half-foot handheld drift right, subject holds ground as train arrives behind, punctuation energy \u2014 declarative, final \u2014 @daniel, navy zip-up hoodie over white tee",
+      "duration_hint": 5
+    }
+  ],
+  "loop_back_line": "Vibe-coding your own tools is making you poor."
+}

@@ -1,0 +1,25 @@
+{
+  "linkedin": {
+    "action": "published",
+    "tool_used": "LINKEDIN_CREATE_LINKED_IN_POST",
+    "response": "{'data': {'http_error': '422 Client Error: Unprocessable Entity for url: https://api.linkedin.com/rest/posts', 'message': '{\"errorDetailType\":\"com.linkedin.common.error.BadRequest\",\"message\":\"com.linkedin.content.common.exception.BadRequestResponseException: Content is a duplicate of urn:li:share:7458064880999456768\",\"errorDetails\":{\"inputErrors\":[{\"description\":\"Duplicate post is detected\",\"input"
+  },
+  "x": {
+    "action": "error",
+    "tool_used": "TWITTER_CREATION_OF_A_POST",
+    "error": "BadRequestError: Error code: 400 - {'error': {'message': 'No connected account found for user ID danielcalder- for toolkit twitter', 'code': 1810, 'slug': 'ActionExecute_ConnectedAccountNotFound', 'status': 400, 'request_id': 'c303a1dbca854d579f8163d0ceaa3ecd', 'suggested_fix': \"No active connection exists for toolkit 'twitter' under entity 'danielcalder-'. Connect your twitter account first via the /api/v3/connected_accounts endpoint or the COMPOSIO_INITIATE_CONNECTION tool.\"}}"
+  },
+  "instagram": {
+    "action": "needs_setup",
+    "reason": "IG_USER_ID env var not set. Find your IG Business Account ID via Facebook Graph API Explorer: me/accounts \u2192 <page>?fields=instagram_business_account"
+  },
+  "youtube_shorts": {
+    "action": "error",
+    "tool_used": "YOUTUBE_UPLOAD_VIDEO",
+    "error": "ToolVersionRequiredError: Toolkit version not specified. For manual execution of the tool please pass a specific toolkit version.\n\nPossible fixes:\n1. Pass the toolkit version as a parameter to the execute function (\"latest\" is not supported in manual execution)\n2. Set the toolkit versions in the Composio config (toolkit_versions={'<toolkit-slug>': '<toolkit-version>'})\n3. Set the toolkit version in the environment variable (COMPOSIO_TOOLKIT_VERSION_<TOOLKIT_SLUG>)\n4. Set dangerously_skip_version_check to True (this might cause unexpected behavior when new versions of the tools are released)"
+  },
+  "medium": {
+    "action": "tool_unavailable",
+    "reason": "MEDIUM_CREATE_POST not connected in Composio"
+  }
+}

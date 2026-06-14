@@ -1,0 +1,80 @@
+{
+  "topic": "I run $2M ARR in e-commerce.",
+  "hook_summary": "I run $2M ARR in e-commerce.",
+  "scenes": [
+    {
+      "audio_text": "I run $2M ARR in e-commerce. No full-time employees. Just me and a $300-a-month stack.",
+      "visual_prompt": "Medium close-up of a man in cream linen shirt, seated at a worn wooden table in a corner cafe, golden morning window light from the left, exposed brick wall behind, leaning forward slightly, both hands on the table, looking directly at camera",
+      "on_screen_text": "$2M ARR | ZERO EMPLOYEES"
+    },
+    {
+      "audio_text": "Eighteen months ago I was paying a $72K ops coordinator. She quit on a Friday. Orders were still coming in.",
+      "visual_prompt": "Wide shot on a rooftop terrace at dusk, city skyline in background, blue-hour ambient light, one folding chair and a closed laptop on a concrete ledge, arms loosely crossed, looking at camera",
+      "on_screen_text": "$72K/year | SHE QUIT"
+    },
+    {
+      "audio_text": "I tried hiring a freelancer. $1,800 later, she missed three supplier deadlines in two weeks. I was back to doing it myself.",
+      "visual_prompt": "Over-shoulder shot in a bright home kitchen, white countertop with printed invoice and half-empty coffee mug, midday natural light through a sliding glass door, elbow on knee looking down at phone",
+      "on_screen_text": "$1,800 | 3 DEADLINES MISSED"
+    },
+    {
+      "audio_text": "So I mapped every task she did. Turns out 80% of it was just moving data. Airtable stores it. Zapier moves it. ChatGPT writes the emails.",
+      "visual_prompt": "Medium close-up in a small private studio, leaning against a whiteboard with hand-drawn boxes and arrows in black marker, one hand on chin, single warm overhead light casting defined shadows, slow push-in as posture shifts forward",
+      "on_screen_text": "80% = DATA ROUTING | AIRTABLE + ZAPIER + CHATGPT"
+    },
+    {
+      "audio_text": "That stack costs me $300 a month. It handles supplier POs, customer escalations, and inventory alerts. Runs every day, never calls in sick.",
+      "visual_prompt": "Extreme wide shot walking along a busy urban street at golden hour, shopfronts glowing, pedestrians moving around, coffee cup in one hand, phone in the other, tracking shot following from the side",
+      "on_screen_text": "$300/month | 24/7 | NEVER CALLS IN SICK"
+    },
+    {
+      "audio_text": "You don't need headcount. You need a decision tree that runs without you. That's the whole business.",
+      "visual_prompt": "Medium close-up in a quiet city park at dusk, iron bench, fallen leaves, stone fountain in soft focus behind, open hands resting on bench back, half-turned looking directly into camera, very slow handheld drift, calm and resolute",
+      "on_screen_text": "DECISION TREE > HEADCOUNT"
+    }
+  ],
+  "caption": "I run $2M a year with zero employees.\n\nNot because I'm special. Because I stopped treating coordination work like judgment work.\n\nEighteen months ago, I was paying a $72K/year ops coordinator. She quit on a Friday. Orders kept coming. I panicked, hired a freelancer for $1,800 \u2014 she missed three supplier deadlines in two weeks.\n\nThat's when I stopped trying to replace a person and started building a system.\n\nHere's what I found: 80% of what my coordinator did was moving data. From an email to a spreadsheet to a Slack message to a supplier portal. That's not thinking. That's routing.\n\nAirtable stores the data. Zapier moves it. ChatGPT drafts the follow-ups. Total: $300/month.\n\nThe stack runs 24/7. Never calls in sick. Never needs a raise. Never takes its institutional knowledge to a competitor.\n\nThat $72K coordinator role? I don't need it anymore. Not because I work harder \u2014 because I made every decision once, locked it into a system, and let the system execute.\n\n\u26a1 Map every decision your team makes. Then automate the routing. The judgment calls? You keep those.\n\nSave this for the day you think you need a hire.",
+  "hashtags": [
+    "#solofounder",
+    "#operationsdesign",
+    "#aiautomation",
+    "#airtable",
+    "#zapier",
+    "#foundersystems",
+    "#startupops",
+    "#ecommerceautomation"
+  ],
+  "platform_versions": {
+    "instagram": {
+      "caption": "I run $2M a year with zero employees.\n\nNot because I'm special. Because I stopped treating coordination work like judgment work.\n\nEighteen months ago, I was paying a $72K/year ops coordinator. She quit on a Friday. Orders kept coming. I panicked, hired a freelancer for $1,800 \u2014 she missed three supplier deadlines in two weeks.\n\nThat's when I stopped trying to replace a person and started building a system.\n\nHere's what I found: 80% of what my coordinator did was moving data. From an email to a spreadsheet to a Slack message to a supplier portal. That's not thinking. That's routing.\n\nAirtable stores the data. Zapier moves it. ChatGPT drafts the follow-ups. Total: $300/month.\n\nThe stack runs 24/7. Never calls in sick. Never needs a raise. Never takes its institutional knowledge to a competitor.\n\nThat $72K coordinator role? I don't need it anymore. Not because I work harder \u2014 because I made every decision once, locked it into a system, and let the system execute.\n\n\u26a1 Map every decision your team makes. Then automate the routing. The judgment calls? You keep those.\n\nSave this for the day you think you need a hire.",
+      "hashtags": [
+        "#solofounder",
+        "#operationsdesign",
+        "#aiautomation",
+        "#airtable",
+        "#zapier",
+        "#foundersystems",
+        "#startupops",
+        "#ecommerceautomation"
+      ]
+    },
+    "linkedin": {
+      "caption": "I run $2M ARR with zero full-time employees.\n\nNot a hot take. Just a decision tree I wrote once and let software execute every day.\n\nEighteen months ago, my ops coordinator quit on a Friday. I tried replacing her \u2014 $1,800 on a freelancer who missed three supplier deadlines in two weeks.\n\nThe problem wasn't the person. It was that I was trying to fill a role instead of building a system.\n\nI mapped every task she did. 80% was data routing \u2014 moving information from an email to a spreadsheet to a Slack channel to a supplier. No judgment required.\n\nToday:\n- Airtable stores the master data ($20/month)\n- Zapier routes 4 core workflows ($49/month)\n- ChatGPT drafts the follow-up emails ($20/month)\n\nTotal ops stack: $300/month. The $72K coordinator salary is gone.\n\nThis works because I spent three weeks documenting every decision I had in my head. Once it's in a system, software can execute it. Forever.\n\nThe judgment calls in my business? Those still need me. But the routing? That's plumbing. Build it once.\n\n\u26a1 The question isn't 'who do I hire next?' The question is 'what am I still routing by hand?'\n\nMap your decision tree. Then build the system that runs it.",
+      "hashtags": [
+        "#SoloFounder",
+        "#Operations",
+        "#Automation",
+        "#SystemDesign",
+        "#FounderMindset"
+      ]
+    },
+    "facebook": {
+      "post": "I run $2M a year with zero employees.\n\nEighteen months ago, my ops coordinator quit on a Friday. Orders kept coming. I hired a freelancer for $1,800 who missed three deadlines in two weeks.\n\nSo I mapped every task. 80% was just moving data. Airtable stores it. Zapier moves it. ChatGPT writes the emails. Total: $300/month.\n\nYou don't need headcount. You need a decision tree that runs without you."
+    },
+    "youtube_shorts": {
+      "title": "I run $2M a year with zero employees",
+      "description": "The exact $300/month stack that replaced a $72K/year ops coordinator.\n\nStack breakdown:\n- Airtable ($20/mo): Master data for orders, suppliers, and refunds\n- Zapier ($49/mo): 4 workflows \u2014 order routing, refund flagging, supplier alerts, review requests\n- ChatGPT ($20/mo): First draft of every supplier email and customer response\n\nTotal: $300/month including a couple of Shopify apps.\n\nIf you're a solo founder thinking about hiring \u2014 watch this first. You might just need a system, not a salary.\n\n#solofounder #ecommerce #automation #airtable #zapier #systembuilding"
+    }
+  },
+  "_source": "creator"
+}

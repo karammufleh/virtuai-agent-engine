@@ -1,0 +1,163 @@
+{
+  "id": "virtuai-master",
+  "name": "VirtuAI — Master Automation",
+  "nodes": [
+    {
+      "parameters": {},
+      "name": "Manual run",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        200
+      ]
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 9 * * *"
+            }
+          ]
+        }
+      },
+      "name": "Schedule 09:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        0,
+        360
+      ]
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 17 * * *"
+            }
+          ]
+        }
+      },
+      "name": "Schedule 17:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        0,
+        520
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:9090/n8n/trigger-pack",
+        "options": {
+          "timeout": 30000
+        }
+      },
+      "name": "Start Pack (LIVE)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        300,
+        360
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:9090/run-crew",
+        "options": {
+          "timeout": 30000
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"build_only\": false,\n  \"llm\": \"kie\"\n}"
+      },
+      "name": "Run Crew (CrewAI 8 agents)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        300,
+        700
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:9090/agents/research/run-sync",
+        "options": {
+          "timeout": 120000
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"input\": { \"prompt\": \"Run your default task and return JSON.\" }\n}"
+      },
+      "name": "Run single Agent",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        300,
+        860
+      ]
+    },
+    {
+      "parameters": {
+        "content": "## VirtuAI - Master Automation\n\n**Autopilot (auto-runs):**\nManual run / 09:00 / 17:00  ->  Start Pack (LIVE)\n= reel + portrait + carousel, published via /n8n/trigger-pack\n(the daily_pack path = the proven live results).\n\n**On-demand (click the node -> Execute step):**\n- Run Crew  -> /run-crew  (CrewAI 8-agent crew; set build_only:true for a free test)\n- Run single Agent -> /agents/{name}/run-sync\n\nBackend: FastAPI :9090 (must run with .env loaded).\nPoll progress: GET /status/{task_id}.\n\nNote: a webhook trigger was omitted - n8n 2.25.7 has a bug in its\nwebhook execution path in this build. Use Manual/Schedule or the\nFastAPI endpoints directly for external triggers.",
+        "height": 420,
+        "width": 470,
+        "color": 4
+      },
+      "name": "Master automation",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -520,
+        200
+      ]
+    }
+  ],
+  "connections": {
+    "Manual run": {
+      "main": [
+        [
+          {
+            "node": "Start Pack (LIVE)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule 09:00": {
+      "main": [
+        [
+          {
+            "node": "Start Pack (LIVE)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule 17:00": {
+      "main": [
+        [
+          {
+            "node": "Start Pack (LIVE)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "tags": []
+}

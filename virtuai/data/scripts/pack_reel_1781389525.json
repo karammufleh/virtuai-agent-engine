@@ -1,0 +1,51 @@
+{
+  "topic": "One Claude workflow, one Sheet, $180K ARR solo",
+  "hook_summary": "$180K ARR, 11 hours a week, zero employees.",
+  "total_words": 118,
+  "estimated_seconds": 26,
+  "scenes": [
+    {
+      "id": 1,
+      "story_beat": "setup",
+      "audio_text": "$180K ARR, 11 hours a week, zero employees. One Claude workflow. One Google Sheet. That's the whole company.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, eye-level, seated leaning slightly forward with both forearms on table [2] SETTING: sunlit corner cafe, espresso machine on the counter behind him, ceramic cups stacked on a wooden shelf, open laptop showing a spreadsheet with colored revenue rows [3] LIGHT: warm morning window light from the left, soft fill bouncing off a white plaster wall, 8am diffuse golden quality [4] LIVE BACKGROUND: barista pulling an espresso shot behind him, steam curling upward from the group head, two patrons in soft focus moving toward the door [5] CAMERA + MOOD: slow 1-foot handheld push-in toward subject, intimate and matter-of-fact, the kind of confidence that doesn't need to perform. @daniel in forest-green flannel over a plain white tee.",
+      "duration_hint": 5
+    },
+    {
+      "id": 2,
+      "story_beat": "incident",
+      "audio_text": "Eight months ago I had three contractors, $4,200 a month in payroll, and I was still the bottleneck on every single deliverable.",
+      "visual_prompt": "[1] COMPOSITION: over-shoulder wide, 28mm, slight low angle, standing with one hand resting flat on a countertop [2] SETTING: modern loft kitchen, morning light, a Moleskine notebook open with handwritten figures visible, a French press half-full of coffee beside it [3] LIGHT: overcast diffuse light through large steel-frame windows, even and cool, no harsh shadows [4] LIVE BACKGROUND: coffee bubbling faintly in the French press, a ceiling fan rotating slowly overhead, pigeons shifting on the window ledge outside [5] CAMERA + MOOD: slow parallax drift left-to-right as subject stands still, contemplative and slightly frustrated energy. @daniel in forest-green flannel over a plain white tee.",
+      "duration_hint": 5
+    },
+    {
+      "id": 3,
+      "story_beat": "struggle",
+      "audio_text": "I tried Notion docs, Zapier zaps, three different project tools. Six weeks of setup. Clients still waiting on me to think.",
+      "visual_prompt": "[1] COMPOSITION: medium shot, 50mm, eye-level, leaning against a glass partition with arms loosely crossed [2] SETTING: co-working space lounge, large south-facing window behind him, a half-drunk glass of water on a side table, scattered notebooks on a low bench [3] LIGHT: midday hard light streaming through the window, creating a strong edge on his left shoulder, ambient interior fill keeping his face readable [4] LIVE BACKGROUND: ambient figures walking past the glass partition in soft focus, someone typing at a standing desk in the background, ceiling pendant lights swaying faintly from an open door [5] CAMERA + MOOD: very slow tracking shot moving right, following the subject at walking pace even though he's still, slightly restless editorial energy. @daniel in forest-green flannel over a plain white tee.",
+      "duration_hint": 5
+    },
+    {
+      "id": 4,
+      "story_beat": "turn",
+      "audio_text": "Then I stopped building tools and just described my brain inside a Claude prompt chain that reads directly from a Google Sheet. No app. No interface.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 85mm portrait, eye-level, sitting with elbow on knee leaning toward camera [2] SETTING: rooftop terrace, city skyline visible in the distance behind him, a single folding chair, a phone face-down on a concrete ledge [3] LIGHT: late golden hour, warm amber key from the west, long soft shadows, slight lens warmth [4] LIVE BACKGROUND: a distant construction crane rotating slowly on the skyline, two pigeons landing and walking on the parapet behind him, wind gently lifting the edge of his flannel [5] CAMERA + MOOD: very slow 2-foot handheld dolly forward, subject leaning in like he's sharing a secret, tone drops \u2014 this is the pivot. @daniel in forest-green flannel over a plain white tee.",
+      "duration_hint": 5
+    },
+    {
+      "id": 5,
+      "story_beat": "proof",
+      "audio_text": "The Sheet holds client data, research briefs, revenue ops. Claude reads a row, executes the brief, routes the output. $180K in the last twelve months. Eleven hours a week.",
+      "visual_prompt": "[1] COMPOSITION: wide shot, 28mm anamorphic, slight high angle, walking with phone in one hand, selfie-stick style candid [2] SETTING: city sidewalk during golden hour, parked cars lining the street, a corner bodega with a fruit stand spilling onto the pavement [3] LIGHT: golden hour side-light from the west, hard warm key catching his left side, deep amber sky behind the buildings [4] LIVE BACKGROUND: cars moving through the intersection behind him, a cyclist passing in the midground, a bodega worker restocking the fruit stand to his right [5] CAMERA + MOOD: tracking walk-and-talk shot keeping pace with subject, energized and grounded, the tone of someone reporting results not bragging. @daniel in forest-green flannel over a plain white tee.",
+      "duration_hint": 5
+    },
+    {
+      "id": 6,
+      "story_beat": "meaning",
+      "audio_text": "You don't need more tools. You need one system that thinks the way you think. Build that, and the hours just fall off.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, eye-level, standing with both hands open at his sides, relaxed and still [2] SETTING: underground subway platform, tiled walls, a metal bench visible to one side, a posted route map behind him [3] LIGHT: warm tungsten overhead platform lights, practical overhead key creating slight downward shadows, ambient cool fill from the platform's fluorescent strips [4] LIVE BACKGROUND: a train pulling into the platform behind him with headlights sweeping left to right, commuters stepping off in soft focus, a gust of air movement visibly lifting his collar [5] CAMERA + MOOD: slow orbit beginning right-to-left, 180 degrees over 5 seconds, ending face-on \u2014 calm, final, declarative. @daniel in forest-green flannel over a plain white tee.",
+      "duration_hint": 5
+    }
+  ],
+  "loop_back_line": "One workflow, one Sheet \u2014 that's the whole company."
+}

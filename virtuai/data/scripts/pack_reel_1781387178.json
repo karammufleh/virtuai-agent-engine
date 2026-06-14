@@ -1,0 +1,51 @@
+{
+  "topic": "Automating VA team saved money, killed enterprise contracts",
+  "hook_summary": "I saved $6,500 a month replacing my VA team.",
+  "total_words": 118,
+  "estimated_seconds": 26,
+  "scenes": [
+    {
+      "id": 1,
+      "story_beat": "setup",
+      "audio_text": "I saved $6,500 a month replacing my entire VA team with Make.com. Deadpan fact. Felt like a genius.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, eye-level, seated leaning slightly forward with both elbows on table, deadpan expression, slight pause mid-sentence. [2] SETTING: sunlit corner cafe, exposed brick wall, ceramic espresso cups on marble counter, Moleskine notebook open beside him. [3] LIGHT: warm morning window light from the left, soft diffuse fill from white wall, 8am golden tone. [4] LIVE BACKGROUND: barista pulling an espresso shot behind him, steam rising from the group head, two customers in soft focus passing the window. [5] CAMERA + MOOD: slow 1-foot handheld dolly forward, intimate confessional energy, quiet confidence before the fall. @daniel in sand-coloured chore jacket over a navy tee.",
+      "duration_hint": 5
+    },
+    {
+      "id": 2,
+      "story_beat": "incident",
+      "audio_text": "Three weeks after I flipped the switch, a $60,000 client emailed. Said it felt like nobody was home.",
+      "visual_prompt": "[1] COMPOSITION: medium shot, 50mm, slight low angle, standing with arms loosely crossed, jaw tight, looking slightly off-camera as if recalling the moment. [2] SETTING: co-working space lounge, large floor-to-ceiling window, potted fiddle-leaf fig beside him, closed laptop on a low table in foreground. [3] LIGHT: overcast diffuse daylight through the window, flat cool midday tone, no harsh shadows. [4] LIVE BACKGROUND: ambient figures typing at desks behind him, a woman walking past carrying a coffee cup, ceiling fan turning slowly overhead. [5] CAMERA + MOOD: slow push-in from medium to medium-close, growing unease, the kind of stillness before bad news lands. @daniel in sand-coloured chore jacket over a navy tee.",
+      "duration_hint": 5
+    },
+    {
+      "id": 3,
+      "story_beat": "struggle",
+      "audio_text": "I'd replaced every check-in, every follow-up email, every status update with a Make.com sequence. Efficient. Soulless.",
+      "visual_prompt": "[1] COMPOSITION: over-shoulder wide, 28mm, slight high angle, leaning against a railing with one hand, looking out at the skyline, half-turned back toward camera. [2] SETTING: rooftop terrace, city skyline in distance, concrete planters with ornamental grasses, a single takeaway coffee cup on the ledge beside him. [3] LIGHT: golden hour dusk, warm amber from the west, long soft shadows across the terrace floor. [4] LIVE BACKGROUND: city traffic moving below in soft focus, a bird landing on the far railing, ornamental grasses swaying in a light breeze. [5] CAMERA + MOOD: slow orbit left to right around the subject, contemplative and exposed, the weight of a decision that looked right on paper. @daniel in sand-coloured chore jacket over a navy tee.",
+      "duration_hint": 5
+    },
+    {
+      "id": 4,
+      "story_beat": "turn",
+      "audio_text": "Inside sixty days, $180,000 in enterprise contracts didn't renew. The automation hadn't failed. The relationships had.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 85mm portrait, eye-level, sitting with elbow on knee, hand loosely on chin, direct unblinking eye contact with lens. [2] SETTING: modern loft kitchen, morning light, white oak cabinets, a French press and two mugs on the stone counter beside him. [3] LIGHT: soft north-facing window light, 9am cool-white tone, gentle fill bounce from white ceiling. [4] LIVE BACKGROUND: French press steaming gently, a tap dripping in the background, morning pigeons visible through the window on a ledge outside. [5] CAMERA + MOOD: locked slow push-in with 2-inch handheld drift, the intimacy of someone telling you the part they didn't want to admit. @daniel in sand-coloured chore jacket over a navy tee.",
+      "duration_hint": 5
+    },
+    {
+      "id": 5,
+      "story_beat": "proof",
+      "audio_text": "I kept Make.com. I added one human back \u2014 $2,800 a month \u2014 just to own the relationship layer. Contracts came back.",
+      "visual_prompt": "[1] COMPOSITION: medium shot, 35mm, eye-level, walking with phone loosely at his side, open hand gesturing as he talks, relaxed stride. [2] SETTING: city sidewalk during golden hour, shopfronts with warm lit windows, a newspaper stand on the corner ahead. [3] LIGHT: golden hour sunlight from the right, long warm shadows stretching left, hard-edged directional with soft ambient fill from building glass. [4] LIVE BACKGROUND: cars passing in the street behind him, a cyclist crossing the intersection ahead, pedestrians moving in and out of soft focus. [5] CAMERA + MOOD: tracking shot matching his walking pace, handheld drift with subtle horizon wobble, forward momentum and resolution after the hard lesson. @daniel in sand-coloured chore jacket over a navy tee.",
+      "duration_hint": 5
+    },
+    {
+      "id": 6,
+      "story_beat": "meaning",
+      "audio_text": "Automate the work. Never automate the trust. That's the line every efficiency calculator leaves out.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 50mm, slight low angle, leaning against a tiled pillar, one hand in jacket pocket, chin slightly down, eyes level and steady. [2] SETTING: underground subway platform, yellow safety stripe at the platform edge, a tiled column behind him, a posted schedule board on the far wall. [3] LIGHT: cool artificial overhead tube lighting, practical amber glow from the tunnel mouth, blue hour quality, slightly harsh but even. [4] LIVE BACKGROUND: a train pulling into the platform behind him, commuters stepping off in soft focus, wind from the arriving train moving his jacket lapel. [5] CAMERA + MOOD: slow 1-foot handheld dolly back as the train arrives, subject stays still while the world moves behind him, quiet authority on the final line. @daniel in sand-coloured chore jacket over a navy tee.",
+      "duration_hint": 5
+    }
+  ],
+  "loop_back_line": "I saved $6,500 a month. Then I lost $180,000. Now I know why."
+}

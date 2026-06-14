@@ -1,0 +1,56 @@
+# Instagram Platform Configuration
+platform_id: "instagram"
+display_name: "Instagram"
+enabled: true
+
+content_formats:
+  - type: "feed_post"
+    max_caption_length: 2200
+    recommended_length: 300
+    supports_media: true
+    media_required: true
+  - type: "carousel"
+    max_slides: 10
+    image_format: "jpg/png"
+    aspect_ratio: "1:1 or 4:5"
+  - type: "reel"
+    max_duration_seconds: 90
+    recommended_duration: 30
+    aspect_ratio: "9:16"
+  - type: "story"
+    max_duration_seconds: 60
+    aspect_ratio: "9:16"
+
+posting:
+  optimal_times:
+    - "Monday 11:00"
+    - "Wednesday 11:00"
+    - "Friday 10:00"
+  max_posts_per_day: 2
+  min_hours_between_posts: 6
+
+media_specs:
+  image:
+    formats: ["jpg", "png"]
+    max_size_mb: 8
+    recommended_resolution: "1080x1080"
+    aspect_ratios: ["1:1", "4:5", "1.91:1"]
+  video:
+    formats: ["mp4", "mov"]
+    max_duration_seconds: 90
+    max_size_mb: 100
+    recommended_resolution: "1080x1920"
+
+api:
+  base_url: "https://graph.instagram.com"
+  auth_type: "OAuth2 (via Meta Graph API)"
+  scopes:
+    - "instagram_basic"
+    - "instagram_content_publish"
+    - "instagram_manage_insights"
+  rate_limit: "200 requests/hour"
+
+hashtag_rules:
+  count: "15-20"
+  placement: "first comment"
+  style: "mix of niche and broad tags"

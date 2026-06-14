@@ -1,0 +1,51 @@
+{
+  "topic": "AI tool I killed because it destroyed my margins",
+  "hook_summary": "I spent $340 a month on an AI tool. Then I did the math.",
+  "total_words": 118,
+  "estimated_seconds": 26,
+  "scenes": [
+    {
+      "id": 1,
+      "story_beat": "setup",
+      "audio_text": "I spent $340 a month on an AI tool. Everyone in my peer group was using it. I assumed I should too.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, eye-level, seated leaning slightly forward with both forearms on desk [2] SETTING: warm wood writing desk in a quiet home study, tall bookshelf behind with stacked paperbacks and a ceramic mug, open notebook beside a trackpad [3] LIGHT: single warm desk lamp casting a tight pool of amber light, late evening, soft shadow on the far wall [4] LIVE BACKGROUND: a ceiling fan rotating slowly overhead, dust drifting through the lamplight, a curtain shifting faintly near a closed window [5] CAMERA + MOOD: slow 1-foot handheld push-in toward subject, intimate and confessional, the quiet weight of a decision being reconsidered. @daniel in black henley with subtle stubble.",
+      "duration_hint": 5
+    },
+    {
+      "id": 2,
+      "story_beat": "incident",
+      "audio_text": "Six weeks in, my accountant flagged it. Our cost-per-deliverable had gone up \u2014 not down. I thought she'd misread the report.",
+      "visual_prompt": "[1] COMPOSITION: medium shot, 28mm, slight low angle, sitting on edge of leather armchair with elbows on knees leaning forward [2] SETTING: leather armchair near a fireplace with low light, a short stack of printed invoices on the armrest, a glass of water on the side table [3] LIGHT: orange firelight as the dominant key source, flickering and warm, deep shadows filling the left side of frame [4] LIVE BACKGROUND: fireplace flames actively licking the logs, embers glowing, a wall clock ticking visible in background [5] CAMERA + MOOD: slow orbit left around subject, 2 feet of arc, tense introspective energy like someone replaying a mistake. @daniel in black henley with subtle stubble.",
+      "duration_hint": 5
+    },
+    {
+      "id": 3,
+      "story_beat": "struggle",
+      "audio_text": "I dug in. The tool ran fine, but it needed a human to QA every single output. That human cost me $1,100 a month on top of the subscription.",
+      "visual_prompt": "[1] COMPOSITION: over-shoulder wide, 24mm, eye-level, standing with one hand flat on kitchen island surface, half-turned looking down at a laptop [2] SETTING: kitchen island at dusk with one pendant lamp on, a printed spreadsheet laid flat on the counter, a pen resting across the page [3] LIGHT: single warm pendant lamp overhead as key light, last traces of blue dusk through the window behind, cool-warm contrast [4] LIVE BACKGROUND: a refrigerator compressor humming visually (condensation on a drink can beside the laptop), a candle flickering on the far counter, ambient cars passing outside the window [5] CAMERA + MOOD: slow dolly right along the island, tracking subject's stillness, quiet frustration of someone doing math they don't want to believe. @daniel in black henley with subtle stubble.",
+      "duration_hint": 5
+    },
+    {
+      "id": 4,
+      "story_beat": "turn",
+      "audio_text": "So last Tuesday I cancelled it. Built the same workflow in Zapier with a Claude step in the middle. Four hours. Zero QA needed.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, slight high angle, seated in reading nook with one arm resting on the windowsill, open hand gesturing outward [2] SETTING: reading nook with rain clearly visible streaming down the window behind, a closed laptop on the seat cushion, a paperback face-down on the ledge [3] LIGHT: flat grey daylight from the rain-streaked window as the ambient fill, a small reading lamp at frame edge providing warm contrast [4] LIVE BACKGROUND: rain running visibly down the glass in rivulets, a tree branch swaying outside, droplets collecting on the window ledge [5] CAMERA + MOOD: slow handheld drift right to left, subject steady against moving rain background, the calm relief of a decision finally made. @daniel in black henley with subtle stubble.",
+      "duration_hint": 5
+    },
+    {
+      "id": 5,
+      "story_beat": "proof",
+      "audio_text": "Monthly cost dropped to $23. Same output volume. And because Zapier logs everything, I caught two errors Notion had been hiding for weeks.",
+      "visual_prompt": "[1] COMPOSITION: medium shot, 35mm, eye-level, standing in garage with both hands resting on a workbench surface, looking directly into camera [2] SETTING: garage workshop with tools hanging on a pegboard behind, a single work lamp clamped to the bench edge, a legal notepad with figures written on it [3] LIGHT: single work lamp as hard key light from above-left, industrial and direct, deep shadow filling the garage behind him [4] LIVE BACKGROUND: a shop fan oscillating slowly in the back corner, its shadow sweeping the wall, a hanging power cord swaying gently [5] CAMERA + MOOD: locked wide then a slow 1-foot push-in to medium close-up, subject still and declarative, the plain confidence of someone reading from their own ledger. @daniel in black henley with subtle stubble.",
+      "duration_hint": 5
+    },
+    {
+      "id": 6,
+      "story_beat": "meaning",
+      "audio_text": "A tool isn't an asset if it needs a babysitter. The best automation you own is the one that runs while you sleep.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 50mm, eye-level, seated on bedroom edge of bed with one hand on chin, direct gaze into lens [2] SETTING: bedroom edge of bed with morning light coming through curtains, a phone face-down on the nightstand, one shoe on the floor suggesting just woken up [3] LIGHT: soft directional morning light from curtained window to the right, cool blue-white, gentle fill from white wall [4] LIVE BACKGROUND: curtain fabric shifting slightly in an AC draft, morning birds audible visually implied by open window gap, dust motes drifting through the light beam [5] CAMERA + MOOD: slow 1-foot handheld push-in, the subject completely still, stripped-down morning truth \u2014 no performance, no pitch. @daniel in black henley with subtle stubble.",
+      "duration_hint": 5
+    }
+  ],
+  "loop_back_line": "I spent $340 a month on an AI tool. The math said stop. So I did."
+}

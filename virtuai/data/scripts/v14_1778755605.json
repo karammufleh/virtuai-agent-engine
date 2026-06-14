@@ -1,0 +1,33 @@
+{
+  "topic": "Stop building AI tools. Start building AI processes.",
+  "hook_summary": "Everyone's building AI tools. That's why most fail.",
+  "total_words": 95,
+  "estimated_seconds": 24,
+  "scenes": [
+    {
+      "id": 1,
+      "audio_text": "Everyone's building AI tools right now. That's why most will fail in 90 days.",
+      "visual_prompt": "A 28-year-old man with short dark wavy hair and light stubble, wearing a dark polo shirt, sitting at a corner table in a busy coffee shop. Natural overhead lighting, candid documentary style. Medium close-up, locked-off shot. He looks directly into the camera, slightly leaning forward.",
+      "duration_hint": 4
+    },
+    {
+      "id": 2,
+      "audio_text": "I spent six months and forty thousand dollars building a custom AI agent for cold outreach. It never worked.",
+      "visual_prompt": "Same man, now standing in a small, cluttered office near a whiteboard covered in scribbles. Harsh fluorescent light, but warm tone. Over-shoulder shot showing the whiteboard and his profile as he gestures toward the board. Slow push-in.",
+      "duration_hint": 5
+    },
+    {
+      "id": 3,
+      "audio_text": "Then I stripped it down. One simple automation routing inbound leads straight to my calendar. No fancy interface, no chatbot. Just a Zapier -> Calendly flow. That one process replaced the entire tool.",
+      "visual_prompt": "Same man, walking down a quiet city street during golden hour. Soft side light, documentary feel. Wide shot as he walks, then cut to medium close-up as he stops and faces the camera. Natural motion.",
+      "duration_hint": 8
+    },
+    {
+      "id": 4,
+      "audio_text": "Stop building AI tools. Start building AI processes. That's the whole thing.",
+      "visual_prompt": "Same man, now sitting on a park bench with trees in background, dappled sunlight. Medium close-up, locked-off. He gives a slight nod after speaking. Photo-real, natural light.",
+      "duration_hint": 4
+    }
+  ],
+  "loop_back_line": null
+}

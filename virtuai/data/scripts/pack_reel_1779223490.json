@@ -1,0 +1,51 @@
+{
+  "topic": "Ship customer features faster with automation than roadmaps",
+  "hook_summary": "Your customers asked for that feature six months ago.",
+  "total_words": 118,
+  "estimated_seconds": 26,
+  "scenes": [
+    {
+      "id": 1,
+      "story_beat": "setup",
+      "audio_text": "Your customers asked for that feature six months ago. It's still sitting in Notion under 'Q3 maybe.'",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, eye-level, seated leaning forward with both forearms on table [2] SETTING: sunlit corner cafe, ceramic espresso cup beside open laptop, worn wooden table, chalk menu board visible on wall [3] LIGHT: warm morning side-light through large east-facing window, 8am golden hour, soft ambient fill from white plaster ceiling [4] LIVE BACKGROUND: barista steaming milk at the counter behind him, a patron stirring a coffee at the adjacent table, pedestrians drifting past the street-side window in soft focus [5] CAMERA + MOOD: slow 1-foot handheld push-in, slight drift left, intimate confessional energy \u2014 @daniel in navy zip-up hoodie over white tee, direct eye contact, controlled urgency",
+      "duration_hint": 5
+    },
+    {
+      "id": 2,
+      "story_beat": "incident",
+      "audio_text": "Last January a client threatened to churn \u2014 $11k a month \u2014 because we hadn't shipped a CSV export. Six months on the roadmap.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, slight low angle, standing arms crossed, weight on back foot [2] SETTING: co-working space lounge, large floor-to-ceiling window behind him, a half-empty glass of water on a side table, a folded blazer draped over the chair [3] LIGHT: flat overcast daylight flooding through the window, even soft-box quality, no harsh shadows [4] LIVE BACKGROUND: two ambient figures typing at tables in mid-ground soft focus, a ceiling fan rotating slowly above, a delivery person crossing behind the glass partition [5] CAMERA + MOOD: slow dolly right-to-left tracking past the window column, documentary observational mood \u2014 @daniel in navy zip-up hoodie over white tee, jaw tight, recounting a loss",
+      "duration_hint": 5
+    },
+    {
+      "id": 3,
+      "story_beat": "struggle",
+      "audio_text": "I went to the dev team. Sprint was full. I went to the PM. 'Prioritization process.' I lost the client anyway.",
+      "visual_prompt": "[1] COMPOSITION: over-shoulder wide, 28mm, slight high angle, half-turned looking back toward camera over left shoulder [2] SETTING: city sidewalk during golden hour, parked bikes chained to a rack at frame left, a coffee cup in his right hand, storefronts behind him [3] LIGHT: low warm late-afternoon sun raking from the right, long shadows across the pavement, rim light catching his hoodie zipper [4] LIVE BACKGROUND: two cyclists passing in the street, a bus pulling away from a stop in the mid-distance, a shop owner propping a door open behind him [5] CAMERA + MOOD: handheld drift following from behind, then slowly orbiting to a front 3/4 view, unsettled restless energy \u2014 @daniel in navy zip-up hoodie over white tee, one hand in pocket, candid and unscripted",
+      "duration_hint": 5
+    },
+    {
+      "id": 4,
+      "story_beat": "turn",
+      "audio_text": "Two weeks later I built the same export in Zapier and a Claude prompt. Four hours. No sprint. No ticket. Shipped to the next client that week.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 50mm, eye-level, sitting with elbow on knee, leaning slightly forward [2] SETTING: modern loft kitchen, pale oak countertop, a Moleskine notebook open with a pen resting across it, morning light bouncing off white tile backsplash [3] LIGHT: diffused north-facing window light, 9am, cool-white quality with a warm fill from under-cabinet strip lights [4] LIVE BACKGROUND: kettle coming to boil on the hob behind him, steam curling upward, a phone screen lighting up with a notification on the counter beside the notebook [5] CAMERA + MOOD: slow 1-foot push-in, barely perceptible handheld sway, moment-of-revelation intimacy \u2014 @daniel in navy zip-up hoodie over white tee, eyes steady, voice dropping slightly as the turn lands",
+      "duration_hint": 5
+    },
+    {
+      "id": 5,
+      "story_beat": "proof",
+      "audio_text": "We've now shipped nine features this quarter that way \u2014 all automations, zero engineering hours. Saved roughly $34k in dev retainer costs.",
+      "visual_prompt": "[1] COMPOSITION: medium wide, 35mm, eye-level, standing with both hands resting on a chest-high railing, open posture [2] SETTING: rooftop terrace, city skyline visible in soft focus in the distance, a small bistro table behind him with a closed laptop and a takeaway coffee cup [3] LIGHT: late afternoon sun from the west, warm golden key light on his face, buildings behind catching the same warm hue, blue-hour sky beginning to emerge at the top of frame [4] LIVE BACKGROUND: a pigeon landing on the railing to his right, a taxi visible moving through an intersection far below, a rooftop HVAC unit venting slow white steam to his left [5] CAMERA + MOOD: slow parallax dolly left, skyline sliding behind him in the opposite direction, expansive confident energy \u2014 @daniel in navy zip-up hoodie over white tee, direct and unhurried",
+      "duration_hint": 5
+    },
+    {
+      "id": 6,
+      "story_beat": "meaning",
+      "audio_text": "Your roadmap isn't slow because of bad PMs. It's slow because automation isn't on it. Put it on the roadmap.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, slight low angle, leaning against a tiled column, one hand on chin [2] SETTING: underground subway platform, a concrete bench visible to his left, a transit map poster on the column beside him, commuter bag at his feet [3] LIGHT: warm tungsten overhead platform lights, pools of amber illumination, slight underexposure giving a candid late-night texture [4] LIVE BACKGROUND: a subway train pulling in from the left, passengers stepping off and flowing past in soft motion blur, a busker's instrument case open on the platform floor visible in the background [5] CAMERA + MOOD: slow handheld drift right, holding on his face as the train motion fills the background, quiet finality \u2014 @daniel in navy zip-up hoodie over white tee, unhurried, the line landing flat and clean",
+      "duration_hint": 5
+    }
+  ],
+  "loop_back_line": "That feature your customers asked for six months ago? It's on the roadmap. Automation would've shipped it in four hours."
+}

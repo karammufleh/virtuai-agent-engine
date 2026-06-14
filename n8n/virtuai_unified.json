@@ -1,0 +1,473 @@
+{
+  "id": "virtuai-unified",
+  "name": "VirtuAI — Unified Automation",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": { "rule": { "interval": [{ "field": "cronExpression", "expression": "0 9 * * *" }] } },
+      "id": "t-cron-morning",
+      "name": "Schedule 09:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [240, 360]
+    },
+    {
+      "parameters": { "rule": { "interval": [{ "field": "cronExpression", "expression": "0 17 * * *" }] } },
+      "id": "t-cron-evening",
+      "name": "Schedule 17:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [240, 520]
+    },
+    { "parameters": {}, "id": "t-manual", "name": "Manual run", "type": "n8n-nodes-base.manualTrigger", "typeVersion": 1, "position": [240, 680] },
+
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.VIRTUAI_API_BASE || 'http://localhost:9090' }}/agents/analyzer/run-sync",
+        "sendBody": true, "specifyBody": "json",
+        "jsonBody": "={\n  \"input\": {\n    \"prompt\": \"Read the most recently published post's metrics. Output a JSON verdict: verdict (positive|negative|neutral), next_direction (do_similar|do_different|continue), recommendation.\"\n  }\n}",
+        "options": { "timeout": 120000 }
+      },
+      "id": "ag-analyzer",
+      "name": "📊 Analyzer",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [480, 520]
+    },
+    {
+      "parameters": {
+        "conditions": { "string": [{ "value1": "={{ $json.output.toLowerCase() }}", "operation": "contains", "value2": "positive" }] }
+      },
+      "id": "if-positive",
+      "name": "Last post: positive?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [720, 520]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.VIRTUAI_API_BASE || 'http://localhost:9090' }}/agents/research/run-sync",
+        "sendBody": true, "specifyBody": "json",
+        "jsonBody": "={\n  \"input\": {\n    \"prompt\": \"Last post performed POSITIVELY. Find a trending AI+automation business topic that SHARES the winning structural pattern. Read banned_patterns.json + lessons.json first.\",\n    \"context\": { \"direction\": \"do_similar\", \"analyzer_output\": \"{{ $('📊 Analyzer').item.json.output }}\" }\n  }\n}",
+        "options": { "timeout": 180000 }
+      },
+      "id": "ag-research-similar",
+      "name": "🔎 Research (similar)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [960, 360]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.VIRTUAI_API_BASE || 'http://localhost:9090' }}/agents/research/run-sync",
+        "sendBody": true, "specifyBody": "json",
+        "jsonBody": "={\n  \"input\": {\n    \"prompt\": \"Last post performed NEGATIVELY or NEUTRALLY. Find a trending AI+automation topic STRUCTURALLY DIFFERENT from what just flopped. Read banned_patterns.json + lessons.json first.\",\n    \"context\": { \"direction\": \"do_different\", \"analyzer_output\": \"{{ $('📊 Analyzer').item.json.output }}\" }\n  }\n}",
+        "options": { "timeout": 180000 }
+      },
+      "id": "ag-research-diff",
+      "name": "🔎 Research (different)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [960, 680]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.VIRTUAI_API_BASE || 'http://localhost:9090' }}/agents/strategy/run-sync",
+        "sendBody": true, "specifyBody": "json",
+        "jsonBody": "={\n  \"input\": {\n    \"prompt\": \"Decide WHEN to publish + WHICH FORMATS, with 3 distinct outfit/mood/setting picks for intra-pack diversity.\",\n    \"context\": { \"research_output\": \"{{ $json.output }}\" }\n  }\n}",
+        "options": { "timeout": 180000 }
+      },
+      "id": "ag-strategy",
+      "name": "📋 Strategy",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1200, 520]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.VIRTUAI_API_BASE || 'http://localhost:9090' }}/agents/creator/run-sync",
+        "sendBody": true, "specifyBody": "json",
+        "jsonBody": "={\n  \"input\": {\n    \"prompt\": \"Read your inbox + banned_patterns first. Then write reel script + portrait + carousel JSON following the Strategy plan.\",\n    \"context\": { \"strategy_output\": \"{{ $json.output }}\" }\n  }\n}",
+        "options": { "timeout": 300000 }
+      },
+      "id": "ag-creator",
+      "name": "✍️ Creator",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1440, 520]
+    },
+
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.VIRTUAI_API_BASE || 'http://localhost:9090' }}/agents/reviewer/run-sync",
+        "sendBody": true, "specifyBody": "json",
+        "jsonBody": "={\n  \"input\": {\n    \"prompt\": \"TEXT QUALITY CHECK ONLY — NO VIDEO YET. Check the Creator's written content against PROJECT_STANDARDS: hook strength, concrete anchors, banned phrases, sentiment match. Verdict PASS or REVISE. If REVISE, send_agent_message to creator with specific issues.\",\n    \"context\": { \"creator_output\": \"{{ $json.output }}\", \"phase\": \"pre-render\" }\n  }\n}",
+        "options": { "timeout": 120000 }
+      },
+      "id": "ag-rev-text",
+      "name": "🔍 Reviewer (TEXT — cheap)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1680, 520]
+    },
+    {
+      "parameters": {
+        "conditions": { "string": [{ "value1": "={{ $json.output.toUpperCase() }}", "operation": "contains", "value2": "PASS" }] }
+      },
+      "id": "if-text-pass",
+      "name": "Text PASS?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [1920, 520]
+    },
+
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.VIRTUAI_API_BASE || 'http://localhost:9090' }}/agents/creator/run-sync",
+        "sendBody": true, "specifyBody": "json",
+        "jsonBody": "={\n  \"input\": {\n    \"prompt\": \"RETRY. Read your inbox — the Reviewer sent a REVISE message. Rewrite the affected pieces fixing every listed issue.\",\n    \"context\": { \"is_retry\": true, \"phase\": \"text-retry\" }\n  }\n}",
+        "options": { "timeout": 300000 }
+      },
+      "id": "ag-creator-retry",
+      "name": "✍️ Creator (retry — cheap)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1680, 760]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.VIRTUAI_API_BASE || 'http://localhost:9090' }}/agents/reviewer/run-sync",
+        "sendBody": true, "specifyBody": "json",
+        "jsonBody": "={\n  \"input\": {\n    \"prompt\": \"TEXT QUALITY re-check after Creator retry. Verdict PASS or REVISE.\",\n    \"context\": { \"creator_output\": \"{{ $json.output }}\", \"phase\": \"retry-check\" }\n  }\n}",
+        "options": { "timeout": 120000 }
+      },
+      "id": "ag-rev-text-2",
+      "name": "🔍 Reviewer (retry check)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1920, 760]
+    },
+    {
+      "parameters": {
+        "conditions": { "string": [{ "value1": "={{ $json.output.toUpperCase() }}", "operation": "contains", "value2": "PASS" }] }
+      },
+      "id": "if-retry-pass",
+      "name": "Retry PASS?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [2160, 760]
+    },
+    {
+      "parameters": {
+        "subject": "⚠️ VirtuAI text REVISE (retry also failed)",
+        "text": "=Creator failed text QA twice in a row.\n\nNo expensive Visual render was triggered — credits saved.\n\nFirst reviewer output:\n{{ $('🔍 Reviewer (TEXT — cheap)').item.json.output }}\n\nRetry reviewer output:\n{{ $('🔍 Reviewer (retry check)').item.json.output }}\n",
+        "toEmail": "={{ $env.NOTIFY_EMAIL || 'me@example.com' }}",
+        "options": {}
+      },
+      "id": "notify-text-fail",
+      "name": "Notify text fail",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [2400, 880]
+    },
+
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.VIRTUAI_API_BASE || 'http://localhost:9090' }}/agents/guardian/run-sync",
+        "sendBody": true, "specifyBody": "json",
+        "jsonBody": "={\n  \"input\": {\n    \"prompt\": \"ETHICS / POLICY / VALIDITY check on the TEXT — no video exists yet. Verdict APPROVE | REVISE | BLOCK. On BLOCK, add_banned_pattern. On REVISE, send_agent_message to creator.\",\n    \"context\": { \"phase\": \"pre-render-ethics\" }\n  }\n}",
+        "options": { "timeout": 120000 }
+      },
+      "id": "ag-guardian",
+      "name": "🛡️ Guardian (TEXT — cheap)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [2160, 360]
+    },
+    {
+      "parameters": {
+        "conditions": { "string": [{ "value1": "={{ $json.output.toUpperCase() }}", "operation": "contains", "value2": "APPROVE" }] }
+      },
+      "id": "if-ethics-ok",
+      "name": "Ethics APPROVE?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [2400, 360]
+    },
+    {
+      "parameters": {
+        "subject": "🛑 VirtuAI BLOCKED by Guardian (no credits spent)",
+        "text": "=Guardian rejected the content for ethics/validity BEFORE expensive rendering.\n\nNo Visual call was made — credits saved.\n\nGuardian verdict:\n{{ $('🛡️ Guardian (TEXT — cheap)').item.json.output }}\n",
+        "toEmail": "={{ $env.NOTIFY_EMAIL || 'me@example.com' }}",
+        "options": {}
+      },
+      "id": "notify-ethics-blocked",
+      "name": "Notify BLOCKED",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [2640, 560]
+    },
+
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.VIRTUAI_API_BASE || 'http://localhost:9090' }}/agents/visual/run-sync",
+        "sendBody": true, "specifyBody": "json",
+        "jsonBody": "={\n  \"input\": {\n    \"prompt\": \"Render the reel via Kling 3.0 multi-shot + portrait + carousel via Nano Banana + Suno underbed. Return file paths.\",\n    \"context\": { \"creator_output\": \"{{ $('✍️ Creator').item.json.output }}\", \"phase\": \"single-render\" }\n  }\n}",
+        "options": { "timeout": 900000 }
+      },
+      "id": "ag-visual",
+      "name": "🎬 Visual (EXPENSIVE — runs once)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [2640, 220]
+    },
+
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.VIRTUAI_API_BASE || 'http://localhost:9090' }}/agents/reviewer/run-sync",
+        "sendBody": true, "specifyBody": "json",
+        "jsonBody": "={\n  \"input\": {\n    \"prompt\": \"POST-RENDER VIDEO QUALITY CHECK. Run review_video_quality + verify_face_identity on the rendered files. PASS or FAIL. NO RETRY — credits already spent. If FAIL, output specific issues for the human.\",\n    \"context\": { \"visual_output\": \"{{ $json.output }}\", \"phase\": \"post-render\" }\n  }\n}",
+        "options": { "timeout": 180000 }
+      },
+      "id": "ag-rev-video",
+      "name": "🔍 Reviewer (VIDEO — post-render)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [2880, 220]
+    },
+    {
+      "parameters": {
+        "conditions": { "string": [{ "value1": "={{ $json.output.toUpperCase() }}", "operation": "contains", "value2": "PASS" }] }
+      },
+      "id": "if-video-pass",
+      "name": "Video PASS?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [3120, 220]
+    },
+    {
+      "parameters": {
+        "subject": "⚠️ VirtuAI post-render REVISE — manual review needed",
+        "text": "=Text QA passed, ethics passed, but the RENDERED video failed quality (rare).\n\nNo retry was triggered — re-rendering would burn another ~$3 in credits.\n\nReview the rendered files manually before deciding to retry.\n\nReviewer output:\n{{ $('🔍 Reviewer (VIDEO — post-render)').item.json.output }}\n\nVisual output (file paths):\n{{ $('🎬 Visual (EXPENSIVE — runs once)').item.json.output }}\n",
+        "toEmail": "={{ $env.NOTIFY_EMAIL || 'me@example.com' }}",
+        "options": {}
+      },
+      "id": "notify-video-fail",
+      "name": "Notify post-render fail",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [3360, 360]
+    },
+
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.VIRTUAI_API_BASE || 'http://localhost:9090' }}/agents/publisher/run-sync",
+        "sendBody": true, "specifyBody": "json",
+        "jsonBody": "={\n  \"input\": {\n    \"prompt\": \"Publish to YouTube + Instagram + LinkedIn. Persist URLs into autopilot_history.json.\",\n    \"context\": { \"creator_output\": \"{{ $('✍️ Creator').item.json.output }}\" }\n  }\n}",
+        "options": { "timeout": 600000 }
+      },
+      "id": "ag-publisher",
+      "name": "📤 Publisher",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [3360, 100]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.VIRTUAI_API_BASE || 'http://localhost:9090' }}/webhook/linkedin-amplify",
+        "sendBody": true, "specifyBody": "json",
+        "jsonBody": "={\n  \"source\": \"daily-pack\",\n  \"text\": \"New VirtuAI pack live.\"\n}",
+        "options": { "timeout": 60000 }
+      },
+      "id": "linkedin-amp",
+      "name": "LinkedIn amplify",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [3600, 100]
+    },
+    {
+      "parameters": {
+        "subject": "✅ VirtuAI pack published",
+        "text": "=Cycle complete.\n\nText QA: PASS\nEthics: APPROVE\nVisual render: 1 (no retries)\nPost-render QA: PASS\n\nAnalyzer recommendations for next cycle:\n{{ $('📊 Analyzer').item.json.output }}\n\nPublisher result:\n{{ $('📤 Publisher').item.json.output }}\n",
+        "toEmail": "={{ $env.NOTIFY_EMAIL || 'me@example.com' }}",
+        "options": {}
+      },
+      "id": "notify-success",
+      "name": "Notify pack live",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [3840, 100]
+    },
+
+    {
+      "parameters": { "httpMethod": "POST", "path": "virtuai-agent-run", "responseMode": "lastNode", "options": {} },
+      "id": "t-wh-agent",
+      "name": "Webhook /virtuai-agent-run",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [240, 1200]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.VIRTUAI_API_BASE || 'http://localhost:9090' }}/agents/{{ $json.body.agent || 'research' }}/run-sync",
+        "sendBody": true, "specifyBody": "json",
+        "jsonBody": "={\n  \"input\": {\n    \"prompt\": \"{{ $json.body.prompt || 'Execute your role.' }}\",\n    \"context\": {{ JSON.stringify($json.body.context || {}) }}\n  }\n}",
+        "options": { "timeout": 600000 }
+      },
+      "id": "wh-agent-call",
+      "name": "Call agent (sync)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [480, 1200]
+    },
+    {
+      "parameters": { "httpMethod": "POST", "path": "virtuai-model-call", "responseMode": "lastNode", "options": {} },
+      "id": "t-wh-model",
+      "name": "Webhook /virtuai-model-call",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [240, 1420]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.VIRTUAI_API_BASE || 'http://localhost:9090' }}{{ $json.body.endpoint || '/models/claude/chat' }}",
+        "sendBody": true, "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json.body.payload || {}) }}",
+        "options": { "timeout": 900000 }
+      },
+      "id": "wh-model-call",
+      "name": "Call model endpoint",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [480, 1420]
+    },
+
+    {
+      "parameters": {
+        "content": "## Credit-aware design\n\n**Cheap gates run FIRST** (text-only, ~$0.10/call):\n  ✍️ Creator → 🔍 Reviewer-text → 🛡️ Guardian-text\n\n**Expensive step runs ONCE per cycle** (no retries on this):\n  🎬 Visual (Kling render + Nano Banana ×6 + Suno) ≈ $3-5\n\n**Retries cost nothing on the Kling side** — text-only Creator retries don't trigger any rendering.\n\n**On any cheap-gate failure** (Reviewer-text REVISE or Guardian REVISE/BLOCK), Visual is NEVER called. The pack stops and emails for manual review. Credits saved.\n\n**Post-render failures are rare** (text already passed) and go straight to email — no automatic re-render.",
+        "height": 280, "width": 600,
+        "color": 1
+      },
+      "id": "sn-header",
+      "name": "📌 Credit-aware design",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [240, 40]
+    },
+    {
+      "parameters": {
+        "content": "## Cheap zone — text only\n*Every retry here costs ~$0.10 (Claude calls only)*\n\n✍️ Creator writes\n🔍 Reviewer checks PROJECT_STANDARDS text rules\n🛡️ Guardian checks ethics on TEXT\n\nIf any of these fail → Creator retry (still no rendering)\n→ if retry also fails → manual email\n\nNo Kling / Nano Banana / Suno calls in this zone.",
+        "height": 260, "width": 320,
+        "color": 5
+      },
+      "id": "sn-cheap",
+      "name": "Cheap zone",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [1440, 980]
+    },
+    {
+      "parameters": {
+        "content": "## Expensive zone — runs at most ONCE\n*$3-5 of credits per render*\n\n🎬 Visual = Kling 3.0 reel + Nano Banana ×6 + Suno music + ElevenLabs TTS\n\nAfter Visual, a cheap post-render Reviewer checks the rendered files (ffmpeg + ArcFace). If it fails, we email — we do NOT auto-retry to protect credits.",
+        "height": 260, "width": 360,
+        "color": 4
+      },
+      "id": "sn-expensive",
+      "name": "Expensive zone",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [2640, 420]
+    },
+    {
+      "parameters": {
+        "content": "## Inter-agent messaging\n\nWhen Reviewer or Guardian rejects, they call `send_agent_message(to='creator', subject='REVISE', body=...)` — the message is appended to `virtuai/data/agent_messages.jsonl`.\n\nThe Creator's NEXT call automatically reads this inbox via the API server's auto-inject. Creator fixes the specific issues without burning new credits on Visual.\n\nGuardian BLOCKs also write to `virtuai/data/banned_patterns.json` — Research reads this file before brainstorming so blocked patterns are never proposed again.\n\nAnalyzer writes to `virtuai/data/lessons.json` when a post performs strongly — Research and Strategy read this for direction next cycle.",
+        "height": 340, "width": 380,
+        "color": 6
+      },
+      "id": "sn-messaging",
+      "name": "Inter-agent messaging",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [840, 980]
+    },
+    {
+      "parameters": {
+        "content": "## Webhook entries (manual / external)\n\n`POST /webhook/virtuai-agent-run` — invoke any single agent\n`POST /webhook/virtuai-model-call` — direct model endpoint call\n\nThese bypass the scheduled pipeline. Useful for debug, ad-hoc generation, or external triggers (Slack slash command, Telegram bot, etc.).",
+        "height": 180, "width": 320,
+        "color": 2
+      },
+      "id": "sn-webhooks",
+      "name": "Webhook entries",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [240, 1620]
+    }
+  ],
+  "connections": {
+    "Schedule 09:00":     { "main": [[{ "node": "📊 Analyzer", "type": "main", "index": 0 }]] },
+    "Schedule 17:00":     { "main": [[{ "node": "📊 Analyzer", "type": "main", "index": 0 }]] },
+    "Manual run":         { "main": [[{ "node": "📊 Analyzer", "type": "main", "index": 0 }]] },
+
+    "📊 Analyzer":           { "main": [[{ "node": "Last post: positive?", "type": "main", "index": 0 }]] },
+    "Last post: positive?":  { "main": [
+                                  [{ "node": "🔎 Research (similar)", "type": "main", "index": 0 }],
+                                  [{ "node": "🔎 Research (different)", "type": "main", "index": 0 }]
+                                ] },
+    "🔎 Research (similar)":   { "main": [[{ "node": "📋 Strategy", "type": "main", "index": 0 }]] },
+    "🔎 Research (different)": { "main": [[{ "node": "📋 Strategy", "type": "main", "index": 0 }]] },
+    "📋 Strategy":             { "main": [[{ "node": "✍️ Creator", "type": "main", "index": 0 }]] },
+    "✍️ Creator":              { "main": [[{ "node": "🔍 Reviewer (TEXT — cheap)", "type": "main", "index": 0 }]] },
+
+    "🔍 Reviewer (TEXT — cheap)": { "main": [[{ "node": "Text PASS?", "type": "main", "index": 0 }]] },
+    "Text PASS?": { "main": [
+                      [{ "node": "🛡️ Guardian (TEXT — cheap)", "type": "main", "index": 0 }],
+                      [{ "node": "✍️ Creator (retry — cheap)", "type": "main", "index": 0 }]
+                    ] },
+
+    "✍️ Creator (retry — cheap)": { "main": [[{ "node": "🔍 Reviewer (retry check)", "type": "main", "index": 0 }]] },
+    "🔍 Reviewer (retry check)":  { "main": [[{ "node": "Retry PASS?", "type": "main", "index": 0 }]] },
+    "Retry PASS?": { "main": [
+                       [{ "node": "🛡️ Guardian (TEXT — cheap)", "type": "main", "index": 0 }],
+                       [{ "node": "Notify text fail", "type": "main", "index": 0 }]
+                     ] },
+
+    "🛡️ Guardian (TEXT — cheap)": { "main": [[{ "node": "Ethics APPROVE?", "type": "main", "index": 0 }]] },
+    "Ethics APPROVE?": { "main": [
+                           [{ "node": "🎬 Visual (EXPENSIVE — runs once)", "type": "main", "index": 0 }],
+                           [{ "node": "Notify BLOCKED", "type": "main", "index": 0 }]
+                         ] },
+
+    "🎬 Visual (EXPENSIVE — runs once)": { "main": [[{ "node": "🔍 Reviewer (VIDEO — post-render)", "type": "main", "index": 0 }]] },
+    "🔍 Reviewer (VIDEO — post-render)": { "main": [[{ "node": "Video PASS?", "type": "main", "index": 0 }]] },
+    "Video PASS?": { "main": [
+                       [{ "node": "📤 Publisher", "type": "main", "index": 0 }],
+                       [{ "node": "Notify post-render fail", "type": "main", "index": 0 }]
+                     ] },
+
+    "📤 Publisher":      { "main": [[{ "node": "LinkedIn amplify", "type": "main", "index": 0 }]] },
+    "LinkedIn amplify":  { "main": [[{ "node": "Notify pack live", "type": "main", "index": 0 }]] },
+
+    "Webhook /virtuai-agent-run":  { "main": [[{ "node": "Call agent (sync)", "type": "main", "index": 0 }]] },
+    "Webhook /virtuai-model-call": { "main": [[{ "node": "Call model endpoint", "type": "main", "index": 0 }]] }
+  },
+  "settings": { "executionOrder": "v1" },
+  "tags": [
+    { "name": "virtuai" }, { "name": "unified" },
+    { "name": "credit-aware" }, { "name": "automation" }
+  ]
+}

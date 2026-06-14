@@ -1,0 +1,51 @@
+{
+  "topic": "Custom GPT trained on proposals beat by Fiverr",
+  "hook_summary": "I spent 40 hours training a GPT. It lost to a $15 freelancer.",
+  "total_words": 118,
+  "estimated_seconds": 26,
+  "scenes": [
+    {
+      "id": 1,
+      "story_beat": "setup",
+      "audio_text": "I spent 40 hours feeding three years of my best client proposals into a custom GPT. Every deck, every win, every close.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, eye-level [2] SETTING: sunlit corner cafe, marble two-top table, ceramic espresso cup to his left, a worn leather notebook half-open beside it, warm wood shelving stacked with coffee bags in background [3] LIGHT: east-facing window morning sun, 8am golden fill, soft ambient bounce off white plaster wall [4] LIVE BACKGROUND: barista pulling a shot at the counter behind him, steam curling off the group head, two patrons blurred at adjacent tables [5] CAMERA + MOOD: locked-off with a subtle 6-inch push-in, @daniel leaning forward elbows on table, low-key confessional energy \u2014 navy zip-up hoodie over a white tee",
+      "duration_hint": 5
+    },
+    {
+      "id": 2,
+      "story_beat": "incident",
+      "audio_text": "A $22,000 retainer pitch came in last Tuesday. I handed it straight to the GPT. First real test.",
+      "visual_prompt": "[1] COMPOSITION: over-shoulder wide, 28mm, slight low angle [2] SETTING: co-working space lounge, floor-to-ceiling industrial window, exposed steel beam overhead, a standing desk with a closed MacBook and a half-empty glass of water [3] LIGHT: overcast midday diffused through frosted glass, even cool fill across the room, no harsh shadows [4] LIVE BACKGROUND: two ambient figures at standing desks in soft focus, a ceiling fan rotating slowly, a courier passing the glass door [5] CAMERA + MOOD: slow handheld drift left to right, @daniel glancing sideways as if recalling the moment, matter-of-fact tension \u2014 navy zip-up hoodie over a white tee",
+      "duration_hint": 5
+    },
+    {
+      "id": 3,
+      "story_beat": "struggle",
+      "audio_text": "The output was generic. Flat. No voice, no edge. I ran it four times. Same result every time.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 50mm, eye-level [2] SETTING: modern loft kitchen, pale birch cabinetry, a Moleskine open on the island counter, a half-drunk black coffee in a plain white mug [3] LIGHT: north-facing window, soft 9am indirect light, cool and clinical, single pendant lamp overhead unlit [4] LIVE BACKGROUND: a kettle beginning to steam on the hob, a phone face-down on the counter, pigeons shifting on the windowsill ledge [5] CAMERA + MOOD: locked-off, @daniel standing arms crossed, slight jaw set, quiet frustration \u2014 navy zip-up hoodie over a white tee",
+      "duration_hint": 5
+    },
+    {
+      "id": 4,
+      "story_beat": "turn",
+      "audio_text": "So I posted the brief on Fiverr out of spite. Fifteen dollars. The freelancer sent back something I would've actually sent.",
+      "visual_prompt": "[1] COMPOSITION: wide, 24mm, slight high angle [2] SETTING: rooftop terrace, two metal folding chairs, a potted olive tree in the corner, city skyline three blocks of low-rise buildings visible in the middle distance, a half-open laptop on a small bistro table [3] LIGHT: late afternoon golden hour, 5:30pm warm side-light raking across the terrace, long shadow from a rooftop water tank [4] LIVE BACKGROUND: a plane crossing the upper frame in soft blur, pigeons landing on the parapet edge, city hum and faint traffic [5] CAMERA + MOOD: slow dolly pull-back revealing the skyline, @daniel shaking his head with a dry half-smile, deadpan irony \u2014 navy zip-up hoodie over a white tee",
+      "duration_hint": 5
+    },
+    {
+      "id": 5,
+      "story_beat": "proof",
+      "audio_text": "I sent the freelancer's version. Client signed within 48 hours. The GPT is still sitting in my Claude workspace doing nothing.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, slight low angle [2] SETTING: city sidewalk during golden hour, a brick building facade behind him, a parked delivery van at the curb, a coffee cup in hand [3] LIGHT: 6pm golden hour, warm directional sun from camera-left, strong amber glow on one side of his face, cool shadow on the other [4] LIVE BACKGROUND: a taxi rolling through frame behind him, pedestrians passing in soft bokeh, a shop sign flickering on across the street [5] CAMERA + MOOD: handheld with minimal drift, @daniel walking slowly toward camera then stopping, candid street-interview energy \u2014 navy zip-up hoodie over a white tee",
+      "duration_hint": 5
+    },
+    {
+      "id": 6,
+      "story_beat": "meaning",
+      "audio_text": "AI doesn't know what made your best work good. Only you do. Tools don't replace judgment. They expose whether you had any.",
+      "visual_prompt": "[1] COMPOSITION: tight medium close-up, 50mm, eye-level [2] SETTING: underground subway platform, yellow tactile strip at edge of frame, a metal bench behind him, a poster-covered pillar to his left [3] LIGHT: overhead fluorescent platform light, flat and honest, no flattering warmth \u2014 harsh and deliberate [4] LIVE BACKGROUND: a train pulling in from the right, motion blur of silver carriages, commuters beginning to rise from the bench behind him [5] CAMERA + MOOD: fully locked-off, @daniel still and direct into lens as train arrives behind him, zero affectation \u2014 final confession energy \u2014 navy zip-up hoodie over a white tee",
+      "duration_hint": 5
+    }
+  ],
+  "loop_back_line": "Forty hours of training. Fifteen dollars of proof."
+}

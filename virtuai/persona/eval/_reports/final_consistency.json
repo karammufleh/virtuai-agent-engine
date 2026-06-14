@@ -1,0 +1,38 @@
+{
+  "baseline_imagen_n29": {
+    "mean_similarity": 0.301,
+    "strong_matches_geq_0.65": 0,
+    "drift_lt_0.30": 13
+  },
+  "lora_n10": {
+    "platform_images": {
+      "linkedin": {
+        "similarity": 0.7655,
+        "nearest_ref_sim": 0.6958,
+        "n_faces": 1
+      },
+      "x": {
+        "similarity": 0.6656,
+        "nearest_ref_sim": 0.6202,
+        "n_faces": 1
+      },
+      "instagram": {
+        "similarity": 0.7248,
+        "nearest_ref_sim": 0.6674,
+        "n_faces": 1
+      },
+      "medium": {
+        "similarity": 0.7098,
+        "nearest_ref_sim": 0.656,
+        "n_faces": 1
+      }
+    },
+    "mean_similarity": 0.6638,
+    "median_similarity": 0.7095,
+    "min_similarity": 0.4851,
+    "max_similarity": 0.7655,
+    "strong_matches_geq_0.65": 8,
+    "acceptable_geq_0.45": 10,
+    "drift_lt_0.30": 0
+  }
+}

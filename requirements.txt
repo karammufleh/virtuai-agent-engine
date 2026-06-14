@@ -1,0 +1,43 @@
+# ───────────────────────────────────────────────────────────────────────────────
+# VirtuAI — Dependencies
+#
+# Cloud pipeline (KIE.ai + Composio + YouTube direct) plus local post-production.
+# Install inside a Python 3.13 virtual environment:
+#
+#   python3 -m venv .venv && source .venv/bin/activate
+#   pip install -r requirements.txt
+# ───────────────────────────────────────────────────────────────────────────────
+
+# ── Agent Framework ────────────────────────────────────────────────────────────
+crewai[tools]>=0.80.0           # Multi-agent orchestration (8 agents)
+python-dotenv>=1.0.0            # .env loading
+pyyaml>=6.0                     # YAML config (personas, platforms, models)
+
+# ── Inference & API Server ─────────────────────────────────────────────────────
+fastapi>=0.110.0                # Control plane (port 9090) + showcase site (port 8080)
+uvicorn[standard]>=0.29.0       # ASGI server
+httpx>=0.27.0                   # HTTP client for KIE.ai, Kling, internal calls
+pydantic>=2.0.0                 # Agent output schema validation
+jinja2>=3.1.0                   # Website templates
+
+# ── Image & Video Post-Production ─────────────────────────────────────────────
+pillow>=10.0.0                  # Typography overlays, slide rendering
+moviepy>=1.0.3                  # Legacy frame-to-video stitching
+numpy>=1.26.0                   # Array ops for media processing
+
+# ── Publishing ─────────────────────────────────────────────────────────────────
+composio>=0.13.0                # Managed OAuth for IG, FB, LinkedIn
+composio-crewai>=0.13.0         # CrewAI tool integration for Composio
+
+# ────────────────────────────────────────────────────────────────────────────
+# The above is everything the FINAL CLOUD WORKFLOW needs. There are NO GPU /
+# Apple-Silicon / MLX dependencies. ALSO REQUIRED (system binary, not pip):
+#   ffmpeg  — install via `brew install ffmpeg` (macOS) or `apt install ffmpeg`
+#             (Linux). The code finds it on PATH automatically.
+#
+# The Phase-1 local MLX stack (mlx, mlx-lm, mlx-vlm, mflux) is ARCHIVED under
+# _archive/ and is NOT needed to run VirtuAI.
+#
+# Optional cloud add-ons — install only if you use the related feature:
+#   openai-whisper   # burned-in captions via the /models/whisper/captions endpoint
+#   insightface      # ArcFace face-consistency check in the Reviewer's video QA

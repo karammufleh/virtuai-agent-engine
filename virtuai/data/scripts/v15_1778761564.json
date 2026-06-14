@@ -1,0 +1,27 @@
+{
+  "topic": "Stop building AI tools. Start building AI processes.",
+  "hook_summary": "Everyone's obsessed with building AI tools. That's the fastest way to waste $50k.",
+  "total_words": 120,
+  "estimated_seconds": 22,
+  "scenes": [
+    {
+      "id": 1,
+      "audio_text": "Everyone's building AI tools. That's the fastest way to waste $50k and 6 months.",
+      "visual_prompt": "Medium close-up of @daniel in a dimly lit coffee shop, natural window light from left, candid documentary style, locked-off camera, slightly gritty texture.",
+      "duration_hint": 5
+    },
+    {
+      "id": 2,
+      "audio_text": "I spent a year building an AI scheduler. Flopped. Then I automated my client onboarding with Zapier and GPT-4. Saved 20 hours a week.",
+      "visual_prompt": "Over-the-shoulder shot of @daniel at a kitchen counter, laptop open, morning light, slow push-in, natural candid moment.",
+      "duration_hint": 8
+    },
+    {
+      "id": 3,
+      "audio_text": "Process beats product. Automate first, build later. That's the whole thing.",
+      "visual_prompt": "Wide shot of @daniel walking on a quiet street, evening golden hour, medium shot, tracking slightly, relaxed confident stride.",
+      "duration_hint": 5
+    }
+  ],
+  "loop_back_line": "Process beats product."
+}

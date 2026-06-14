@@ -1,0 +1,53 @@
+# LinkedIn Platform Configuration
+platform_id: "linkedin"
+display_name: "LinkedIn"
+enabled: true
+
+content_formats:
+  - type: "text_post"
+    max_length: 3000
+    recommended_length: 1200
+    supports_media: true
+    supports_links: true
+  - type: "article"
+    max_length: 125000
+    recommended_length: 1500
+    supports_media: true
+    supports_links: true
+  - type: "carousel"
+    max_slides: 20
+    image_format: "PDF or images"
+    aspect_ratio: "1:1 or 4:5"
+
+posting:
+  optimal_times:
+    - "Tuesday 08:00"
+    - "Wednesday 10:00"
+    - "Thursday 12:00"
+  max_posts_per_day: 1
+  min_hours_between_posts: 20
+
+media_specs:
+  image:
+    formats: ["jpg", "png"]
+    max_size_mb: 10
+    recommended_resolution: "1200x1200"
+    aspect_ratios: ["1:1", "1.91:1", "4:5"]
+  video:
+    formats: ["mp4"]
+    max_duration_seconds: 600
+    max_size_mb: 200
+    recommended_resolution: "1920x1080"
+
+api:
+  base_url: "https://api.linkedin.com/v2"
+  auth_type: "OAuth2"
+  scopes:
+    - "w_member_social"
+    - "r_liteprofile"
+  rate_limit: "100 requests/day"
+
+hashtag_rules:
+  count: "3-5"
+  placement: "bottom of post"
+  style: "separated by spaces on their own line"

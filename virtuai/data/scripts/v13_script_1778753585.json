@@ -1,0 +1,53 @@
+{
+  "topic": "How millionaires cut obligations to focus on what matters",
+  "title": "The One Thing Millionaires Cut From Their Schedule",
+  "hook": "Millionaires cut obligations, not tasks.",
+  "ending_pattern": "loop_back",
+  "scenes": [
+    {
+      "id": 1,
+      "setting": "Modern coffee shop with wooden tables, morning light",
+      "scene_edit_prompt": "Keep the same person, face, head position, lighting on the face, and expression EXACTLY the same. Only change the background and environment behind them.",
+      "spoken_text": "Millionaires cut obligations, not tasks. I surveyed 100 people earning over a million a year.",
+      "shot_type": "medium close-up",
+      "emphasis_words": [
+        "obligations",
+        "tasks"
+      ]
+    },
+    {
+      "id": 2,
+      "setting": "Minimalist home office with a single monitor and bookshelf",
+      "scene_edit_prompt": "Keep the same person, face, head position, lighting on the face, and expression EXACTLY the same. Only change the background and environment behind them.",
+      "spoken_text": "Every single one said they stopped saying yes to things they didn't want to do.",
+      "shot_type": "medium close-up",
+      "emphasis_words": [
+        "every",
+        "stopped"
+      ]
+    },
+    {
+      "id": 3,
+      "setting": "Park bench under a tree, natural afternoon light",
+      "scene_edit_prompt": "Keep the same person, face, head position, lighting on the face, and expression EXACTLY the same. Only change the background and environment behind them.",
+      "spoken_text": "Not busywork. Not tasks. Obligations. The guilt-driven yes that drains your energy.",
+      "shot_type": "medium close-up",
+      "emphasis_words": [
+        "guilt-driven",
+        "drains"
+      ]
+    },
+    {
+      "id": 4,
+      "setting": "Quiet corner of a library with warm lighting",
+      "scene_edit_prompt": "Keep the same person, face, head position, lighting on the face, and expression EXACTLY the same. Only change the background and environment behind them.",
+      "spoken_text": "That's the only pattern. So ask yourself—what obligation are you keeping that makes you poor? Millionaires cut obligations, not tasks.",
+      "shot_type": "medium close-up",
+      "emphasis_words": [
+        "obligation",
+        "poor"
+      ]
+    }
+  ],
+  "estimated_total_sec": 25
+}

@@ -1,0 +1,647 @@
+{
+  "id": "virtuai-full-pipeline",
+  "name": "VirtuAI — Full Agent Pipeline",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "t-manual",
+      "name": "Manual run",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        240,
+        680
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:9090/agents/analyzer/run-sync",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"input\": {\n    \"prompt\": \"Read the most recently published post's metrics. Output a JSON verdict: verdict (positive|negative|neutral), next_direction (do_similar|do_different|continue), recommendation.\"\n  }\n}",
+        "options": {
+          "timeout": 1800000
+        }
+      },
+      "id": "ag-analyzer",
+      "name": "📊 Analyzer",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        480,
+        520
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.output.toLowerCase() }}",
+              "operation": "contains",
+              "value2": "positive"
+            }
+          ]
+        }
+      },
+      "id": "if-positive",
+      "name": "Last post: positive?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        720,
+        520
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:9090/agents/research/run-sync",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"input\": {\n    \"prompt\": \"Last post performed POSITIVELY. Find a trending AI+automation business topic that SHARES the winning structural pattern. Read banned_patterns.json + lessons.json first.\",\n    \"context\": { \"direction\": \"do_similar\", \"analyzer_output\": {{ JSON.stringify($('📊 Analyzer').item.json.output) }} }\n  }\n}",
+        "options": {
+          "timeout": 1800000
+        }
+      },
+      "id": "ag-research-similar",
+      "name": "🔎 Research (similar)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        960,
+        360
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:9090/agents/research/run-sync",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"input\": {\n    \"prompt\": \"Last post performed NEGATIVELY or NEUTRALLY. Find a trending AI+automation topic STRUCTURALLY DIFFERENT from what just flopped. Read banned_patterns.json + lessons.json first.\",\n    \"context\": { \"direction\": \"do_different\", \"analyzer_output\": {{ JSON.stringify($('📊 Analyzer').item.json.output) }} }\n  }\n}",
+        "options": {
+          "timeout": 1800000
+        }
+      },
+      "id": "ag-research-diff",
+      "name": "🔎 Research (different)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        960,
+        680
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:9090/agents/strategy/run-sync",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"input\": {\n    \"prompt\": \"Decide content_type (data-driven from analyzer best_content_types + verdict) and platform routing per the fixed rule (reel -> instagram+youtube_shorts; portrait/carousel -> instagram only). Do NOT decide a posting time.\",\n    \"context\": {\n      \"analyzer_output\": {{ JSON.stringify($('📊 Analyzer').item.json.output) }},\n      \"research_output\": {{ JSON.stringify($json.output) }}\n    }\n  }\n}",
+        "options": {
+          "timeout": 1800000
+        }
+      },
+      "id": "ag-strategy",
+      "name": "📋 Strategy",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1200,
+        520
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:9090/agents/creator/run-sync",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"input\": {\n    \"prompt\": \"Read your inbox + banned_patterns first. Then write reel script + portrait + carousel JSON following the Strategy plan.\",\n    \"context\": { \"strategy_output\": {{ JSON.stringify($json.output) }} }\n  }\n}",
+        "options": {
+          "timeout": 1800000
+        }
+      },
+      "id": "ag-creator",
+      "name": "✍️ Creator",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1440,
+        520
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:9090/agents/reviewer/run-sync",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"input\": {\n    \"prompt\": \"TEXT QUALITY CHECK ONLY — NO VIDEO YET. Check the Creator's written content against PROJECT_STANDARDS: hook strength, concrete anchors, banned phrases, sentiment match. Verdict PASS or REVISE. If REVISE, send_agent_message to creator with specific issues.\",\n    \"context\": { \"creator_output\": {{ JSON.stringify($json.output) }}, \"phase\": \"pre-render\" }\n  }\n}",
+        "options": {
+          "timeout": 1800000
+        }
+      },
+      "id": "ag-rev-text",
+      "name": "🔍 Reviewer (TEXT — cheap)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1680,
+        520
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.output }}",
+              "operation": "contains",
+              "value2": "VERDICT=PASS"
+            }
+          ]
+        }
+      },
+      "id": "if-text-pass",
+      "name": "Text PASS?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        1920,
+        520
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:9090/agents/creator/run-sync",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"input\": {\n    \"prompt\": \"RETRY. Read your inbox — the Reviewer sent a REVISE message. Rewrite the affected pieces fixing every listed issue.\",\n    \"context\": { \"is_retry\": true, \"phase\": \"text-retry\" }\n  }\n}",
+        "options": {
+          "timeout": 1800000
+        }
+      },
+      "id": "ag-creator-retry",
+      "name": "✍️ Creator (retry — cheap)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1680,
+        760
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:9090/agents/reviewer/run-sync",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"input\": {\n    \"prompt\": \"TEXT QUALITY re-check after Creator retry. Verdict PASS or REVISE.\",\n    \"context\": { \"creator_output\": {{ JSON.stringify($json.output) }}, \"phase\": \"retry-check\" }\n  }\n}",
+        "options": {
+          "timeout": 1800000
+        }
+      },
+      "id": "ag-rev-text-2",
+      "name": "🔍 Reviewer (retry check)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1920,
+        760
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.output }}",
+              "operation": "contains",
+              "value2": "VERDICT=PASS"
+            }
+          ]
+        }
+      },
+      "id": "if-retry-pass",
+      "name": "Retry PASS?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        2160,
+        760
+      ]
+    },
+    {
+      "parameters": {},
+      "name": "Notify text fail",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        2400,
+        880
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:9090/agents/guardian/run-sync",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"input\": {\n    \"prompt\": \"ETHICS / POLICY / VALIDITY check on the TEXT POST below (no video exists yet). The actual content to check is in context.creator_output. Emit VERDICT=APPROVE | VERDICT=REVISE | VERDICT=BLOCK as the first line, then your JSON. On BLOCK call add_banned_pattern; on REVISE send_agent_message to creator.\",\n    \"context\": {\n      \"phase\": \"pre-render-ethics\",\n      \"creator_output\": {{ JSON.stringify($('✍️ Creator (retry — cheap)').isExecuted ? $('✍️ Creator (retry — cheap)').item.json.output : $('✍️ Creator').item.json.output) }},\n      \"reviewer_verdict\": {{ JSON.stringify($json.output) }}\n    }\n  }\n}",
+        "options": {
+          "timeout": 1800000
+        }
+      },
+      "id": "ag-guardian",
+      "name": "🛡️ Guardian (TEXT — cheap)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        2160,
+        360
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.output }}",
+              "operation": "contains",
+              "value2": "VERDICT=APPROVE"
+            }
+          ]
+        }
+      },
+      "id": "if-ethics-ok",
+      "name": "Ethics APPROVE?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        2400,
+        360
+      ]
+    },
+    {
+      "parameters": {},
+      "name": "Notify BLOCKED",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        2640,
+        560
+      ]
+    },
+    {
+      "parameters": {
+        "content": "## Credit-aware design\n\n**Cheap gates run FIRST** (text-only, ~$0.10/call):\n  ✍️ Creator → 🔍 Reviewer-text → 🛡️ Guardian-text\n\n**Expensive step runs ONCE per cycle** (no retries on this):\n  🎬 Visual (Kling render + Nano Banana ×6 + Suno) ≈ $3-5\n\n**Retries cost nothing on the Kling side** — text-only Creator retries don't trigger any rendering.\n\n**On any cheap-gate failure** (Reviewer-text REVISE or Guardian REVISE/BLOCK), Visual is NEVER called. The pack stops and emails for manual review. Credits saved.\n\n**Post-render failures are rare** (text already passed) and go straight to email — no automatic re-render.",
+        "height": 280,
+        "width": 600,
+        "color": 1
+      },
+      "id": "sn-header",
+      "name": "📌 Credit-aware design",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        240,
+        40
+      ]
+    },
+    {
+      "parameters": {
+        "content": "## Cheap zone — text only\n*Every retry here costs ~$0.10 (Claude calls only)*\n\n✍️ Creator writes\n🔍 Reviewer checks PROJECT_STANDARDS text rules\n🛡️ Guardian checks ethics on TEXT\n\nIf any of these fail → Creator retry (still no rendering)\n→ if retry also fails → manual email\n\nNo Kling / Nano Banana / Suno calls in this zone.",
+        "height": 260,
+        "width": 320,
+        "color": 5
+      },
+      "id": "sn-cheap",
+      "name": "Cheap zone",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        1440,
+        980
+      ]
+    },
+    {
+      "parameters": {
+        "content": "## Inter-agent messaging\n\nWhen Reviewer or Guardian rejects, they call `send_agent_message(to='creator', subject='REVISE', body=...)` — the message is appended to `virtuai/data/agent_messages.jsonl`.\n\nThe Creator's NEXT call automatically reads this inbox via the API server's auto-inject. Creator fixes the specific issues without burning new credits on Visual.\n\nGuardian BLOCKs also write to `virtuai/data/banned_patterns.json` — Research reads this file before brainstorming so blocked patterns are never proposed again.\n\nAnalyzer writes to `virtuai/data/lessons.json` when a post performs strongly — Research and Strategy read this for direction next cycle.",
+        "height": 340,
+        "width": 380,
+        "color": 6
+      },
+      "id": "sn-messaging",
+      "name": "Inter-agent messaging",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        840,
+        980
+      ]
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 9 * * *"
+            }
+          ]
+        }
+      },
+      "name": "Schedule 09:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        240,
+        830
+      ]
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 17 * * *"
+            }
+          ]
+        }
+      },
+      "name": "Schedule 17:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        240,
+        980
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:9090/n8n/render-publish-sync",
+        "options": {
+          "timeout": 900000
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"creator_output\": {{ JSON.stringify($('✍️ Creator').item.json.output) }},\n  \"strategy_output\": {{ JSON.stringify($('📋 Strategy').item.json.output) }},\n  \"publish\": true\n}"
+      },
+      "name": "🚀 Render + Publish (agent-seeded, sync)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        2640,
+        220
+      ]
+    },
+    {
+      "parameters": {
+        "content": "## Render + Publish (agent-seeded, SYNC)\n\nAfter the agent gates APPROVE, this hands the AGENTS' chosen topic/angle to\n/n8n/render-publish-sync, which renders (Kling + Nano Banana + Suno) the\n3-piece pack ABOUT that topic and PUBLISHES — reels -> YouTube + Instagram,\nimages -> Instagram. The node BLOCKS (~12 min) and the live post URLs land\nin the '✅ Pack LIVE' node. (No Wait node — it's broken in this n8n build.)",
+        "height": 230,
+        "width": 430,
+        "color": 3
+      },
+      "name": "Deterministic zone",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        2600,
+        -40
+      ]
+    },
+    {
+      "parameters": {},
+      "name": "✅ Pack LIVE (URLs in this node)",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        3520,
+        160
+      ]
+    }
+  ],
+  "connections": {
+    "Manual run": {
+      "main": [
+        [
+          {
+            "node": "📊 Analyzer",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "📊 Analyzer": {
+      "main": [
+        [
+          {
+            "node": "Last post: positive?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Last post: positive?": {
+      "main": [
+        [
+          {
+            "node": "🔎 Research (similar)",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "🔎 Research (different)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "🔎 Research (similar)": {
+      "main": [
+        [
+          {
+            "node": "📋 Strategy",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "🔎 Research (different)": {
+      "main": [
+        [
+          {
+            "node": "📋 Strategy",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "📋 Strategy": {
+      "main": [
+        [
+          {
+            "node": "✍️ Creator",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "✍️ Creator": {
+      "main": [
+        [
+          {
+            "node": "🔍 Reviewer (TEXT — cheap)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "🔍 Reviewer (TEXT — cheap)": {
+      "main": [
+        [
+          {
+            "node": "Text PASS?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Text PASS?": {
+      "main": [
+        [
+          {
+            "node": "🛡️ Guardian (TEXT — cheap)",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "✍️ Creator (retry — cheap)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "✍️ Creator (retry — cheap)": {
+      "main": [
+        [
+          {
+            "node": "🔍 Reviewer (retry check)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "🔍 Reviewer (retry check)": {
+      "main": [
+        [
+          {
+            "node": "Retry PASS?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Retry PASS?": {
+      "main": [
+        [
+          {
+            "node": "🛡️ Guardian (TEXT — cheap)",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Notify text fail",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "🛡️ Guardian (TEXT — cheap)": {
+      "main": [
+        [
+          {
+            "node": "Ethics APPROVE?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ethics APPROVE?": {
+      "main": [
+        [],
+        [
+          {
+            "node": "Notify BLOCKED",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule 09:00": {
+      "main": [
+        [
+          {
+            "node": "📊 Analyzer",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule 17:00": {
+      "main": [
+        [
+          {
+            "node": "📊 Analyzer",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "🚀 Render + Publish (agent-seeded, sync)": {
+      "main": [
+        [
+          {
+            "node": "✅ Pack LIVE (URLs in this node)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "tags": []
+}

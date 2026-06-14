@@ -1,0 +1,33 @@
+{
+  "topic": "Stop building AI tools. Start building AI processes.",
+  "hook_summary": "Everyone is building AI products. The real money is in process, not product.",
+  "total_words": 110,
+  "estimated_seconds": 24,
+  "scenes": [
+    {
+      "id": 1,
+      "audio_text": "Everyone's out here building AI tools. They're missing the point.",
+      "visual_prompt": "@daniel, medium close-up, indoors in a modern cafe with warm lighting, candid documentary style, natural daylight from window, locked-off camera, slight background blur.",
+      "duration_hint": 4
+    },
+    {
+      "id": 2,
+      "audio_text": "I spent six months building an AI scheduling bot. Got 12 users. Then I automated my client's onboarding process \u2014 8 hours of manual work down to 20 minutes. They paid me $5,000.",
+      "visual_prompt": "@daniel, over-shoulder shot at a desk with a laptop and coffee, bookshelf in background, soft artificial light, slow push-in, documentary feel.",
+      "duration_hint": 8
+    },
+    {
+      "id": 3,
+      "audio_text": "The tool is a commodity. The process is the moat. Anyone can clone your chatbot. They can't clone your system.",
+      "visual_prompt": "@daniel, walking on a city street with blurred pedestrians, golden hour lighting, medium shot, slight handheld motion for realism.",
+      "duration_hint": 6
+    },
+    {
+      "id": 4,
+      "audio_text": "So stop building. Start systematizing. That's where the leverage lives.",
+      "visual_prompt": "@daniel, wide shot in a rooftop garden with skyline background, natural overcast light, locked-off camera, calm candid pose.",
+      "duration_hint": 6
+    }
+  ],
+  "loop_back_line": null
+}

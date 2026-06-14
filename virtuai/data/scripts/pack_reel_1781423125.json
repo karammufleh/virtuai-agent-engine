@@ -1,0 +1,69 @@
+{
+  "topic": "We spent $40,000 building a",
+  "hook_summary": "We spent $40,000 building a",
+  "scenes": [
+    {
+      "audio_text": "We spent forty thousand dollars building a GPT-4 sales bot. In the first week, it quoted twelve dollars a seat to two hundred enterprise prospects. Our real price is one hundred and twenty dollars.",
+      "visual_prompt": "Face-to-camera, man in dark charcoal henley seated at desk, dim warm lamp light, deadpan expression, laptop closed in front of him",
+      "on_screen_text": "$40K BOT \u2192 $12 QUOTE \u2192 200 LEADS"
+    },
+    {
+      "audio_text": "Twelve versus one twenty \u2014 two hundred leads. One bot. Zero human eyes. We used Claude for conversation, Apollo to source prospects, Zapier to route the quotes.",
+      "visual_prompt": "Cut to text overlay '$12 VS $120 \u2014 200 leads' over a blurred Slack screenshot showing an email forward with subject 'Is this a joke?'",
+      "on_screen_text": "$12 vs $120 \u2014 200 LEADS"
+    },
+    {
+      "audio_text": "Every tool worked perfectly. The problem was the pricing doc Claude read first had two tables \u2014 the old twelve dollar tier and the new one twenty dollar tier. No labels. Claude picked the first one every time.",
+      "visual_prompt": "Cut back to face-to-camera, slight shake of head, hands on desk, serious expression",
+      "on_screen_text": "TWO PRICING TABLES. NO LABELS."
+    },
+    {
+      "audio_text": "Day eighteen, a VP forwarded our bot's email to our head of sales. Subject line: 'Is this a joke?' That's when we realized the fix wasn't technical. It was one afternoon of work.",
+      "visual_prompt": "Cut to desk shot, laptop screen open showing a Notion database with a single pricing table, red circle around a bolded header 'ACTIVE PRICING \u2014 USE THIS TABLE ONLY'",
+      "on_screen_text": "FIX: ONE AFTERNOON"
+    },
+    {
+      "audio_text": "Six weeks since the fix. Zero pricing errors. Zero forwarded emails. The Zapier log shows every quote being cross-checked against a single-source Notion table before delivery.",
+      "visual_prompt": "Cut to face-to-camera, calmer tone, hands resting, slight nod",
+      "on_screen_text": "6 WEEKS. 0 ERRORS."
+    },
+    {
+      "audio_text": "Your AI will faithfully execute whatever context you hand it. If your context is ambiguous, your outputs will be too \u2014 at scale, at speed, with no one watching. Garbage in, forty grand out.",
+      "visual_prompt": "Face-to-camera, intense close, direct stare into lens, single warm lamp, shadows on face",
+      "on_screen_text": "GARBAGE IN, $40K OUT."
+    }
+  ],
+  "caption": "We spent $40K building an AI sales bot that destroyed the first 200 enterprise conversations we ever had.\n\nThe bot was trained on our SMB pricing sheet. Nobody caught it before we pointed it at a prospect list that averaged $80K ACV deals. First week live, it quoted $12 monthly subscriptions to 200 decision-makers who were expecting six-figure contracts. We found out on day eight when a VP forwarded the bot's email to our head of sales with one line: 'Is this a joke?'\n\nWe used Claude for the conversation layer, Apollo to source the list, and a custom Zapier sequence to fire the outreach. Every piece of the stack worked exactly as designed. The design was just wrong. Nobody had audited what pricing data the bot could access, and nobody had scoped the prospect list to match the product tier. Two separate oversights \u2014 combined, they torched 200 relationships before a human ever touched them. Re-warming that list took four months and a personal video from our founder to each contact via Loom.\n\nThe $40K wasn't in the tools. It was in the developer hours to build the flow, the copywriter who tuned the sequences, and the sales manager who project-managed the launch. The actual Zapier and Claude API costs were maybe $200. The expensive part was the confidence we had that it was ready.\n\nAI in your sales process is not a set-and-forget decision. It is an accountability decision. Someone has to own the data inputs, the prospect segmentation, and the QA loop \u2014 the same way someone owns the CRM. If that role doesn't exist in your org before the bot goes live, you're not saving labor costs. You're just moving the risk somewhere invisible.\n\nShip fast. But know what the bot is touching before it touches it.",
+  "hashtags": [
+    "#AIFailure",
+    "#SalesBotDisaster",
+    "#AIPostMortem",
+    "#EnterpriseAI",
+    "#FounderLessons",
+    "#AISales",
+    "#SalesAutomation"
+  ],
+  "platform_versions": {
+    "instagram": {
+      "caption": "We spent $40K building an AI sales bot that destroyed the first 200 enterprise conversations we ever had.\n\nThe bot was trained on our SMB pricing sheet. Nobody caught it before we pointed it at a prospect list that averaged $80K ACV deals. First week live, it quoted $12 monthly subscriptions to 200 decision-makers who were expecting six-figure contracts. We found out on day eight when a VP forwarded the bot's email to our head of sales with one line: 'Is this a joke?'\n\nWe used Claude for the conversation layer, Apollo to source the list, and a custom Zapier sequence to fire the outreach. Every piece of the stack worked exactly as designed. The design was just wrong. Nobody had audited what pricing data the bot could access, and nobody had scoped the prospect list to match the product tier. Two separate oversights \u2014 combined, they torched 200 relationships before a human ever touched them. Re-warming that list took four months and a personal video from our founder to each contact via Loom.\n\nThe $40K wasn't in the tools. It was in the developer hours to build the flow, the copywriter who tuned the sequences, and the sales manager who project-managed the launch. The actual Zapier and Claude API costs were maybe $200. The expensive part was the confidence we had that it was ready.\n\nAI in your sales process is not a set-and-forget decision. It is an accountability decision. Someone has to own the data inputs, the prospect segmentation, and the QA loop \u2014 the same way someone owns the CRM. If that role doesn't exist in your org before the bot goes live, you're not saving labor costs. You're just moving the risk somewhere invisible.\n\nShip fast. But know what the bot is touching before it touches it.\n\nComment 'GUARDRAILS' and I'll DM you the prompt template we use now.",
+      "hashtags": [
+        "#AIFailure",
+        "#SalesBotDisaster",
+        "#AIPostMortem",
+        "#EnterpriseAI",
+        "#FounderLessons"
+      ]
+    },
+    "linkedin": {
+      "caption": "My AI sales bot quoted $12 per seat to 200 enterprise prospects.\n\nThe real price was $120.\n\nWe didn't catch it for three weeks. By the time a prospect forwarded us their own quote to ask about a discount, we'd already sent contracts. The total exposure was just over $40,000 in under-billed ARR \u2014 some of which we honoured because we were too far into the sales cycle to walk it back.\n\nHere's what actually happened. We built a Claude-powered quoting bot that pulled pricing context from a Notion doc. That doc had two pricing tables \u2014 one from our old self-serve tier (written 18 months ago), one from our current enterprise tier. Both lived in the same page. Neither had a label saying which was active. Claude read the first one it found. It was the wrong one. Every single time.\n\nThe bot wasn't hallucinating. It was doing exactly what we told it to do, with exactly the data we gave it. That's the part that stings.\n\nThe fix took one afternoon. We deleted the old table, added a single bolded header that said 'ACTIVE PRICING \u2014 USE THIS TABLE ONLY', re-prompted Claude with an explicit instruction to refuse any quote that didn't reference that header, and re-routed the Zapier flow to log every quote to a Slack channel for a 10-minute human review window before it hit the prospect.\n\nSix weeks. Zero errors since.\n\nThe lesson isn't 'don't trust AI with pricing'. It's that AI will faithfully execute on whatever context you hand it. If your context is ambiguous, your outputs will be too \u2014 at scale, at speed, with no one watching.\n\nGarbage in, $40K out."
+    },
+    "facebook": {
+      "post": "We spent $40,000 building a GPT-4 sales bot. First week live, it quoted $12 a seat to 200 enterprise prospects. Our real price is $120. The bot wasn't broken \u2014 it was reading a pricing doc that had both the old $12 tier and the new $120 tier in the same page with no labels. Claude picked the first one. Every time. The fix? One afternoon. Delete the old table. Add a clear header. Add a 10-minute human Slack review via Zapier. Six weeks with zero errors since. Your AI will execute whatever data you give it. Garbage in, $40K out."
+    },
+    "youtube_shorts": {
+      "title": "I Spent $40K on an AI Sales Bot That Quoted $12 Instead of $120",
+      "description": "We spent $40K building a GPT-4 sales bot that quoted $12 per seat to 200 enterprise prospects instead of our real price of $120. Here's the complete post-mortem \u2014 what broke, why it broke, and how we fixed it in one afternoon.\n\nTools mentioned:\n- Claude (conversation layer)\n- Apollo (prospect sourcing)\n- Zapier (outreach routing)\n- Notion (pricing database)\n- Slack (human review queue)\n\nTimeline:\n- Week 1: Bot goes live, quotes wrong price to 200 leads\n- Day 8: VP forwards bot's email to head of sales\n- Day 18: We discover the scale of the problem\n- Week 3-4: Rollout of fix (single-source pricing table + human review loop)\n- Week 10 onwards: Zero pricing errors (verified for 6+ weeks)\n\nSubscribe for more AI war stories and deployment post-mortems."
+    }
+  },
+  "_source": "creator"
+}

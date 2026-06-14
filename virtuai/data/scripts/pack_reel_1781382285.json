@@ -1,0 +1,51 @@
+{
+  "topic": "Solo bookkeeper cuts $8k/month in subs with $97 workflow",
+  "hook_summary": "I replaced $8,000 a month in subcontractors with a $97 automation.",
+  "total_words": 103,
+  "estimated_seconds": 28,
+  "scenes": [
+    {
+      "id": 1,
+      "story_beat": "setup",
+      "audio_text": "I replaced $8,000 a month in subcontractors with a $97 automation. My clients didn't even notice.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, eye-level, seated leaning forward with both forearms resting flat on desk, direct deadpan eye contact held for 1.5 beats after '$8,000' [2] SETTING: warm wood writing desk in a quiet home study, tall bookshelf packed with binders and paperbacks behind him, a ceramic mug and a small open Moleskine visible on the desk surface \u2014 @daniel in light denim shirt under a tan suede jacket [3] LIGHT: single warm incandescent desk lamp to his left casting a soft amber pool, late evening, deep shadows on the right side of frame [4] LIVE BACKGROUND: pages of a book flutter faintly from a nearby vent, a wall clock's second hand ticks visibly over his shoulder, ambient lamp flicker from the fireplace in the adjacent room spills through the doorway [5] CAMERA + MOOD: slow 1-foot push-in on a handheld rig, barely perceptible drift left, intimate confessional energy \u2014 the stillness of someone about to say something they know will land hard",
+      "duration_hint": 5
+    },
+    {
+      "id": 2,
+      "story_beat": "incident",
+      "audio_text": "I had four bookkeeping subs. Good people. But by March I was clearing less than they were.",
+      "visual_prompt": "[1] COMPOSITION: medium shot, 50mm, slight low angle looking up, seated on the edge of the bed with one elbow on knee and chin resting on closed fist [2] SETTING: bedroom edge of bed, morning light pouring through sheer linen curtains casting long soft stripes across the hardwood floor, a phone face-down and an open laptop on the bed behind him \u2014 @daniel in light denim shirt under a tan suede jacket [3] LIGHT: diffuse early-morning window light from the east, cool-warm mix, no artificial fill, soft shadow under jawline [4] LIVE BACKGROUND: curtain fabric shifts gently in the draft from a cracked window, dust motes drifting through the light beam, a ceiling fan rotates slowly above [5] CAMERA + MOOD: slow handheld drift rightward, subject stays centered, quiet morning-reckoning energy \u2014 like a decision already made the night before",
+      "duration_hint": 5
+    },
+    {
+      "id": 3,
+      "story_beat": "struggle",
+      "audio_text": "Every deliverable ran through three inboxes. Five days from close to client report. Every single month.",
+      "visual_prompt": "[1] COMPOSITION: wide shot, 28mm, eye-level, standing with arms loosely crossed, weight shifted to one hip, slight tilt of head [2] SETTING: garage workshop with a pegboard of hanging tools behind him, a single aluminum work lamp clamped to the edge of a cluttered workbench, oil-stained concrete floor \u2014 @daniel in light denim shirt under a tan suede jacket [3] LIGHT: single hard practical work lamp from above-right at roughly 45 degrees, casting strong directional shadows, rest of the garage in dim ambient [4] LIVE BACKGROUND: a shop fan oscillates slowly in the far corner moving dust across the floor, an overhead fluorescent tube flickers briefly, a rag draped over the bench edge sways from the fan's draft [5] CAMERA + MOOD: static wide locked with a slow 2-foot tracking pull backward, revealing the space around him, tone of frustrated retrospect \u2014 someone describing a system they should have fixed sooner",
+      "duration_hint": 5
+    },
+    {
+      "id": 4,
+      "story_beat": "turn",
+      "audio_text": "I built one Make.com workflow connected to Claude. Expected it to break on the first real client file. It didn't.",
+      "visual_prompt": "[1] COMPOSITION: over-shoulder wide, 35mm, slight high angle looking down at the kitchen counter, both hands flat on the island surface leaning forward [2] SETTING: kitchen island at dusk, one brushed-brass pendant lamp switched on above the island, a laptop open at the counter, a half-drunk glass of water, takeout container pushed to the side \u2014 @daniel in light denim shirt under a tan suede jacket [3] LIGHT: warm single pendant lamp overhead, deep blue dusk visible through the window above the sink, cool ambient from outside contrasting the warm cone of light [4] LIVE BACKGROUND: a kettle on the back burner vents a thin thread of steam, exterior trees sway in wind visible through the kitchen window, a dripping faucet sends ripples across the sink basin [5] CAMERA + MOOD: slow dolly in from wide to medium, camera settling just as he says 'It didn't' \u2014 quiet disbelief turned into conviction, the energy of someone who ran the test and was genuinely surprised",
+      "duration_hint": 5
+    },
+    {
+      "id": 5,
+      "story_beat": "proof",
+      "audio_text": "Turnaround dropped to four hours. Same quarter, I raised my prices 40%. Nobody asked why.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 85mm portrait, eye-level, leaning back into leather armchair with one arm resting along the side, relaxed open posture [2] SETTING: leather armchair beside a fireplace, low orange firelight from burning logs, a short glass of water on the side table, framed print on the wall partially lit \u2014 @daniel in light denim shirt under a tan suede jacket [3] LIGHT: warm firelight as primary practical source, dancing and shifting naturally, no fill light, deep warm shadows across the left side of his face [4] LIVE BACKGROUND: fire logs actively burning with visible flame movement and ember glow, shadows from the flame shift across the wall and ceiling, a candle on the mantel flickers in the convection current [5] CAMERA + MOOD: slow handheld orbit left-to-right about 20 degrees, subject stays in frame, fire dancing behind him \u2014 measured, almost amused delivery, the energy of someone who expected pushback and got silence instead",
+      "duration_hint": 5
+    },
+    {
+      "id": 6,
+      "story_beat": "meaning",
+      "audio_text": "The work didn't get worse. The overhead just disappeared. That's the only math that matters.",
+      "visual_prompt": "[1] COMPOSITION: medium shot, 50mm, eye-level, seated in reading nook with one hand on chin, half-turned toward camera from a slight three-quarter angle [2] SETTING: reading nook with a cushioned window bench, rain visible streaking the glass behind him, a closed hardback book on his knee, a dim floor lamp to the right \u2014 @daniel in light denim shirt under a tan suede jacket [3] LIGHT: overcast diffuse daylight from the rain-streaked window, grey-cool and flat from outside, balanced by a warm floor lamp on the right creating a split-tone effect [4] LIVE BACKGROUND: rain droplets stream visibly down the window glass behind him, a tree branch outside sways in the wind, a candle on the windowsill throws a faint waver of light onto the sill [5] CAMERA + MOOD: very slow 1-foot push-in, handheld with minimal drift, subject quietly holds eye contact through the final line \u2014 the tone of someone who figured something out and is simply stating it, no performance, just fact",
+      "duration_hint": 5
+    }
+  ],
+  "loop_back_line": "The work didn't get worse. The overhead just disappeared. That's the only math that matters."
+}

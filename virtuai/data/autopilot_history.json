@@ -1,0 +1,522 @@
+{
+  "runs": [
+    {
+      "ts": 1778775252,
+      "topic": "Claude agent replaced $4,200 accountant in 11 minutes",
+      "hook": "My accountant charged me $4,200 to categorize expenses.",
+      "outfit": "navy short-sleeve polo (the classic)",
+      "mood": "case study \u2014 a single specific automation, with the numbers",
+      "setting_pool_id": 1,
+      "results": {
+        "youtube": "https://youtube.com/shorts/jU7jKV2u_Nk",
+        "instagram_id": "18129323833592951",
+        "linkedin_urn": "urn:li:share:7460726645474148352"
+      }
+    },
+    {
+      "ts": 1778777008,
+      "topic": "Notion agent found $4,200 tax leak in 11 minutes",
+      "hook": "My accountant charged $4,200 to find what took 11 minutes.",
+      "outfit": "navy short-sleeve polo (the classic)",
+      "mood": "case study \u2014 a single specific automation, with the numbers",
+      "setting_pool_id": 1,
+      "results": {
+        "youtube": "https://youtube.com/shorts/HKzFTlgtJt8",
+        "instagram_id": "18086844599183016",
+        "linkedin_urn": "urn:li:share:7460731521327382528"
+      }
+    },
+    {
+      "ts": 1778779536,
+      "kind": "reel",
+      "topic": "AI proposal generator killed my conversion rate",
+      "hook": "I burned $31,000 building a tool that hurt my business.",
+      "outfit": "navy zip-up hoodie over a white tee",
+      "mood": "personal regret \u2014 admit a costly mistake you made building AI",
+      "setting_pool_id": 0,
+      "results": {
+        "youtube": "https://youtube.com/shorts/xXs0RSjAKk4",
+        "instagram_id": "18012382967889848",
+        "linkedin_urn": "urn:li:share:7460742123886391296"
+      }
+    },
+    {
+      "ts": 1778779536,
+      "kind": "portrait",
+      "topic": "Automating Email Is Usually Wrong First",
+      "hook": "Everyone automates email first. That is the wrong move.",
+      "outfit": "white linen button-down with sleeves rolled to the elbow",
+      "mood": "contrarian rant \u2014 push back on a popular AI tip that's wrong",
+      "setting_pool_id": null,
+      "results": {
+        "youtube": null,
+        "instagram_id": "17928308214294256",
+        "linkedin_urn": "urn:li:share:7460741947654131712"
+      }
+    },
+    {
+      "ts": 1778779536,
+      "kind": "carousel",
+      "topic": "Most AI Assistants Will Be Unemployed by 2027",
+      "hook": "The AI tools winning today will be dead in 18 months.",
+      "outfit": "grey crewneck sweater",
+      "mood": "hot take \u2014 a prediction about where AI work is going",
+      "setting_pool_id": null,
+      "results": {
+        "youtube": null,
+        "instagram_id": "18100220246516674",
+        "linkedin_urn": "urn:li:share:7460741953652162560"
+      }
+    },
+    {
+      "ts": 1778782088,
+      "kind": "reel",
+      "topic": "AI tool I killed because it destroyed my margins",
+      "hook": "I spent $340 a month on an AI tool. Then I did the math.",
+      "outfit": "black henley with subtle stubble",
+      "mood": "comparison \u2014 a tool you abandoned vs the one you replaced it with",
+      "topic_seed": "an AI tool you abandoned because it broke your unit economics",
+      "setting_pool_id": 1,
+      "results": {
+        "youtube": "https://youtube.com/shorts/hIjSDAcWKpU",
+        "instagram_id": "17901025410442309",
+        "linkedin_urn": "urn:li:share:7460752826722533376"
+      }
+    },
+    {
+      "ts": 1778782088,
+      "kind": "portrait",
+      "topic": "Junior dev replaced by Cursor costs more",
+      "hook": "We gave Cursor to a junior dev. It made the senior busier.",
+      "outfit": "olive-green field jacket over a charcoal tee",
+      "mood": "live observation \u2014 something you noticed this week that surprised you",
+      "topic_seed": "the agent stack you'd hand a new hire instead of a 90-day plan",
+      "setting_pool_id": null,
+      "results": {
+        "youtube": null,
+        "instagram_id": "18123888826617104",
+        "linkedin_urn": "urn:li:share:7460752781063213057"
+      }
+    },
+    {
+      "ts": 1778782088,
+      "kind": "carousel",
+      "topic": "Stop Prompting Claude Like A Search Engine",
+      "hook": "Your AI prompt isn't broken. Your mental model is.",
+      "outfit": "vintage denim jacket over a grey hoodie",
+      "mood": "contrarian rant \u2014 push back on a popular AI tip that's wrong",
+      "topic_seed": "a single Notion + Zapier loop that quietly killed three meetings a week",
+      "setting_pool_id": null,
+      "results": {
+        "youtube": null,
+        "instagram_id": "18121844833630660",
+        "linkedin_urn": "urn:li:share:7460752783005151232"
+      }
+    },
+    {
+      "ts": 1779229427,
+      "kind": "reel",
+      "topic": "Why founders who vibe-code their own tools lose",
+      "hook": "Vibe-coding your own tools is making you poor.",
+      "outfit": "navy zip-up hoodie over a white tee",
+      "mood": "personal regret \u2014 admit a costly mistake you made building AI",
+      "topic_seed": "a contrarian take on why most founders should NOT vibe-code their own tools",
+      "setting_pool_id": 0,
+      "results": {
+        "youtube": null,
+        "instagram_id": "18092430152224540",
+        "linkedin_urn": null
+      }
+    },
+    {
+      "ts": 1779229427,
+      "kind": "portrait",
+      "topic": "Operators Will Outprice Agencies In 18 Months",
+      "hook": "The agency model doesn't survive a world with Claude and Zapier.",
+      "outfit": "white linen button-down with sleeves rolled to the elbow",
+      "mood": "hot take \u2014 a prediction about where AI work is going",
+      "topic_seed": "the one workflow you'd automate before hiring anyone for the next year",
+      "setting_pool_id": null,
+      "results": {
+        "youtube": null,
+        "instagram_id": "18014250197851738",
+        "linkedin_urn": null
+      }
+    },
+    {
+      "ts": 1779229427,
+      "kind": "carousel",
+      "topic": "One Zapier Zap Replaced My VA",
+      "hook": "I fired my $1,800/mo VA after building one Zap.",
+      "outfit": "grey crewneck sweater",
+      "mood": "case study \u2014 a single specific automation, with the numbers",
+      "topic_seed": "the hidden compounding cost of building AI products vs. AI processes",
+      "setting_pool_id": null,
+      "results": {
+        "youtube": null,
+        "instagram_id": "18125769676625341",
+        "linkedin_urn": null
+      }
+    },
+    {
+      "ts": 1779278497,
+      "kind": "reel",
+      "topic": "Shipping on a $40 stack vs a $40k stack",
+      "hook": "I shipped a feature last Tuesday for forty dollars.",
+      "outfit": "sand-coloured chore jacket over a navy tee",
+      "mood": "hidden cost \u2014 what nobody tells you about scaling AI in your business",
+      "topic_seed": "what shipping a feature on a $40 stack vs. a $40k stack actually feels like",
+      "setting_pool_id": 1,
+      "results": {
+        "youtube": null,
+        "instagram_id": null,
+        "linkedin_urn": null
+      }
+    },
+    {
+      "ts": 1779278497,
+      "kind": "portrait",
+      "topic": "Most AI workflows fail at the handoff",
+      "hook": "The automation works. The human handoff breaks everything.",
+      "outfit": "off-white knit polo, no collar stand",
+      "mood": "hot take \u2014 a prediction about where AI work is going",
+      "topic_seed": "why a small business beats a venture-backed competitor with the same AI stack",
+      "setting_pool_id": null,
+      "results": {
+        "youtube": null,
+        "instagram_id": null,
+        "linkedin_urn": null
+      }
+    },
+    {
+      "ts": 1779278497,
+      "kind": "carousel",
+      "topic": "Stop Building SOPs Before Automating Anything",
+      "hook": "Your SOP obsession is the bottleneck, not the fix.",
+      "outfit": "charcoal merino quarter-zip pullover",
+      "mood": "contrarian rant \u2014 push back on a popular AI tip that's wrong",
+      "topic_seed": "the SaaS feature your customers want that an automation could ship faster than the roadmap",
+      "setting_pool_id": null,
+      "results": {
+        "youtube": null,
+        "instagram_id": null,
+        "linkedin_urn": null
+      }
+    },
+    {
+      "ts": 1781298428,
+      "kind": "reel",
+      "topic": "Automation quietly killed my recurring contractor invoice",
+      "hook": "I paid a contractor $1,200 a month for two years.",
+      "outfit": "deep-burgundy henley, sleeves at the elbow",
+      "mood": "comparison \u2014 a tool you abandoned vs the one you replaced it with",
+      "topic_seed": "an automation that quietly replaced a recurring contractor invoice",
+      "setting_pool_id": 0,
+      "results": {
+        "youtube": "https://youtube.com/shorts/YbOvgA7tURE",
+        "instagram_id": "18233999644311305",
+        "linkedin_urn": null
+      }
+    },
+    {
+      "ts": 1781298428,
+      "kind": "portrait",
+      "topic": "The Maintenance Tax Nobody Invoices You For",
+      "hook": "Every workflow you ship becomes infrastructure you owe.",
+      "outfit": "rust-orange sweatshirt",
+      "mood": "hidden cost \u2014 what nobody tells you about scaling AI in your business",
+      "topic_seed": "a specific prompt that changed how you price your services",
+      "setting_pool_id": null,
+      "results": {
+        "youtube": null,
+        "instagram_id": "18132652726577901",
+        "linkedin_urn": null
+      }
+    },
+    {
+      "ts": 1781298428,
+      "kind": "carousel",
+      "topic": "Prompt Engineers Are Already Being Replaced",
+      "hook": "The job title that aged the fastest in tech",
+      "outfit": "forest-green flannel over a plain white tee",
+      "mood": "hot take \u2014 a prediction about where AI work is going",
+      "topic_seed": "an API integration that paid for itself before the onboarding call ended",
+      "setting_pool_id": null,
+      "results": {
+        "youtube": null,
+        "instagram_id": "18058620665719642",
+        "linkedin_urn": null
+      }
+    },
+    {
+      "ts": 1781371685,
+      "kind": "reel",
+      "topic": "The AI tool that wrecked my unit economics",
+      "hook": "I paid $1,400 a month for a tool that cost me clients.",
+      "outfit": "black bomber jacket with a thin chain necklace",
+      "mood": "case study \u2014 a single specific automation, with the numbers",
+      "topic_seed": "an AI tool you abandoned because it broke your unit economics",
+      "setting_pool_id": 1,
+      "results": {
+        "youtube": "https://youtube.com/shorts/HE0C5VbeKJs",
+        "instagram_id": "17892699279514341",
+        "linkedin_urn": null
+      }
+    },
+    {
+      "ts": 1781371685,
+      "kind": "portrait",
+      "topic": "Stop Automating Your Email Outreach First",
+      "hook": "Automating outreach before you can close manually is a mistake.",
+      "outfit": "navy zip-up hoodie over a white tee",
+      "mood": "contrarian rant \u2014 push back on a popular AI tip that's wrong",
+      "topic_seed": "the agent stack you'd hand a new hire instead of a 90-day plan",
+      "setting_pool_id": null,
+      "results": {
+        "youtube": null,
+        "instagram_id": "18157816837461096",
+        "linkedin_urn": null
+      }
+    },
+    {
+      "ts": 1781371685,
+      "kind": "carousel",
+      "topic": "Context Windows Are Replacing Middle Management",
+      "hook": "The coordinator role is already obsolete. You just haven't noticed.",
+      "outfit": "white linen button-down with sleeves rolled to the elbow",
+      "mood": "hot take \u2014 a prediction about where AI work is going",
+      "topic_seed": "a single Notion + Zapier loop that quietly killed three meetings a week",
+      "setting_pool_id": null,
+      "results": {
+        "youtube": null,
+        "instagram_id": "18202922530358545",
+        "linkedin_urn": null
+      }
+    },
+    {
+      "ts": 1781379331,
+      "kind": "reel",
+      "topic": "Replaced junior dev with AI, product crashed six months later",
+      "hook": "I replaced a $68,000-a-year developer with a $40 subscription.",
+      "outfit": "vintage denim jacket over a grey hoodie",
+      "mood": "comparison \u2014 a tool you abandoned vs the one you replaced it with",
+      "topic_seed": "Personal confession: I replaced a $68K/yr junior dev with Claude + Cursor, saved the salary, then watched the product crash six months later because AI code isn't maintainable by humans. The automation success story with a regretful twist that exposes the hidden cost no one talks about. \u2014 angle: The Specific Number Promise \u2014 'I replaced a $68,000-a-year junior developer with a $40/month AI subscription. Six months later, the product crashed.' Open on face-to-camera, deadpan delivery, pause after '$68,000'.",
+      "setting_pool_id": 0,
+      "results": {
+        "youtube": "https://youtube.com/shorts/HcWe-ZnWob8",
+        "instagram_id": "17865287214627761",
+        "linkedin_urn": null
+      }
+    },
+    {
+      "ts": 1781379331,
+      "kind": "portrait",
+      "topic": "The $68K Dev I Replaced With AI",
+      "hook": "I replaced a $68,000-a-year developer with a $40 subscription.",
+      "outfit": "navy short-sleeve polo (the classic)",
+      "mood": "hidden cost \u2014 what nobody tells you about scaling AI in your business",
+      "topic_seed": "Personal confession: I replaced a $68K/yr junior dev with Claude + Cursor, saved the salary, then watched the product crash six months later because AI code isn't maintainable by humans. The automation success story with a regretful twist that exposes the hidden cost no one talks about. \u2014 angle: The Specific Number Promise \u2014 'I replaced a $68,000-a-year junior developer with a $40/month AI subscription. Six months later, the product crashed.' Open on face-to-camera, deadpan delivery, pause after '$68,000'.",
+      "setting_pool_id": null,
+      "results": {
+        "youtube": null,
+        "instagram_id": "18124586488650157",
+        "linkedin_urn": null
+      }
+    },
+    {
+      "ts": 1781379331,
+      "kind": "carousel",
+      "topic": "I Replaced a Dev and Paid for It",
+      "hook": "Saved $68K. Lost the product. Here's what happened.",
+      "outfit": "black henley with subtle stubble",
+      "mood": "case study \u2014 a single specific automation, with the numbers",
+      "topic_seed": "Personal confession: I replaced a $68K/yr junior dev with Claude + Cursor, saved the salary, then watched the product crash six months later because AI code isn't maintainable by humans. The automation success story with a regretful twist that exposes the hidden cost no one talks about. \u2014 angle: The Specific Number Promise \u2014 'I replaced a $68,000-a-year junior developer with a $40/month AI subscription. Six months later, the product crashed.' Open on face-to-camera, deadpan delivery, pause after '$68,000'.",
+      "setting_pool_id": null,
+      "results": {
+        "youtube": null,
+        "instagram_id": "17855043645677391",
+        "linkedin_urn": null
+      }
+    },
+    {
+      "ts": 1781382882,
+      "kind": "reel",
+      "topic": "Solo bookkeeper cuts $8k/month in subs with $97 workflow",
+      "hook": "I replaced $8,000 a month in subcontractors with a $97 automation.",
+      "outfit": "light denim shirt under a tan suede jacket",
+      "mood": "personal regret \u2014 admit a costly mistake you made building AI",
+      "topic_seed": "Personal confession: A solo bookkeeper fired 4 subcontractors costing $8,000/month and replaced them with a $97/month Make.com + Claude workflow \u2014 then raised prices 40% in the same quarter because turnaround went from 5 days to 4 hours. Clients didn't blink. The twist: she didn't fire people becaus \u2014 angle: Specific Number Promise \u2014 'I replaced $8,000 a month in subcontractors with a $97 automation.' Open face-to-camera, deadpan, hold for 1.5 beats after '$8,000.' Then cut to: 'My clients didn't even notice. Then I raised my prices 40%.'",
+      "setting_pool_id": 1,
+      "results": {
+        "youtube": "https://youtube.com/shorts/PhjpSEDP8FY",
+        "instagram_id": "18096140582241715",
+        "linkedin_urn": null
+      }
+    },
+    {
+      "ts": 1781382882,
+      "kind": "portrait",
+      "topic": "Solo Bookkeeper Replaced $8K in Subcontractors",
+      "hook": "I replaced $8,000 a month in subcontractors with $97.",
+      "outfit": "stone wool overshirt over a black turtleneck",
+      "mood": "hot take \u2014 a prediction about where AI work is going",
+      "topic_seed": "Personal confession: A solo bookkeeper fired 4 subcontractors costing $8,000/month and replaced them with a $97/month Make.com + Claude workflow \u2014 then raised prices 40% in the same quarter because turnaround went from 5 days to 4 hours. Clients didn't blink. The twist: she didn't fire people becaus \u2014 angle: Specific Number Promise \u2014 'I replaced $8,000 a month in subcontractors with a $97 automation.' Open face-to-camera, deadpan, hold for 1.5 beats after '$8,000.' Then cut to: 'My clients didn't even notice. Then I raised my prices 40%.'",
+      "setting_pool_id": null,
+      "results": {
+        "youtube": null,
+        "instagram_id": "18173828998411219",
+        "linkedin_urn": null
+      }
+    },
+    {
+      "ts": 1781382882,
+      "kind": "carousel",
+      "topic": "$97 Workflow, Four Contractors Gone",
+      "hook": "I replaced $8,000 a month in subcontractors with $97.",
+      "outfit": "heather-grey hoodie with subtle texture",
+      "mood": "contrarian rant \u2014 push back on a popular AI tip that's wrong",
+      "topic_seed": "Personal confession: A solo bookkeeper fired 4 subcontractors costing $8,000/month and replaced them with a $97/month Make.com + Claude workflow \u2014 then raised prices 40% in the same quarter because turnaround went from 5 days to 4 hours. Clients didn't blink. The twist: she didn't fire people becaus \u2014 angle: Specific Number Promise \u2014 'I replaced $8,000 a month in subcontractors with a $97 automation.' Open face-to-camera, deadpan, hold for 1.5 beats after '$8,000.' Then cut to: 'My clients didn't even notice. Then I raised my prices 40%.'",
+      "setting_pool_id": null,
+      "results": {
+        "youtube": null,
+        "instagram_id": "18106120432985556",
+        "linkedin_urn": null
+      }
+    },
+    {
+      "ts": 1781389962,
+      "kind": "portrait",
+      "topic": "$180K ARR, One Sheet, Zero Staff",
+      "hook": "$180K ARR. 11 hours a week. One Claude prompt chain.",
+      "outfit": "sand-coloured chore jacket over a navy tee",
+      "mood": "live observation \u2014 something you noticed this week that surprised you",
+      "topic_seed": "One solo founder runs $180K ARR on a single Claude prompt chain reading from a Google Sheet \u2014 zero employees, 11 hours per week. Here's the exact architecture: the prompt structure, the Sheet schema, and how the automation pipelines research output directly into revenue operations. The system is ful \u2014 angle: Contrast hook + specific number: '$180K ARR, 11 hours a week, zero employees \u2014 one Claude workflow, one Google Sheet.' Archetype: 'The System Builder' \u2014 not selling a course, showing a real system. Opener shows the Google Sheet revenue dashboard scrolling on screen with on-screen text overlay.",
+      "setting_pool_id": null,
+      "results": {
+        "youtube": null,
+        "instagram_id": "18199658290320189",
+        "linkedin_urn": null
+      }
+    },
+    {
+      "ts": 1781389962,
+      "kind": "carousel",
+      "topic": "One Sheet, One Prompt, $180K ARR",
+      "hook": "$180K ARR, 11 hours a week, zero employees",
+      "outfit": "navy zip-up hoodie over a white tee",
+      "mood": "case study \u2014 a single specific automation, with the numbers",
+      "topic_seed": "One solo founder runs $180K ARR on a single Claude prompt chain reading from a Google Sheet \u2014 zero employees, 11 hours per week. Here's the exact architecture: the prompt structure, the Sheet schema, and how the automation pipelines research output directly into revenue operations. The system is ful \u2014 angle: Contrast hook + specific number: '$180K ARR, 11 hours a week, zero employees \u2014 one Claude workflow, one Google Sheet.' Archetype: 'The System Builder' \u2014 not selling a course, showing a real system. Opener shows the Google Sheet revenue dashboard scrolling on screen with on-screen text overlay.",
+      "setting_pool_id": null,
+      "results": {
+        "youtube": null,
+        "instagram_id": "18030964172815371",
+        "linkedin_urn": null
+      }
+    },
+    {
+      "ts": 1781395911,
+      "kind": "portrait",
+      "topic": "94% Support Cost Cut, Zero Agents",
+      "hook": "We cut support costs by 94% and improved response quality.",
+      "outfit": "forest-green flannel over a plain white tee",
+      "mood": "hidden cost \u2014 what nobody tells you about scaling AI in your business",
+      "topic_seed": "A $12M/year e-commerce operator replaced their entire 14-person support team with one Claude + Intercom workflow \u2014 now handling 4,000 tickets daily with zero human agents at $1,847/month instead of $31,200 in salaries. We show the live dashboard, the exact prompt, and the full dollar breakdown on sc \u2014 angle: Dollar contrast hook within first 1 second: On-screen text '$1,847/mo AI vs $31,200/mo Humans' over a live Intercom dashboard showing '4,000 Tickets Handled Today.' Voiceover: 'We cut our support cost by 94% \u2014 and actually improved response quality.' Archetype: 'The Profit Optimizer' \u2014 not a layoff",
+      "setting_pool_id": null,
+      "results": {
+        "youtube": null,
+        "instagram_id": "18294891184303994",
+        "linkedin_urn": null
+      }
+    },
+    {
+      "ts": 1781395911,
+      "kind": "carousel",
+      "topic": "94% Support Cost Cut, Zero Agents",
+      "hook": "$1,847/mo beat a 14-person team. No layoffs.",
+      "outfit": "off-white knit polo, no collar stand",
+      "mood": "hot take \u2014 a prediction about where AI work is going",
+      "topic_seed": "A $12M/year e-commerce operator replaced their entire 14-person support team with one Claude + Intercom workflow \u2014 now handling 4,000 tickets daily with zero human agents at $1,847/month instead of $31,200 in salaries. We show the live dashboard, the exact prompt, and the full dollar breakdown on sc \u2014 angle: Dollar contrast hook within first 1 second: On-screen text '$1,847/mo AI vs $31,200/mo Humans' over a live Intercom dashboard showing '4,000 Tickets Handled Today.' Voiceover: 'We cut our support cost by 94% \u2014 and actually improved response quality.' Archetype: 'The Profit Optimizer' \u2014 not a layoff",
+      "setting_pool_id": null,
+      "results": {
+        "youtube": null,
+        "instagram_id": "17891401515376041",
+        "linkedin_urn": null
+      }
+    },
+    {
+      "ts": 1781424192,
+      "kind": "portrait",
+      "topic": "We spent $40,000 building a",
+      "hook": "WRONG PRICE, WRONG ROOM",
+      "outfit": "navy zip-up hoodie over a white tee",
+      "mood": "hidden cost \u2014 what nobody tells you about scaling AI in your business",
+      "topic_seed": "The $40K pricing hallucination \u2014 a startup invested $40K in a GPT-4 sales bot that misquoted $12/seat instead of $120/seat to 200 enterprise prospects in its first week. The specific number promise ($40K, $12 vs $120) plus the regretful twist of the hidden cost of AI at the worst possible moment. \u2014 angle: Specific Number Promise + Regretful Twist archetype. Open face-to-camera, deadpan: 'We spent $40,000 building a GPT-4 sales bot. In the first week, it quoted $12 a seat to 200 enterprise prospects. Our real price is $120.' Hold 1.5 beats after '$12.' Then cut to: 'Here's the full post-mortem.'",
+      "setting_pool_id": null,
+      "results": {
+        "youtube": null,
+        "instagram_id": "17871274266534254",
+        "linkedin_urn": null
+      }
+    },
+    {
+      "ts": 1781424192,
+      "kind": "carousel",
+      "topic": "We spent $40,000 building a",
+      "hook": "My AI quoted $12 instead of $120. 200 times.",
+      "outfit": "grey crewneck sweater",
+      "mood": "money stunt \u2014 a specific dollar transformation ($X \u2192 $Y) with the math",
+      "topic_seed": "The $40K pricing hallucination \u2014 a startup invested $40K in a GPT-4 sales bot that misquoted $12/seat instead of $120/seat to 200 enterprise prospects in its first week. The specific number promise ($40K, $12 vs $120) plus the regretful twist of the hidden cost of AI at the worst possible moment. \u2014 angle: Specific Number Promise + Regretful Twist archetype. Open face-to-camera, deadpan: 'We spent $40,000 building a GPT-4 sales bot. In the first week, it quoted $12 a seat to 200 enterprise prospects. Our real price is $120.' Hold 1.5 beats after '$12.' Then cut to: 'Here's the full post-mortem.'",
+      "setting_pool_id": null,
+      "results": {
+        "youtube": null,
+        "instagram_id": "18404156725153235",
+        "linkedin_urn": null
+      }
+    },
+    {
+      "ts": 1781429786,
+      "kind": "reel",
+      "topic": "I run $2M ARR in e-commerce.",
+      "hook": "I run $2M ARR in e-commerce.",
+      "outfit": "charcoal merino quarter-zip pullover",
+      "mood": "case study \u2014 a single specific automation, with the numbers",
+      "topic_seed": "A solo e-commerce founder runs $2M ARR with zero full-time employees \u2014 using a $300/month Airtable+Zapier+ChatGPT stack that replaced a $72K/year operations coordinator. The exact architecture: the Airtable base schema, 4 Zapier workflows, and the ChatGPT prompt chain that runs the entire ops pipeli \u2014 angle: Specific Number Promise archetype: Open face-to-camera, deadpan delivery: 'This founder runs $2 million a year with zero employees. His entire ops stack costs $300 a month.' Hold 1.5 beats after '$300.' Then cut to: 'Let me show you exactly how it works.' The contrast of $2M vs $300/mo creates scrol",
+      "setting_pool_id": 0,
+      "results": {
+        "youtube": "https://youtube.com/shorts/uisYZXzwCdo",
+        "instagram_id": "17908753356424000",
+        "linkedin_urn": null
+      }
+    },
+    {
+      "ts": 1781429786,
+      "kind": "portrait",
+      "topic": "I run $2M ARR in e-commerce.",
+      "hook": "HEADCOUNT IS A CRUTCH",
+      "outfit": "black bomber jacket with a thin chain necklace",
+      "mood": "hot take \u2014 a prediction about where AI work is going",
+      "topic_seed": "A solo e-commerce founder runs $2M ARR with zero full-time employees \u2014 using a $300/month Airtable+Zapier+ChatGPT stack that replaced a $72K/year operations coordinator. The exact architecture: the Airtable base schema, 4 Zapier workflows, and the ChatGPT prompt chain that runs the entire ops pipeli \u2014 angle: Specific Number Promise archetype: Open face-to-camera, deadpan delivery: 'This founder runs $2 million a year with zero employees. His entire ops stack costs $300 a month.' Hold 1.5 beats after '$300.' Then cut to: 'Let me show you exactly how it works.' The contrast of $2M vs $300/mo creates scrol",
+      "setting_pool_id": null,
+      "results": {
+        "youtube": null,
+        "instagram_id": "18069340208374982",
+        "linkedin_urn": null
+      }
+    },
+    {
+      "ts": 1781429786,
+      "kind": "carousel",
+      "topic": "I run $2M ARR in e-commerce.",
+      "hook": "No employees. $2M ARR. $300/month stack.",
+      "outfit": "light denim shirt under a tan suede jacket",
+      "mood": "step-by-step \u2014 exactly how you built a small system, no fluff",
+      "topic_seed": "A solo e-commerce founder runs $2M ARR with zero full-time employees \u2014 using a $300/month Airtable+Zapier+ChatGPT stack that replaced a $72K/year operations coordinator. The exact architecture: the Airtable base schema, 4 Zapier workflows, and the ChatGPT prompt chain that runs the entire ops pipeli \u2014 angle: Specific Number Promise archetype: Open face-to-camera, deadpan delivery: 'This founder runs $2 million a year with zero employees. His entire ops stack costs $300 a month.' Hold 1.5 beats after '$300.' Then cut to: 'Let me show you exactly how it works.' The contrast of $2M vs $300/mo creates scrol",
+      "setting_pool_id": null,
+      "results": {
+        "youtube": null,
+        "instagram_id": "17886982710574858",
+        "linkedin_urn": null
+      }
+    }
+  ]
+}

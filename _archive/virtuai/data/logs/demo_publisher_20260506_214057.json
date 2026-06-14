@@ -1,0 +1,23 @@
+{
+  "linkedin": {
+    "action": "published",
+    "tool_used": "LINKEDIN_CREATE_LINKED_IN_POST",
+    "response": "{'data': {'x_restli_id': 'urn:li:share:7457861983732723714'}, 'error': None, 'successful': True}"
+  },
+  "x": {
+    "action": "tool_unavailable",
+    "reason": "TWITTER_CREATE_TWEET not connected in Composio"
+  },
+  "instagram": {
+    "action": "tool_unavailable",
+    "reason": "INSTAGRAM_CREATE_MEDIA not connected in Composio"
+  },
+  "youtube_shorts": {
+    "action": "tool_unavailable",
+    "reason": "YOUTUBE_UPLOAD_SHORT not connected in Composio"
+  },
+  "medium": {
+    "action": "tool_unavailable",
+    "reason": "MEDIUM_CREATE_POST not connected in Composio"
+  }
+}

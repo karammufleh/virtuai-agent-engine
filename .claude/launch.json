@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "virtuai-backend",
+      "runtimeExecutable": "/Users/karammufleh/virtuai-venv/bin/python",
+      "runtimeArgs": ["run_backend.py"],
+      "port": 8765
+    },
+    {
+      "name": "virtuai-website",
+      "runtimeExecutable": "/Users/karammufleh/virtuai-venv/bin/python",
+      "runtimeArgs": ["run_website.py"],
+      "port": 8080
+    }
+  ]
+}

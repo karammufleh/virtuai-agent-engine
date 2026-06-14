@@ -1,0 +1,50 @@
+# Facebook Page Platform Configuration
+platform_id: "facebook"
+display_name: "Facebook Page"
+enabled: true
+
+content_formats:
+  - type: "feed_post"
+    max_caption_length: 63206
+    recommended_length: 250
+    supports_media: true
+    media_required: false
+  - type: "photo_post"
+    image_format: "jpg/png"
+    recommended_aspect_ratio: "4:5 or 1:1"
+    max_dimension: 2048
+  - type: "video_post"
+    max_duration_seconds: 14400          # FB Pages allow up to 4 hours
+    recommended_duration: 30             # short-form performs better
+    aspect_ratio: "9:16 or 1:1"
+    max_file_size_mb: 10240
+
+posting:
+  optimal_times:
+    - day: "weekday"
+      times: ["09:00", "13:00", "17:00"]
+    - day: "weekend"
+      times: ["10:00", "14:00"]
+  timezone: "viewer_local"
+
+caption_style:
+  tone: "longer-form than IG; LinkedIn-similar voice works well"
+  use_hashtags: true
+  max_hashtags: 5
+  emoji_density: "low"
+
+# What gets published per Page post
+publish_via:
+  reel:     "FACEBOOK_CREATE_VIDEO_POST"
+  portrait: "FACEBOOK_CREATE_PHOTO_POST"
+  carousel: "FACEBOOK_CREATE_PHOTO_POST (cover slide only — Page album was attempted in 2026-05-21 but reverted to single-photo for parity with IG fallback)"
+
+requires_env:
+  - FB_PAGE_ID                 # numeric Page ID, e.g. 1100372146493807
+  - COMPOSIO_API_KEY           # Composio handles the OAuth side
+  - COMPOSIO_USER_ID           # entity id that owns the Composio FB connection
+
+notes:
+  - "Page must have an active Composio Facebook connection for entity COMPOSIO_USER_ID."
+  - "Replaced X/Twitter as the 4th active publishing surface on 2026-05-21."
+  - "FB Page audience for an AI/automation operator like Daniel Calder is weaker than IG/LinkedIn, so FB acts as a cross-post amplifier, not a primary platform."

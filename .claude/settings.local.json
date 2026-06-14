@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(brew install:*)",
+      "Bash(pip3 install:*)",
+      "Bash(python3 -c \":*)",
+      "Bash(mkdir -p \"/tmp/zip-review\")",
+      "Read(//tmp/**)",
+      "Bash(rm -rf *)",
+      "Bash(unzip -o \"/Users/karammufleh/Desktop/PRJ-SeifAlkhalidy-#2282975.zip\")",
+      "Bash(mkdir -p /tmp/zip-review-new /tmp/zip-review-old)",
+      "Bash(rm -rf ./*)"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+# Minimal project tooling config.
+#
+# Currently scopes `pytest` discovery to the real project tests so a
+# bare `pytest` invocation does not crawl archived scripts or vendored
+# third-party AI models (SadTalker, video_retalking) whose filenames
+# happen to start with `test_` but are not real tests.
+#
+# Add other tooling sections here only when needed.
+
+[tool.pytest.ini_options]
+testpaths = ["virtuai/tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]

@@ -1,0 +1,27 @@
+{
+  "topic": "I replaced my $80k VA with AI agents. Here's the math.",
+  "hook_summary": "I fired my VA and saved $60k. Here's how.",
+  "total_words": 90,
+  "estimated_seconds": 27,
+  "scenes": [
+    {
+      "id": 1,
+      "audio_text": "Everyone says hire a VA before you're ready. I did that, spent $80k in a year. Then I replaced her with three AI agents for $300 a month.",
+      "visual_prompt": "A 28-year-old man with short dark wavy hair and light stubble, wearing a dark polo shirt, sits at a wooden desk in a bright home office with natural light from a window. Medium close-up, locked-off camera, direct to lens. Candid documentary style.",
+      "duration_hint": 5
+    },
+    {
+      "id": 2,
+      "audio_text": "One handles inbox triage, another books client calls, the third drafts proposals. They don't sleep, don't complain, and cost less than my coffee budget.",
+      "visual_prompt": "Same man now walking down a busy city street, holding a phone to his ear, slight smile. Over-shoulder shot, handheld motion, afternoon golden hour light. Photo-real.",
+      "duration_hint": 7
+    },
+    {
+      "id": 3,
+      "audio_text": "The hard truth? Most tasks you delegate can be automated. Stop hiring people to do what code can do. That's the math.",
+      "visual_prompt": "Same man leaning against a brick wall in a quiet alley, arms crossed, looking directly at camera. Medium close-up, slow push-in, warm ambient light. Candid.",
+      "duration_hint": 6
+    }
+  ],
+  "loop_back_line": "Hire less, automate more."
+}

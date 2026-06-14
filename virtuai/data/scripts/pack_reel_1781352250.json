@@ -1,0 +1,51 @@
+{
+  "topic": "Junior roles wired through AI agents look different",
+  "hook_summary": "Junior roles aren't disappearing. They already have.",
+  "total_words": 118,
+  "estimated_seconds": 26,
+  "scenes": [
+    {
+      "id": 1,
+      "story_beat": "setup",
+      "audio_text": "Junior roles aren't disappearing. They already have. I had a $42k coordinator running my client onboarding.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, eye-level, seated leaning forward with both forearms on desk [2] SETTING: warm wood writing desk in a quiet home study, bookshelf packed with spines behind him, a Moleskine open to a handwritten org chart [3] LIGHT: single warm desk lamp casting soft amber glow, 8pm, shadows deep on the bookshelf [4] LIVE BACKGROUND: dust motes drifting through lamplight, a ceiling fan turning slowly overhead, a pen rolling slightly as he shifts weight [5] CAMERA + MOOD: slow 1-foot handheld push-in, intimate and matter-of-fact, like a founder debriefing a board \u2014 @daniel in olive-green field jacket over charcoal tee",
+      "duration_hint": 5
+    },
+    {
+      "id": 2,
+      "story_beat": "incident",
+      "audio_text": "Three weeks ago she gave notice. Two weeks left, no replacement pipeline, $11k in onboarding tasks sitting unassigned.",
+      "visual_prompt": "[1] COMPOSITION: medium shot, 50mm, slight low angle, sitting on edge of bed with one elbow on knee, chin resting on fist [2] SETTING: bedroom edge of bed, morning light bleeding through linen curtains, a phone face-down on the duvet beside him [3] LIGHT: soft diffuse morning window light from the left, 7am overcast, no fill \u2014 gentle grey shadows [4] LIVE BACKGROUND: curtain fabric shifting in a faint draft, a bird moving across the window ledge outside, dust catching the weak morning light [5] CAMERA + MOOD: slow handheld drift left to right, contemplative and pressured, a man doing math he doesn't like \u2014 @daniel in olive-green field jacket over charcoal tee",
+      "duration_hint": 5
+    },
+    {
+      "id": 3,
+      "story_beat": "struggle",
+      "audio_text": "I posted a job ad. Fourteen applicants in four days. Every one of them needed three weeks of training I didn't have.",
+      "visual_prompt": "[1] COMPOSITION: over-shoulder wide, 28mm, slight high angle, standing at kitchen island with both hands flat on the counter, looking down at a laptop [2] SETTING: kitchen island at dusk, one brass pendant lamp on above him, a half-drunk coffee to his right, sticky notes on the cabinet behind [3] LIGHT: single warm pendant downlight, dusk blue bleeding through the window behind, high contrast between lamp and ambient [4] LIVE BACKGROUND: steam curling from the coffee mug, headlights from a passing car sliding across the cabinet, a notification briefly lighting the laptop screen [5] CAMERA + MOOD: slow dolly pull-back, wide and slightly cold, exposing the empty kitchen around him \u2014 @daniel in olive-green field jacket over charcoal tee",
+      "duration_hint": 5
+    },
+    {
+      "id": 4,
+      "story_beat": "turn",
+      "audio_text": "So instead of hiring, I gave Claude every Loom recording she'd ever made. I expected a summary. I got a fully running intake agent.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 85mm portrait, eye-level, leaning against the garage workshop wall, arms loosely crossed [2] SETTING: garage workshop, pegboard of hand tools visible behind him, a single work lamp clamped to a shelf throwing hard directional light, a worn wooden stool in the corner [3] LIGHT: single clamp work lamp at 45 degrees, warm tungsten, heavy shadows on the wall and tool pegboard, night outside [4] LIVE BACKGROUND: a hanging cord swaying gently, a moth circling the work lamp, dust on the shelf catching the beam [5] CAMERA + MOOD: slow orbit right to left, low handheld, like something just clicked \u2014 the turn, the lean-in moment \u2014 @daniel in olive-green field jacket over charcoal tee",
+      "duration_hint": 5
+    },
+    {
+      "id": 5,
+      "story_beat": "proof",
+      "audio_text": "Zapier wired it to our CRM. It's handled 34 onboardings since Tuesday. Total cost: $6.",
+      "visual_prompt": "[1] COMPOSITION: close-up, 35mm, slightly low angle, sitting in leather armchair with one hand on chin, looking slightly off-camera [2] SETTING: leather armchair near a fireplace, low amber firelight, a glass of water on a small side table, a closed book with a bookmark in his lap [3] LIGHT: flickering warm firelight as key, no fill, deep shadows framing his face \u2014 intimate and direct [4] LIVE BACKGROUND: firelight visibly shifting and dancing on the wall, embers dropping in the grate, steam wisping from the water glass [5] CAMERA + MOOD: slow 1-foot push-in, handheld micro-drift, confessional and precise \u2014 the number lands flat \u2014 @daniel in olive-green field jacket over charcoal tee",
+      "duration_hint": 5
+    },
+    {
+      "id": 6,
+      "story_beat": "meaning",
+      "audio_text": "You're not replacing people. You're replacing the process they were doing. There's a difference \u2014 and it costs you $6 to see it.",
+      "visual_prompt": "[1] COMPOSITION: medium shot, 50mm, eye-level, seated in a reading nook with one arm resting on the windowsill, half-turned looking slightly back toward camera [2] SETTING: reading nook, rain visible and audible on the window behind him, a small stack of dog-eared paperbacks on the sill, a dim floor lamp to his left [3] LIGHT: overcast grey window light from behind, soft floor lamp fill from the left, 4pm rainy diffuse \u2014 calm and resolved [4] LIVE BACKGROUND: rain streaking down the glass behind him, a drop running visibly down the outside pane, pages of an open book on his lap shifting in the lamplight [5] CAMERA + MOOD: slow tracking pull-back, handheld, unhurried \u2014 he's not selling anything, he's just done \u2014 @daniel in olive-green field jacket over charcoal tee",
+      "duration_hint": 5
+    }
+  ],
+  "loop_back_line": "Junior roles aren't disappearing. They already have \u2014 and it cost $6 to prove it."
+}

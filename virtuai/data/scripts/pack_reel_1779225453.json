@@ -1,0 +1,51 @@
+{
+  "topic": "Founders who vibe-code their tools are burning money",
+  "hook_summary": "Stop building the thing. You're not a software company.",
+  "total_words": 118,
+  "estimated_seconds": 34,
+  "scenes": [
+    {
+      "id": 1,
+      "story_beat": "setup",
+      "audio_text": "Stop building the thing. You're not a software company. I spent eleven thousand dollars and eight weeks vibe-coding a client dashboard in Cursor.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, eye-level, leaning slightly forward with both hands flat on the table, direct eye contact. [2] SETTING: sunlit corner cafe, round marble table in foreground, espresso machine on the bar behind, ceramic cup and a cracked-spine notebook visible on the table surface. [3] LIGHT: warm east-facing window light at 8am, soft diffused fill from white plaster wall, gentle shadows under brow. [4] LIVE BACKGROUND: barista pulling a shot behind him, steam curling from the group head, two blurred customers passing the window left to right. [5] CAMERA + MOOD: slow 1-foot handheld dolly forward, intimate confessional energy, photo-real documentary. @daniel wears a navy zip-up hoodie over a white tee.",
+      "duration_hint": 5
+    },
+    {
+      "id": 2,
+      "story_beat": "incident",
+      "audio_text": "My developer quit on a Thursday. I had a demo with a $4M ARR prospect the following Monday. I had nothing to show.",
+      "visual_prompt": "[1] COMPOSITION: medium shot, 28mm, slight low angle, standing with arms crossed, weight on one hip, chin slightly down. [2] SETTING: underground subway platform, yellow platform-edge stripe visible at feet, a tiled column beside him, a folded Metro card on the ledge. [3] LIGHT: overhead tungsten station strips casting a warm pool downward, cooler ambient bounce from the tunnel mouth. [4] LIVE BACKGROUND: a train pulling into frame on the far track, commuters shifting on the platform behind him, a paper cup rolling slowly across the floor. [5] CAMERA + MOOD: slow tracking pan left-to-right as the train arrives, tense documentary energy. @daniel wears a navy zip-up hoodie over a white tee.",
+      "duration_hint": 5
+    },
+    {
+      "id": 3,
+      "story_beat": "struggle",
+      "audio_text": "I jumped back into Cursor myself. Four hours in, I'd broken the auth layer and lost the weekend. The demo almost didn't happen.",
+      "visual_prompt": "[1] COMPOSITION: over-shoulder wide, 24mm, slight high angle, seated at a kitchen island, elbow on counter, one hand pressed to his forehead. [2] SETTING: modern loft kitchen, morning light, a French press on the stone counter, an open Moleskine with scribbled diagrams beside a laptop, exposed brick wall behind. [3] LIGHT: diffused north-facing window light, 7am cool-white, soft shadows across the counter surface. [4] LIVE BACKGROUND: coffee dripping slowly from the French press spout, leaves of a potted plant swaying near the window, a phone screen lighting up on the counter behind him. [5] CAMERA + MOOD: slow push-in toward subject, 8 inches over 5 seconds, quiet dread energy, handheld drift. @daniel wears a navy zip-up hoodie over a white tee.",
+      "duration_hint": 5
+    },
+    {
+      "id": 4,
+      "story_beat": "turn",
+      "audio_text": "Then I stopped. I took the entire spec, dropped it into Claude, and asked it to write a Notion doc that mimicked the dashboard logic. No code. Forty dollars.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, eye-level, sitting with elbow on knee, open hand extended toward camera as if handing something over. [2] SETTING: co-working space lounge, large floor-to-ceiling window behind him, a low timber coffee table with a water glass and a printed one-pager, warm pendant light above. [3] LIGHT: diffused afternoon window light, 3pm, soft warm fill from the pendant, long horizontal shadows across the table. [4] LIVE BACKGROUND: two ambient figures working at standing desks in the window's soft focus, a ceiling fan rotating slowly overhead, a plant swaying near the HVAC vent. [5] CAMERA + MOOD: slow orbit right-to-left around subject, revelatory energy, handheld drift, photo-real. @daniel wears a navy zip-up hoodie over a white tee.",
+      "duration_hint": 5
+    },
+    {
+      "id": 5,
+      "story_beat": "proof",
+      "audio_text": "The prospect loved it. Signed a six-month contract the next Thursday. The Notion doc ran the whole workflow for three months before we touched a single line of real code.",
+      "visual_prompt": "[1] COMPOSITION: medium shot, 50mm, eye-level, walking slowly with one hand in hoodie pocket, half-turned looking back toward camera. [2] SETTING: city sidewalk during golden hour, glass-fronted buildings lining the street, a bike courier rack visible on the curb, faint chalk menu board outside a restaurant entrance. [3] LIGHT: warm 6pm side-light raking across his face from the west, long golden shadows stretching across the pavement. [4] LIVE BACKGROUND: cars passing left to right in the street behind him, a courier unlocking a bike at the rack, pedestrians crossing at the far end of the block in soft focus. [5] CAMERA + MOOD: slow tracking follow shot, 3 feet behind subject, quiet earned confidence, handheld drift. @daniel wears a navy zip-up hoodie over a white tee.",
+      "duration_hint": 5
+    },
+    {
+      "id": 6,
+      "story_beat": "meaning",
+      "audio_text": "Founders don't lose to better software. They lose to better processes. Build the process first. The code can wait.",
+      "visual_prompt": "[1] COMPOSITION: medium close-up, 35mm, slight low angle, standing with both hands on a railing, leaning slightly forward, direct gaze into lens. [2] SETTING: rooftop terrace, city skyline low in the distance, a single folding chair behind him, an empty espresso cup on the railing ledge beside him. [3] LIGHT: dusk blue-hour ambient light, warm city glow rising from below, faint pink in the upper sky, no artificial key light. [4] LIVE BACKGROUND: a flag on a nearby rooftop flapping in the wind, pigeons taking off from the ledge behind him, headlights of cars moving on the street far below. [5] CAMERA + MOOD: slow push-in, 12 inches over 5 seconds, locked onto his face, quiet declarative finality, minimal handheld drift. @daniel wears a navy zip-up hoodie over a white tee.",
+      "duration_hint": 5
+    }
+  ],
+  "loop_back_line": "Stop building the thing \u2014 the thing isn't the business."
+}
